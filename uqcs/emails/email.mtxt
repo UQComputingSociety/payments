@@ -3,13 +3,13 @@ $ ${'5.40' if user.paid != "CASH" else '5.00'} Paid
 **********
 
 -----------------------
-Welcome to UQCS in 2018
+Welcome to UQCS in 2019
 -----------------------
 
 ${user.first_name} ${user.last_name}
 ${str(dt.datetime.now())}
 
-UQCS 2018 Membership
+UQCS 2019 Membership
 $ 5.00
 
 % if user.paid != "CASH":
