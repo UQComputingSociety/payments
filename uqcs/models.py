@@ -58,7 +58,7 @@ class Student(Member):
     domestic = Column(Boolean)
     year = Column(Integer)
     program = Column(String(100))
-    undergrad = Column(Boolean)
+    degreetype = Column(String(10))
 
     __mapper_args__ = {
         "polymorphic_identity": "student"

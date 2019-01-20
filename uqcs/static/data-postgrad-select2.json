@@ -1,0 +1,2520 @@
+{
+    "pagination": {
+        "more": false
+    },
+    "results": [
+        {
+            "children": [
+                {
+                    "id": 1,
+                    "text": "Agribusiness"
+                }
+            ],
+            "text": "Agribusiness"
+        },
+        {
+            "children": [
+                {
+                    "id": 2,
+                    "text": "Agricultural Science"
+                }
+            ],
+            "text": "Agricultural Science"
+        },
+        {
+            "children": [
+                {
+                    "id": 3,
+                    "text": "Alcohol, Tobacco and Other Drug Studies"
+                }
+            ],
+            "text": "Alcohol, Tobacco and Other Drug Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 4,
+                    "text": "Animal Science"
+                }
+            ],
+            "text": "Animal Science"
+        },
+        {
+            "children": [
+                {
+                    "id": 5,
+                    "text": "Applied Linguistics"
+                },
+                {
+                    "id": 6,
+                    "text": "TESOL Studies"
+                }
+            ],
+            "text": "Applied Linguistics"
+        },
+        {
+            "children": [
+                {
+                    "id": 7,
+                    "text": "Arts in Chinese Translation and Interpreting"
+                }
+            ],
+            "text": "Arts in Chinese Translation and Interpreting"
+        },
+        {
+            "children": [
+                {
+                    "id": 8,
+                    "text": "Arts in Japanese Interpreting"
+                }
+            ],
+            "text": "Arts in Japanese Interpreting"
+        },
+        {
+            "children": [
+                {
+                    "id": 9,
+                    "text": "Arts in Japanese Translation"
+                }
+            ],
+            "text": "Arts in Japanese Translation"
+        },
+        {
+            "children": [
+                {
+                    "id": 10,
+                    "text": "Arts in Japanese Interpreting and Translation"
+                },
+                {
+                    "id": 38,
+                    "text": "Arts in Japanese Interpreting and Translation"
+                }
+            ],
+            "text": "Arts in Japanese Interpreting and Translation"
+        },
+        {
+            "children": [
+                {
+                    "id": 11,
+                    "text": "Advanced Economics (16 units)"
+                }
+            ],
+            "text": "Advanced Economics (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 12,
+                    "text": "Advanced Economics (24 units)"
+                }
+            ],
+            "text": "Advanced Economics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 13,
+                    "text": "Advanced Nursing"
+                }
+            ],
+            "text": "Advanced Nursing"
+        },
+        {
+            "children": [
+                {
+                    "id": 14,
+                    "text": "Agribusiness (24 units)"
+                }
+            ],
+            "text": "Agribusiness (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 15,
+                    "text": "Agribusiness (32 units)"
+                }
+            ],
+            "text": "Agribusiness (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 16,
+                    "text": "Agronomy"
+                },
+                {
+                    "id": 17,
+                    "text": "Horticulture"
+                },
+                {
+                    "id": 18,
+                    "text": "Plant Protection"
+                }
+            ],
+            "text": "Agricultural Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 19,
+                    "text": "Agronomy"
+                },
+                {
+                    "id": 20,
+                    "text": "Horticulture"
+                },
+                {
+                    "id": 21,
+                    "text": "Plant Protection"
+                }
+            ],
+            "text": "Agricultural Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 22,
+                    "text": "Equine Science"
+                },
+                {
+                    "id": 23,
+                    "text": "Production Animal Science"
+                },
+                {
+                    "id": 24,
+                    "text": "Wildlife Biology"
+                }
+            ],
+            "text": "Animal Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 25,
+                    "text": "Equine Science"
+                },
+                {
+                    "id": 26,
+                    "text": "Production Animal Science"
+                },
+                {
+                    "id": 27,
+                    "text": "Wildlife Biology"
+                }
+            ],
+            "text": "Animal Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 28,
+                    "text": "Applied Econometrics (24 units)"
+                }
+            ],
+            "text": "Applied Econometrics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 29,
+                    "text": "Applied Econometrics (32 units)"
+                }
+            ],
+            "text": "Applied Econometrics (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 30,
+                    "text": "Applied Linguistics"
+                },
+                {
+                    "id": 31,
+                    "text": "TESOL Studies"
+                }
+            ],
+            "text": "Applied Linguistics (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 32,
+                    "text": "Applied Linguistics"
+                },
+                {
+                    "id": 33,
+                    "text": "TESOL Studies"
+                }
+            ],
+            "text": "Applied Linguistics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 34,
+                    "text": "Applied Linguistics"
+                },
+                {
+                    "id": 35,
+                    "text": "TESOL Studies"
+                }
+            ],
+            "text": "Applied Linguistics (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 36,
+                    "text": "Architecture"
+                }
+            ],
+            "text": "Architecture"
+        },
+        {
+            "children": [
+                {
+                    "id": 37,
+                    "text": "Arts in Chinese Translation and Interpreting (32 units)"
+                }
+            ],
+            "text": "Arts in Chinese Translation and Interpreting (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 39,
+                    "text": "Audiology Studies"
+                }
+            ],
+            "text": "Audiology Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 40,
+                    "text": "Bioinformatics"
+                }
+            ],
+            "text": "Bioinformatics"
+        },
+        {
+            "children": [
+                {
+                    "id": 41,
+                    "text": "Biostatistics"
+                },
+                {
+                    "id": 49,
+                    "text": "Biostatistics"
+                }
+            ],
+            "text": "Biostatistics"
+        },
+        {
+            "children": [
+                {
+                    "id": 42,
+                    "text": "Biotechnology"
+                },
+                {
+                    "id": 50,
+                    "text": "Biotechnology"
+                }
+            ],
+            "text": "Biotechnology"
+        },
+        {
+            "children": [
+                {
+                    "id": 43,
+                    "text": "Business"
+                }
+            ],
+            "text": "Business"
+        },
+        {
+            "children": [
+                {
+                    "id": 44,
+                    "text": "Business Administration"
+                },
+                {
+                    "id": 51,
+                    "text": "Business Administration"
+                },
+                {
+                    "id": 82,
+                    "text": "Business Administration"
+                }
+            ],
+            "text": "Business Administration"
+        },
+        {
+            "children": [
+                {
+                    "id": 45,
+                    "text": "Financial Leadership in the Public Sector"
+                },
+                {
+                    "id": 46,
+                    "text": "Insurance Business"
+                },
+                {
+                    "id": 47,
+                    "text": "Medical Leadership"
+                }
+            ],
+            "text": "Business Leadership"
+        },
+        {
+            "children": [
+                {
+                    "id": 48,
+                    "text": "Business Research Methods"
+                },
+                {
+                    "id": 52,
+                    "text": "Business Research Methods"
+                }
+            ],
+            "text": "Business Research Methods"
+        },
+        {
+            "children": [
+                {
+                    "id": 53,
+                    "text": "Bioinformatics (16 units)"
+                }
+            ],
+            "text": "Bioinformatics (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 54,
+                    "text": "Bioinformatics (24 units)"
+                }
+            ],
+            "text": "Bioinformatics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 55,
+                    "text": "Bioinformatics Research Extensive (24 units)"
+                }
+            ],
+            "text": "Bioinformatics Research Extensive (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 56,
+                    "text": "Bioinformatics Research Extensive (32 units)"
+                }
+            ],
+            "text": "Bioinformatics Research Extensive (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 57,
+                    "text": "Biostatistics (16 units)"
+                }
+            ],
+            "text": "Biostatistics (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 58,
+                    "text": "Biostatistics (24 units)"
+                }
+            ],
+            "text": "Biostatistics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 59,
+                    "text": "Biotechnology (16 units)"
+                }
+            ],
+            "text": "Biotechnology (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 60,
+                    "text": "Biotechnology (24 units)"
+                }
+            ],
+            "text": "Biotechnology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 61,
+                    "text": "Biotechnology (32 units)"
+                }
+            ],
+            "text": "Biotechnology (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 62,
+                    "text": "Biotechnology Research Extensive (24 units)"
+                }
+            ],
+            "text": "Biotechnology Research Extensive (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 63,
+                    "text": "Biotechnology Research Extensive (32 units)"
+                }
+            ],
+            "text": "Biotechnology Research Extensive (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 64,
+                    "text": "Advertising"
+                },
+                {
+                    "id": 65,
+                    "text": "Human Resource Management"
+                },
+                {
+                    "id": 66,
+                    "text": "Information Systems"
+                },
+                {
+                    "id": 67,
+                    "text": "Innovation and Entrepreneurship"
+                },
+                {
+                    "id": 68,
+                    "text": "International Business"
+                },
+                {
+                    "id": 69,
+                    "text": "Leadership"
+                },
+                {
+                    "id": 70,
+                    "text": "Marketing"
+                },
+                {
+                    "id": 71,
+                    "text": "Organisational Sustainability"
+                },
+                {
+                    "id": 72,
+                    "text": "Supply Chain Management"
+                }
+            ],
+            "text": "Business (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 73,
+                    "text": "Advertising"
+                },
+                {
+                    "id": 74,
+                    "text": "Human Resource Management"
+                },
+                {
+                    "id": 75,
+                    "text": "Information Systems"
+                },
+                {
+                    "id": 76,
+                    "text": "Innovation and Entrepreneurship"
+                },
+                {
+                    "id": 77,
+                    "text": "International Business"
+                },
+                {
+                    "id": 78,
+                    "text": "Leadership"
+                },
+                {
+                    "id": 79,
+                    "text": "Marketing"
+                },
+                {
+                    "id": 80,
+                    "text": "Organisational Sustainability"
+                },
+                {
+                    "id": 81,
+                    "text": "Supply Chain Management"
+                }
+            ],
+            "text": "Business (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 83,
+                    "text": "Business Psychology"
+                }
+            ],
+            "text": "Business Psychology"
+        },
+        {
+            "children": [
+                {
+                    "id": 84,
+                    "text": "Dento-Maxillofacial Radiology"
+                },
+                {
+                    "id": 85,
+                    "text": "Endodontics"
+                },
+                {
+                    "id": 86,
+                    "text": "Oral Medicine"
+                },
+                {
+                    "id": 87,
+                    "text": "Orthodontics"
+                },
+                {
+                    "id": 88,
+                    "text": "Periodontics"
+                },
+                {
+                    "id": 89,
+                    "text": "Prosthodontics"
+                },
+                {
+                    "id": 90,
+                    "text": "Special Needs Dentistry"
+                }
+            ],
+            "text": "Clinical Dentistry"
+        },
+        {
+            "children": [
+                {
+                    "id": 91,
+                    "text": "Clinical Pharmacy"
+                },
+                {
+                    "id": 96,
+                    "text": "Clinical Pharmacy"
+                },
+                {
+                    "id": 99,
+                    "text": "Clinical Pharmacy"
+                }
+            ],
+            "text": "Clinical Pharmacy"
+        },
+        {
+            "children": [
+                {
+                    "id": 92,
+                    "text": "Commerce"
+                }
+            ],
+            "text": "Commerce"
+        },
+        {
+            "children": [
+                {
+                    "id": 93,
+                    "text": "Strategic Communication"
+                }
+            ],
+            "text": "Communication"
+        },
+        {
+            "children": [
+                {
+                    "id": 94,
+                    "text": "Community Development"
+                }
+            ],
+            "text": "Community Development"
+        },
+        {
+            "children": [
+                {
+                    "id": 95,
+                    "text": "Computer Science"
+                },
+                {
+                    "id": 97,
+                    "text": "Computer Science"
+                }
+            ],
+            "text": "Computer Science"
+        },
+        {
+            "children": [
+                {
+                    "id": 98,
+                    "text": "Clinical Exercise Physiology (24 units)"
+                }
+            ],
+            "text": "Clinical Exercise Physiology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 100,
+                    "text": "Clinical Psychology"
+                }
+            ],
+            "text": "Clinical Psychology"
+        },
+        {
+            "children": [
+                {
+                    "id": 101,
+                    "text": "Applied Finance"
+                },
+                {
+                    "id": 102,
+                    "text": "Information Systems"
+                },
+                {
+                    "id": 103,
+                    "text": "Professional Accounting"
+                }
+            ],
+            "text": "Commerce (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 104,
+                    "text": "Applied Finance"
+                },
+                {
+                    "id": 105,
+                    "text": "Information Systems"
+                },
+                {
+                    "id": 106,
+                    "text": "Professional Accounting"
+                }
+            ],
+            "text": "Commerce (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 107,
+                    "text": "Communication for Social Change"
+                },
+                {
+                    "id": 108,
+                    "text": "Strategic Communication"
+                }
+            ],
+            "text": "Communication (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 109,
+                    "text": "Communication for Social Change"
+                },
+                {
+                    "id": 110,
+                    "text": "Strategic Communication"
+                }
+            ],
+            "text": "Communication (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 111,
+                    "text": "Computer Science (16 units)"
+                }
+            ],
+            "text": "Computer Science (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 112,
+                    "text": "Computer Science (24 units)"
+                }
+            ],
+            "text": "Computer Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 113,
+                    "text": "Computer Science (Management)"
+                }
+            ],
+            "text": "Computer Science (Management)"
+        },
+        {
+            "children": [
+                {
+                    "id": 114,
+                    "text": "Conservation Biology (24 units)"
+                }
+            ],
+            "text": "Conservation Biology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 115,
+                    "text": "Conservation Science (32 units)"
+                }
+            ],
+            "text": "Conservation Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 116,
+                    "text": "Counselling"
+                }
+            ],
+            "text": "Counselling"
+        },
+        {
+            "children": [
+                {
+                    "id": 117,
+                    "text": "Development Practice"
+                }
+            ],
+            "text": "Development Practice"
+        },
+        {
+            "children": [
+                {
+                    "id": 118,
+                    "text": "Data Science (24 units)"
+                }
+            ],
+            "text": "Data Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 119,
+                    "text": "Data Science (32 units)"
+                }
+            ],
+            "text": "Data Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 120,
+                    "text": "Development Economics (24 units)"
+                }
+            ],
+            "text": "Development Economics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 121,
+                    "text": "Development Economics (32 units)"
+                }
+            ],
+            "text": "Development Economics (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 122,
+                    "text": "Development Practice (24 units)"
+                }
+            ],
+            "text": "Development Practice (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 123,
+                    "text": "Development Practice (32 units)"
+                }
+            ],
+            "text": "Development Practice (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 124,
+                    "text": "Dietetics Studies"
+                }
+            ],
+            "text": "Dietetics Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 125,
+                    "text": "Development Economics/Economics and Public Policy"
+                }
+            ],
+            "text": "Development Economics/Economics and Public Policy"
+        },
+        {
+            "children": [
+                {
+                    "id": 126,
+                    "text": "Economic Studies"
+                }
+            ],
+            "text": "Economic Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 127,
+                    "text": "Economics"
+                },
+                {
+                    "id": 143,
+                    "text": "Economics"
+                }
+            ],
+            "text": "Economics"
+        },
+        {
+            "children": [
+                {
+                    "id": 128,
+                    "text": "Behaviour Management"
+                },
+                {
+                    "id": 129,
+                    "text": "Curriculum"
+                },
+                {
+                    "id": 130,
+                    "text": "Guidance, Counselling and Careers"
+                },
+                {
+                    "id": 131,
+                    "text": "Leadership"
+                },
+                {
+                    "id": 132,
+                    "text": "Supporting Diverse Learners"
+                }
+            ],
+            "text": "Educational Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 133,
+                    "text": "Civil Engineering"
+                },
+                {
+                    "id": 134,
+                    "text": "Electrical Engineering"
+                },
+                {
+                    "id": 135,
+                    "text": "Materials and Manufacturing Engineering"
+                },
+                {
+                    "id": 136,
+                    "text": "Mechanical Engineering"
+                },
+                {
+                    "id": 137,
+                    "text": "Mechatronic Engineering"
+                },
+                {
+                    "id": 138,
+                    "text": "Software Engineering"
+                }
+            ],
+            "text": "Engineering Science"
+        },
+        {
+            "children": [
+                {
+                    "id": 139,
+                    "text": "Entrepreneurship and Innovation"
+                },
+                {
+                    "id": 195,
+                    "text": "Biotechnology"
+                },
+                {
+                    "id": 196,
+                    "text": "Design and Information Technology"
+                },
+                {
+                    "id": 197,
+                    "text": "Food Entrepreneurship"
+                },
+                {
+                    "id": 198,
+                    "text": "Social and Community Entrepreneurship"
+                },
+                {
+                    "id": 199,
+                    "text": "Sustainable Energy"
+                }
+            ],
+            "text": "Entrepreneurship and Innovation"
+        },
+        {
+            "children": [
+                {
+                    "id": 140,
+                    "text": "Environmental Health Sciences"
+                },
+                {
+                    "id": 144,
+                    "text": "Environmental Health Sciences"
+                },
+                {
+                    "id": 200,
+                    "text": "Environmental Health Sciences"
+                }
+            ],
+            "text": "Environmental Health Sciences"
+        },
+        {
+            "children": [
+                {
+                    "id": 141,
+                    "text": "Environmental Management"
+                },
+                {
+                    "id": 145,
+                    "text": "Environmental Management"
+                }
+            ],
+            "text": "Environmental Management"
+        },
+        {
+            "children": [
+                {
+                    "id": 142,
+                    "text": "Epidemiology"
+                },
+                {
+                    "id": 146,
+                    "text": "Epidemiology"
+                }
+            ],
+            "text": "Epidemiology"
+        },
+        {
+            "children": [
+                {
+                    "id": 147,
+                    "text": "Economics (24 units)"
+                }
+            ],
+            "text": "Economics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 148,
+                    "text": "Economics (32 units)"
+                }
+            ],
+            "text": "Economics (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 149,
+                    "text": "Economics and Public Policy (24 units)"
+                }
+            ],
+            "text": "Economics and Public Policy (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 150,
+                    "text": "Economics and Public Policy (32 units)"
+                }
+            ],
+            "text": "Economics and Public Policy (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 151,
+                    "text": "Behaviour Management"
+                },
+                {
+                    "id": 152,
+                    "text": "Curriculum"
+                },
+                {
+                    "id": 153,
+                    "text": "Guidance, Counselling and Careers"
+                },
+                {
+                    "id": 154,
+                    "text": "Leadership"
+                },
+                {
+                    "id": 155,
+                    "text": "Supporting Diverse Learners"
+                }
+            ],
+            "text": "Educational Studies (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 156,
+                    "text": "Behaviour Management"
+                },
+                {
+                    "id": 157,
+                    "text": "Curriculum"
+                },
+                {
+                    "id": 158,
+                    "text": "Guidance, Counselling and Careers"
+                },
+                {
+                    "id": 159,
+                    "text": "Leadership"
+                },
+                {
+                    "id": 160,
+                    "text": "Supporting Diverse Learners"
+                }
+            ],
+            "text": "Educational Studies (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 161,
+                    "text": "Behaviour Management"
+                },
+                {
+                    "id": 162,
+                    "text": "Curriculum"
+                },
+                {
+                    "id": 163,
+                    "text": "Guidance, Counselling and Careers"
+                },
+                {
+                    "id": 164,
+                    "text": "Leadership"
+                },
+                {
+                    "id": 165,
+                    "text": "Supporting Diverse Learners"
+                }
+            ],
+            "text": "Educational Studies (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 166,
+                    "text": "Chemical Engineering"
+                },
+                {
+                    "id": 167,
+                    "text": "Civil Engineering"
+                },
+                {
+                    "id": 168,
+                    "text": "Electrical Engineering"
+                },
+                {
+                    "id": 169,
+                    "text": "Materials and Manufacturing Engineering"
+                },
+                {
+                    "id": 170,
+                    "text": "Mechanical Engineering"
+                },
+                {
+                    "id": 171,
+                    "text": "Software Engineering"
+                },
+                {
+                    "id": 172,
+                    "text": "Urban Water Engineering"
+                }
+            ],
+            "text": "Engineering (32-unit)"
+        },
+        {
+            "children": [
+                {
+                    "id": 173,
+                    "text": "Chemical Engineering"
+                },
+                {
+                    "id": 174,
+                    "text": "Civil Engineering"
+                },
+                {
+                    "id": 175,
+                    "text": "Electrical Engineering"
+                },
+                {
+                    "id": 176,
+                    "text": "Mechanical Engineering"
+                },
+                {
+                    "id": 177,
+                    "text": "Software Engineering"
+                }
+            ],
+            "text": "Engineering (48-unit)"
+        },
+        {
+            "children": [
+                {
+                    "id": 178,
+                    "text": "Civil Engineering"
+                },
+                {
+                    "id": 179,
+                    "text": "Electrical Engineering"
+                },
+                {
+                    "id": 180,
+                    "text": "Materials and Manufacturing Engineering"
+                },
+                {
+                    "id": 181,
+                    "text": "Mechanical Engineering"
+                },
+                {
+                    "id": 182,
+                    "text": "Mechatronic Engineering"
+                },
+                {
+                    "id": 183,
+                    "text": "Software Engineering"
+                },
+                {
+                    "id": 184,
+                    "text": "Undeclared"
+                }
+            ],
+            "text": "Engineering Science (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 185,
+                    "text": "Electrical Engineering"
+                },
+                {
+                    "id": 186,
+                    "text": "Fire Safety Engineering"
+                },
+                {
+                    "id": 187,
+                    "text": "Software Engineering"
+                }
+            ],
+            "text": "Engineering Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 188,
+                    "text": "Civil Engineering"
+                },
+                {
+                    "id": 189,
+                    "text": "Electrical Engineering"
+                },
+                {
+                    "id": 190,
+                    "text": "Materials and Manufacturing Engineering"
+                },
+                {
+                    "id": 191,
+                    "text": "Mechanical Engineering"
+                },
+                {
+                    "id": 192,
+                    "text": "Mechatronic Engineering"
+                },
+                {
+                    "id": 193,
+                    "text": "Software Engineering"
+                },
+                {
+                    "id": 194,
+                    "text": "Undeclared"
+                }
+            ],
+            "text": "Engineering Science (Management)"
+        },
+        {
+            "children": [
+                {
+                    "id": 201,
+                    "text": "Environmental Management (24 units)"
+                }
+            ],
+            "text": "Environmental Management (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 202,
+                    "text": "Environmental Management (32 units)"
+                }
+            ],
+            "text": "Environmental Management (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 203,
+                    "text": "Epidemiology (24 units)"
+                }
+            ],
+            "text": "Epidemiology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 204,
+                    "text": "Fire Safety"
+                }
+            ],
+            "text": "Fire Safety"
+        },
+        {
+            "children": [
+                {
+                    "id": 205,
+                    "text": "Food Science and Technology"
+                }
+            ],
+            "text": "Food Science and Technology"
+        },
+        {
+            "children": [
+                {
+                    "id": 206,
+                    "text": "Financial Mathematics (24 units)"
+                }
+            ],
+            "text": "Financial Mathematics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 207,
+                    "text": "Financial Mathematics (32 units)"
+                }
+            ],
+            "text": "Financial Mathematics (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 208,
+                    "text": "Food Science and Technology (24 units)"
+                }
+            ],
+            "text": "Food Science and Technology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 209,
+                    "text": "Food Science and Technology (32 units)"
+                }
+            ],
+            "text": "Food Science and Technology (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 210,
+                    "text": "Geographic Information Science"
+                },
+                {
+                    "id": 212,
+                    "text": "Geographic Information Science"
+                }
+            ],
+            "text": "Geographic Information Science"
+        },
+        {
+            "children": [
+                {
+                    "id": 211,
+                    "text": "Governance and Public Policy"
+                },
+                {
+                    "id": 213,
+                    "text": "Governance and Public Policy"
+                }
+            ],
+            "text": "Governance and Public Policy"
+        },
+        {
+            "children": [
+                {
+                    "id": 214,
+                    "text": "Geographic Information Science (24 units)"
+                }
+            ],
+            "text": "Geographic Information Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 215,
+                    "text": "Geographic Information Science (32 units)"
+                }
+            ],
+            "text": "Geographic Information Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 216,
+                    "text": "International Economics and Finance"
+                },
+                {
+                    "id": 217,
+                    "text": "International Enterprise Management"
+                },
+                {
+                    "id": 218,
+                    "text": "International Tourism"
+                }
+            ],
+            "text": "Global Management"
+        },
+        {
+            "children": [
+                {
+                    "id": 219,
+                    "text": "Governance and Public Policy (16 units)"
+                }
+            ],
+            "text": "Governance and Public Policy (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 220,
+                    "text": "Governance and Public Policy (24 units)"
+                }
+            ],
+            "text": "Governance and Public Policy (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 221,
+                    "text": "Governance and Public Policy (32 units)"
+                }
+            ],
+            "text": "Governance and Public Policy (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 222,
+                    "text": "Health Economics (24 units)"
+                }
+            ],
+            "text": "Health Economics (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 223,
+                    "text": "Health Economics (32 units)"
+                }
+            ],
+            "text": "Health Economics (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 224,
+                    "text": "Information Technology"
+                },
+                {
+                    "id": 227,
+                    "text": "Information Technology"
+                },
+                {
+                    "id": 229,
+                    "text": "Information Technology"
+                }
+            ],
+            "text": "Information Technology"
+        },
+        {
+            "children": [
+                {
+                    "id": 225,
+                    "text": "Interaction Design"
+                },
+                {
+                    "id": 228,
+                    "text": "Interaction Design"
+                },
+                {
+                    "id": 231,
+                    "text": "Interaction Design"
+                }
+            ],
+            "text": "Interaction Design"
+        },
+        {
+            "children": [
+                {
+                    "id": 226,
+                    "text": "International Relations"
+                }
+            ],
+            "text": "International Relations"
+        },
+        {
+            "children": [
+                {
+                    "id": 230,
+                    "text": "Information Technology (Management)"
+                }
+            ],
+            "text": "Information Technology (Management)"
+        },
+        {
+            "children": [
+                {
+                    "id": 232,
+                    "text": "International Commercial Law (24 units)"
+                }
+            ],
+            "text": "International Commercial Law (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 233,
+                    "text": "International Economics and Finance (24 units)"
+                }
+            ],
+            "text": "International Economics and Finance (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 234,
+                    "text": "International Economics and Finance (32 units)"
+                }
+            ],
+            "text": "International Economics and Finance (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 235,
+                    "text": "International Law"
+                }
+            ],
+            "text": "International Law"
+        },
+        {
+            "children": [
+                {
+                    "id": 236,
+                    "text": "International Relations (16 units)"
+                }
+            ],
+            "text": "International Relations (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 237,
+                    "text": "International Relations (24 units)"
+                }
+            ],
+            "text": "International Relations (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 238,
+                    "text": "International Relations (32 units)"
+                }
+            ],
+            "text": "International Relations (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 239,
+                    "text": "Applied Finance"
+                },
+                {
+                    "id": 240,
+                    "text": "Information Systems"
+                },
+                {
+                    "id": 241,
+                    "text": "Professional Accounting"
+                }
+            ],
+            "text": "International Commercial Law/Commerce"
+        },
+        {
+            "children": [
+                {
+                    "id": 242,
+                    "text": "Applied Finance"
+                }
+            ],
+            "text": "International Economics and Finance/Commerce"
+        },
+        {
+            "children": [
+                {
+                    "id": 243,
+                    "text": "International Relations/International Law"
+                }
+            ],
+            "text": "International Relations/International Law"
+        },
+        {
+            "children": [
+                {
+                    "id": 244,
+                    "text": "International Relations/Peace and Conflict Studies"
+                }
+            ],
+            "text": "International Relations/Peace and Conflict Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 245,
+                    "text": "Laws (16 units)"
+                }
+            ],
+            "text": "Laws (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 246,
+                    "text": "Laws (24 units)"
+                }
+            ],
+            "text": "Laws (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 247,
+                    "text": "Leadership in Global Development (16 units)"
+                }
+            ],
+            "text": "Leadership in Global Development (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 248,
+                    "text": "Leadership in Global Development (24 units)"
+                }
+            ],
+            "text": "Leadership in Global Development (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 249,
+                    "text": "Leadership in Service Innovation"
+                }
+            ],
+            "text": "Leadership in Service Innovation"
+        },
+        {
+            "children": [
+                {
+                    "id": 250,
+                    "text": "Medicine"
+                },
+                {
+                    "id": 255,
+                    "text": "Medicine"
+                },
+                {
+                    "id": 267,
+                    "text": "Skin Cancer"
+                }
+            ],
+            "text": "Medicine"
+        },
+        {
+            "children": [
+                {
+                    "id": 251,
+                    "text": "Medicine-Ochsner"
+                }
+            ],
+            "text": "Medicine-Ochsner"
+        },
+        {
+            "children": [
+                {
+                    "id": 252,
+                    "text": "Magnetic Resonance Technology"
+                },
+                {
+                    "id": 261,
+                    "text": "Magnetic Resonance Technology"
+                }
+            ],
+            "text": "Magnetic Resonance Technology"
+        },
+        {
+            "children": [
+                {
+                    "id": 253,
+                    "text": "Magnetic Resonance and Positron Emission Tomography"
+                }
+            ],
+            "text": "Magnetic Resonance and Positron Emission Tomography"
+        },
+        {
+            "children": [
+                {
+                    "id": 254,
+                    "text": "Mediation and Conflict Resolution"
+                }
+            ],
+            "text": "Mediation and Conflict Resolution"
+        },
+        {
+            "children": [
+                {
+                    "id": 256,
+                    "text": "Mental Health"
+                },
+                {
+                    "id": 268,
+                    "text": "Art Therapy"
+                },
+                {
+                    "id": 269,
+                    "text": "Psychotherapy"
+                }
+            ],
+            "text": "Mental Health"
+        },
+        {
+            "children": [
+                {
+                    "id": 257,
+                    "text": "Mineral Resources"
+                },
+                {
+                    "id": 262,
+                    "text": "Exploration Geology"
+                },
+                {
+                    "id": 263,
+                    "text": "Exploration Geophysics"
+                },
+                {
+                    "id": 271,
+                    "text": "Exploration Geology"
+                },
+                {
+                    "id": 272,
+                    "text": "Exploration Geophysics"
+                }
+            ],
+            "text": "Mineral Resources"
+        },
+        {
+            "children": [
+                {
+                    "id": 258,
+                    "text": "Molecular Biology"
+                },
+                {
+                    "id": 264,
+                    "text": "Molecular Biology"
+                }
+            ],
+            "text": "Molecular Biology"
+        },
+        {
+            "children": [
+                {
+                    "id": 259,
+                    "text": "Museum Studies"
+                },
+                {
+                    "id": 265,
+                    "text": "Museum Studies"
+                },
+                {
+                    "id": 279,
+                    "text": "Museum Studies"
+                }
+            ],
+            "text": "Museum Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 260,
+                    "text": "Music"
+                }
+            ],
+            "text": "Music"
+        },
+        {
+            "children": [
+                {
+                    "id": 266,
+                    "text": "Magnetic Resonance Technology (24 units)"
+                }
+            ],
+            "text": "Magnetic Resonance Technology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 270,
+                    "text": "Mental Health Nursing"
+                }
+            ],
+            "text": "Mental Health Nursing"
+        },
+        {
+            "children": [
+                {
+                    "id": 273,
+                    "text": "Molecular Biology (16 units)"
+                }
+            ],
+            "text": "Molecular Biology (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 274,
+                    "text": "Molecular Biology (24 units)"
+                }
+            ],
+            "text": "Molecular Biology (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 275,
+                    "text": "Molecular Biology (32 units)"
+                }
+            ],
+            "text": "Molecular Biology (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 276,
+                    "text": "Molecular Biology Research Extensive (24 units)"
+                }
+            ],
+            "text": "Molecular Biology Research Extensive (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 277,
+                    "text": "Molecular Biology Research Extensive (32 units)"
+                }
+            ],
+            "text": "Molecular Biology Research Extensive (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 278,
+                    "text": "Molecular Imaging Technology"
+                }
+            ],
+            "text": "Molecular Imaging Technology"
+        },
+        {
+            "children": [
+                {
+                    "id": 280,
+                    "text": "Music (16 units)"
+                }
+            ],
+            "text": "Music (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 281,
+                    "text": "Music (24 units)"
+                }
+            ],
+            "text": "Music (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 282,
+                    "text": "Nursing"
+                }
+            ],
+            "text": "Nursing"
+        },
+        {
+            "children": [
+                {
+                    "id": 283,
+                    "text": "Nurse Practitioner"
+                }
+            ],
+            "text": "Nurse Practitioner"
+        },
+        {
+            "children": [
+                {
+                    "id": 284,
+                    "text": "Nursing Studies"
+                }
+            ],
+            "text": "Nursing Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 285,
+                    "text": "Occupational Health and Safety Science (24 units)"
+                }
+            ],
+            "text": "Occupational Health and Safety Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 286,
+                    "text": "Occupational Health and Safety Science (32 units)"
+                }
+            ],
+            "text": "Occupational Health and Safety Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 287,
+                    "text": "Occupational Therapy Studies"
+                }
+            ],
+            "text": "Occupational Therapy Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 288,
+                    "text": "Organisational Psychology"
+                }
+            ],
+            "text": "Organisational Psychology"
+        },
+        {
+            "children": [
+                {
+                    "id": 289,
+                    "text": "Clinical Neuropsychology and Clinical Psychology"
+                },
+                {
+                    "id": 290,
+                    "text": "Clinical Psychology"
+                },
+                {
+                    "id": 291,
+                    "text": "Clinical Psychology and Clinical Geropsychology"
+                },
+                {
+                    "id": 316,
+                    "text": "Counselling"
+                },
+                {
+                    "id": 317,
+                    "text": "Health"
+                },
+                {
+                    "id": 318,
+                    "text": "Sport and Exercise"
+                }
+            ],
+            "text": "Psychology"
+        },
+        {
+            "children": [
+                {
+                    "id": 292,
+                    "text": "Peace and Conflict Studies"
+                }
+            ],
+            "text": "Peace and Conflict Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 293,
+                    "text": "Pharmacy Practice"
+                }
+            ],
+            "text": "Pharmacy Practice"
+        },
+        {
+            "children": [
+                {
+                    "id": 294,
+                    "text": "Standard"
+                },
+                {
+                    "id": 302,
+                    "text": "Alcohol, Tobacco and Other Drugs"
+                },
+                {
+                    "id": 303,
+                    "text": "Global Health"
+                },
+                {
+                    "id": 304,
+                    "text": "Health Promotion and Disease Prevention"
+                },
+                {
+                    "id": 305,
+                    "text": "Indigenous Health"
+                },
+                {
+                    "id": 306,
+                    "text": "Nutrition"
+                },
+                {
+                    "id": 307,
+                    "text": "Standard"
+                }
+            ],
+            "text": "Public Health"
+        },
+        {
+            "children": [
+                {
+                    "id": 295,
+                    "text": "Public Transport"
+                }
+            ],
+            "text": "Public Transport"
+        },
+        {
+            "children": [
+                {
+                    "id": 296,
+                    "text": "Clinical Neuropsychology"
+                },
+                {
+                    "id": 297,
+                    "text": "Clinical Psychology"
+                },
+                {
+                    "id": 298,
+                    "text": "Counselling Psychology"
+                },
+                {
+                    "id": 299,
+                    "text": "Health Psychology"
+                },
+                {
+                    "id": 300,
+                    "text": "Organisational Psychology"
+                },
+                {
+                    "id": 301,
+                    "text": "Sport and Exercise Psychology"
+                }
+            ],
+            "text": "Psychological Practice"
+        },
+        {
+            "children": [
+                {
+                    "id": 308,
+                    "text": "Peace and Conflict Studies (16 units)"
+                }
+            ],
+            "text": "Peace and Conflict Studies (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 309,
+                    "text": "Peace and Conflict Studies (24 units)"
+                }
+            ],
+            "text": "Peace and Conflict Studies (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 310,
+                    "text": "Peace and Conflict Studies (32 units)"
+                }
+            ],
+            "text": "Peace and Conflict Studies (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 311,
+                    "text": "Petroleum Engineering"
+                }
+            ],
+            "text": "Petroleum Engineering"
+        },
+        {
+            "children": [
+                {
+                    "id": 312,
+                    "text": "Pharmaceutical Industry Practice"
+                }
+            ],
+            "text": "Pharmaceutical Industry Practice"
+        },
+        {
+            "children": [
+                {
+                    "id": 313,
+                    "text": "Musculoskeletal Physiotherapy"
+                },
+                {
+                    "id": 314,
+                    "text": "Sports Physiotherapy"
+                }
+            ],
+            "text": "Physiotherapy"
+        },
+        {
+            "children": [
+                {
+                    "id": 315,
+                    "text": "Physiotherapy Studies"
+                }
+            ],
+            "text": "Physiotherapy Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 319,
+                    "text": "Alcohol, Tobacco and Other Drugs"
+                },
+                {
+                    "id": 320,
+                    "text": "Global Health"
+                },
+                {
+                    "id": 321,
+                    "text": "Health Promotion and Disease Prevention"
+                },
+                {
+                    "id": 322,
+                    "text": "Indigenous Health"
+                },
+                {
+                    "id": 323,
+                    "text": "Nutrition"
+                },
+                {
+                    "id": 324,
+                    "text": "Standard"
+                }
+            ],
+            "text": "Public Health (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 325,
+                    "text": "Quantum Technology"
+                }
+            ],
+            "text": "Quantum Technology"
+        },
+        {
+            "children": [
+                {
+                    "id": 326,
+                    "text": "Research Commercialisation"
+                }
+            ],
+            "text": "Research Commercialisation"
+        },
+        {
+            "children": [
+                {
+                    "id": 327,
+                    "text": "Community Relations"
+                },
+                {
+                    "id": 328,
+                    "text": "Environment"
+                },
+                {
+                    "id": 329,
+                    "text": "Health and Safety"
+                },
+                {
+                    "id": 330,
+                    "text": "Community Relations"
+                },
+                {
+                    "id": 331,
+                    "text": "Environment"
+                },
+                {
+                    "id": 332,
+                    "text": "Health and Safety"
+                },
+                {
+                    "id": 333,
+                    "text": "Community Relations"
+                },
+                {
+                    "id": 334,
+                    "text": "Environment"
+                },
+                {
+                    "id": 335,
+                    "text": "Health and Safety"
+                }
+            ],
+            "text": "Responsible Resource Development"
+        },
+        {
+            "children": [
+                {
+                    "id": 336,
+                    "text": "Mathematics"
+                },
+                {
+                    "id": 337,
+                    "text": "Physics"
+                },
+                {
+                    "id": 338,
+                    "text": "Statistics"
+                },
+                {
+                    "id": 342,
+                    "text": "Mathematics"
+                },
+                {
+                    "id": 343,
+                    "text": "Physics"
+                },
+                {
+                    "id": 344,
+                    "text": "Statistics"
+                }
+            ],
+            "text": "Science"
+        },
+        {
+            "children": [
+                {
+                    "id": 339,
+                    "text": "Sports Coaching"
+                }
+            ],
+            "text": "Sports Coaching"
+        },
+        {
+            "children": [
+                {
+                    "id": 340,
+                    "text": "Sports Medicine"
+                },
+                {
+                    "id": 355,
+                    "text": "Sports Medicine"
+                }
+            ],
+            "text": "Sports Medicine"
+        },
+        {
+            "children": [
+                {
+                    "id": 341,
+                    "text": "Sustainable Energy"
+                },
+                {
+                    "id": 345,
+                    "text": "Sustainable Energy"
+                },
+                {
+                    "id": 356,
+                    "text": "Sustainable Energy"
+                }
+            ],
+            "text": "Sustainable Energy"
+        },
+        {
+            "children": [
+                {
+                    "id": 346,
+                    "text": "Mathematics"
+                },
+                {
+                    "id": 347,
+                    "text": "Physics"
+                },
+                {
+                    "id": 348,
+                    "text": "Statistics"
+                }
+            ],
+            "text": "Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 349,
+                    "text": "Science (32 units)"
+                }
+            ],
+            "text": "Science (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 350,
+                    "text": "Social Work Studies (24 units)"
+                }
+            ],
+            "text": "Social Work Studies (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 351,
+                    "text": "Social Work Studies (32 units)"
+                }
+            ],
+            "text": "Social Work Studies (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 352,
+                    "text": "Speech Pathology Studies"
+                }
+            ],
+            "text": "Speech Pathology Studies"
+        },
+        {
+            "children": [
+                {
+                    "id": 353,
+                    "text": "Sports Coaching (16 units)"
+                }
+            ],
+            "text": "Sports Coaching (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 354,
+                    "text": "Sports Coaching (24 units)"
+                }
+            ],
+            "text": "Sports Coaching (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 357,
+                    "text": "Sustainable Energy (Management)"
+                }
+            ],
+            "text": "Sustainable Energy (Management)"
+        },
+        {
+            "children": [
+                {
+                    "id": 358,
+                    "text": "Tourism, Hotel and Event Management"
+                }
+            ],
+            "text": "Tourism, Hotel and Event Management"
+        },
+        {
+            "children": [
+                {
+                    "id": 359,
+                    "text": "Teaching (Primary)"
+                }
+            ],
+            "text": "Teaching (Primary)"
+        },
+        {
+            "children": [
+                {
+                    "id": 360,
+                    "text": "Teaching (Secondary)"
+                }
+            ],
+            "text": "Teaching (Secondary)"
+        },
+        {
+            "children": [
+                {
+                    "id": 361,
+                    "text": "Service Management"
+                },
+                {
+                    "id": 362,
+                    "text": "Tourism Development"
+                },
+                {
+                    "id": 363,
+                    "text": "Tourism Marketing"
+                },
+                {
+                    "id": 364,
+                    "text": "Visitor Management"
+                }
+            ],
+            "text": "Tourism Leadership"
+        },
+        {
+            "children": [
+                {
+                    "id": 365,
+                    "text": "Event Management"
+                },
+                {
+                    "id": 366,
+                    "text": "Hotel management"
+                },
+                {
+                    "id": 367,
+                    "text": "Travel and Tourism Management"
+                }
+            ],
+            "text": "Tourism, Hotel and Event Management (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 368,
+                    "text": "Event Management"
+                },
+                {
+                    "id": 369,
+                    "text": "Hotel Management"
+                },
+                {
+                    "id": 370,
+                    "text": "Travel and Tourism Management"
+                }
+            ],
+            "text": "Tourism, Hotel and Event Management (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 371,
+                    "text": "Urban and Regional Planning"
+                },
+                {
+                    "id": 372,
+                    "text": "Urban and Regional Planning"
+                }
+            ],
+            "text": "Urban and Regional Planning"
+        },
+        {
+            "children": [
+                {
+                    "id": 373,
+                    "text": "Urban and Regional Planning (32 units)"
+                }
+            ],
+            "text": "Urban and Regional Planning (32 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 374,
+                    "text": "Veterinary Diagnostic Pathology"
+                }
+            ],
+            "text": "Veterinary Science (24 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 375,
+                    "text": "Writing, Editing and Publishing"
+                }
+            ],
+            "text": "Writing, Editing and Publishing"
+        },
+        {
+            "children": [
+                {
+                    "id": 376,
+                    "text": "Writing, Editing and Publishing (16 units)"
+                }
+            ],
+            "text": "Writing, Editing and Publishing (16 units)"
+        },
+        {
+            "children": [
+                {
+                    "id": 377,
+                    "text": "Writing, Editing and Publishing (24 units)"
+                }
+            ],
+            "text": "Writing, Editing and Publishing (24 units)"
+        }
+    ]
+}

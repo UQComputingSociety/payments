@@ -66,11 +66,11 @@ def user_from_request(req):
                 return None, "Invalid domestic/international option"
             info["domestic"] = req.form['domORint'].lower() == 'domestic'
         if 'degreeType' in req.form:
-            if req.form['degreeType'].lower() not in ['undergrad', 'postgrad']:
+            if req.form['degreeType'].lower() not in ['undergrad', 'postgrad', 'research']:
                 return None, "Invalid degree type option"
-            info["undergrad"] = req.form['degreeType'].lower() == 'undergrad'
-        if 'degree' in req.form:
-            info['program'] = req.form['degree'][:100]
+            info["degreetype"] = req.form['degreeType'].lower()
+        if 'program' in req.form:
+            info['program'] = req.form['program'][:100]
         return m.Student(**info), "Success"
     else:
         return m.Member(**info), "Success"
@@ -131,3 +131,4 @@ def complete(s):
         .one()
     return lookup.get_template("complete.mako").render(
         member=user)
+    

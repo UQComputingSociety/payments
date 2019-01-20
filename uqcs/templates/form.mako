@@ -123,7 +123,7 @@
         </div>
         <div class="form-group">
           <label>Degree Type</label><br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div id="ugpgrs" class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-primary">
               <input
                 type="radio"
@@ -136,7 +136,7 @@
             <label class="btn btn-primary">
               <input
                 type="radio"
-                value="undergrad"
+                value="postgrad"
                 name="degreeType"
                 autocomplete="off"
               />
@@ -145,7 +145,7 @@
             <label class="btn btn-primary">
               <input
                 type="radio"
-                value="undergrad"
+                value="research"
                 name="degreeType"
                 autocomplete="off"
               />
@@ -175,7 +175,13 @@
               <input type="radio" name="year" value="2" /> 2
             </label>
             <label class="btn btn-primary">
-              <input type="radio" name="year" value="3" /> 3+
+              <input type="radio" name="year" value="3" /> 3
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="year" value="4" /> 4
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="year" value="5" /> 5+
             </label>
           </div>
         </div>
@@ -263,16 +269,41 @@
   function formatState (item) {
     opt = $(item.element);
     og = opt.closest("optgroup").attr("label");
-    return ((og != null) ? og : "Degree") + " | " + item.text;
+    return ((og != null || og != "") ? og : "Degree") + " | " + item.text;
   };
-  $(document).ready(function() {
-    $.getJSON("/static/data-undergrad-select2.json", function(data) {
-      $("#inputProgram").select2({
-        theme: "bootstrap",
-        data: data.results,
-        placeholder: "Major",
-        templateSelection: formatState
-      });
-    });
+  var ugpgrs;
+  $("#ugpgrs :input").change(function() {
+    switch(this.value) {
+      case "undergrad":
+        $.getJSON("/static/data-undergrad-select2.json", function(data) {
+          $("#inputProgram").empty();
+          $("#inputProgram").prop("disabled", false);
+          $("#inputProgram").select2({
+            templateSelection: formatState,
+            data: data.results,
+          });
+        });
+        break;
+      case "postgrad":
+        $.getJSON("/static/data-postgrad-select2.json", function(data) {
+          $("#inputProgram").empty();
+          $("#inputProgram").prop("disabled", false);
+          $("#inputProgram").select2({
+            templateSelection: formatState,
+            data: data.results,
+          });
+        });
+        break;
+      case "research":
+        $("#inputProgram").empty();
+        $("#inputProgram").prop("disabled", true);
+        break;
+    }
   });
+  $(document).ready(function() {
+    $("#inputProgram").select2({
+      theme: "bootstrap",
+      placeholder: "Degree | Major"
+    });
+  }); 
 </script>
