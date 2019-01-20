@@ -260,9 +260,19 @@
       $("#studentNo").attr("required", null);
     }
   });
+  function formatState (item) {
+    opt = $(item.element);
+    og = opt.closest("optgroup").attr("label");
+    return ((og != null) ? og : "Degree") + " | " + item.text;
+  };
   $(document).ready(function() {
-    $("#inputProgram").select2({
-      theme: "bootstrap"
+    $.getJSON("/static/data-undergrad-select2.json", function(data) {
+      $("#inputProgram").select2({
+        theme: "bootstrap",
+        data: data.results,
+        placeholder: "Major",
+        templateSelection: formatState
+      });
     });
   });
 </script>
