@@ -200,7 +200,7 @@
         QPAY is right for you.
       </p>
     </div>
-    <a role="button" class="btn btn-primary" href="https://joinuqcs.getqpay.com"
+    <a role="button" class="btn btn-warning" href="https://joinuqcs.getqpay.com"
       >Signup with QPAY</a
     >
   </div>
