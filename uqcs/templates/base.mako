@@ -8,7 +8,7 @@
 <style type="text/css">
 iframe{display:block;}
 .reqstar{color:red;}
-body{background-image: url('/static/bg.png'); background-size: cover}
+body{background-image: url('/static/bg.png'); background-size: cover; padding-bottom: 50px;}
 html,body{min-height: 100%}
 .row,.container{min-height: 100%}
 .container{padding-top: 20px;}
