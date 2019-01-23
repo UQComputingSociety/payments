@@ -155,7 +155,7 @@
               <input type="radio" name="year" value="4" /> 4
             </label>
             <label class="btn btn-primary">
-              <input type="radio" name="year" value="5" /> 5
+              <input type="radio" name="year" value="5" /> 5+
             </label>
           </div>
         </div>
@@ -187,7 +187,7 @@
       <p>Online payments have a 40c card surcharge.</p>
     </div>
     <h3>Want to register with QPAY?</h3>
-    <p>
+    <p style="text-align: justify; text-align-last: center;">
       As nearly all clubs and societies will be required to use QPAY for 2019,
       UQCS will offer QPAY signup as a secondary method. QPAY is not required
       for interacting with UQCS other than co-hosted events with clubs that
@@ -195,7 +195,7 @@
     </p>
     <div class="text-muted">
       <p></p>
-      <p>
+      <p style="text-align: justify; text-align-last: center;">
         UQCS does not endorse QPAY, you should do your own research to see if
         QPAY is right for you.
       </p>
