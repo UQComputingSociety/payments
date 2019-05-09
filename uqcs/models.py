@@ -1,10 +1,9 @@
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
 from sqlalchemy.dialects.postgresql import UUID as PGUUID
 from sqlalchemy import (
-    Column, Integer, DateTime, Enum, String, UnicodeText, Text, Boolean, ForeignKey, func, Interval, text, DateTime
+    Column, Integer, Enum, String, UnicodeText, Text, Boolean, ForeignKey, func, Interval, text, DateTime
 )
 from sqlalchemy.ext.hybrid import hybrid_property
-import tzlocal
 import bcrypt
 import logging
 import datetime as dt
@@ -19,6 +18,7 @@ class Ancestor(object):
     @declared_attr
     def __tablename__(cls):
         return cls.__name__.lower()
+
 
 Base = declarative_base(cls=Ancestor)
 

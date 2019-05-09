@@ -3,6 +3,7 @@ import queue
 from functools import wraps
 from flask_sqlalchemy import SQLAlchemy
 
+
 mailer_queue = queue.Queue()
 mailchimp_queue = queue.Queue()
 

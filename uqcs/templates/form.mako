@@ -28,7 +28,7 @@
           id="fnameInput"
           placeholder="First Name"
           name="fname"
-          required="true"
+          required="required"
         />
       </div>
       <div class="form-group">
@@ -39,7 +39,7 @@
           id="lnameInput"
           placeholder="Last Name"
           name="lname"
-          required="true"
+          required="required"
         />
       </div>
       <div class="form-group">
@@ -52,7 +52,7 @@
           class="form-control"
           id="emailInput"
           placeholder="Email"
-          required="true"
+          required="required"
         />
       </div>
       <div class="form-group">
@@ -88,7 +88,7 @@
         <div class="checkbox">
           <label>
             <input name="student" type="checkbox" id="studentCheckbox" /> Are
-            you currently a student?
+            you currently a UQ student?
           </label>
         </div>
       </div>
@@ -98,7 +98,7 @@
             >Student Number <span class="reqstar">*</span></label
           >
           <input
-            type="number"
+            type="text"
             name="student-no"
             class="form-control"
             id="studentNo"
@@ -162,21 +162,14 @@
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
       <input
-        class="btn btn-primary"
-        name="submit"
-        type="submit"
-        id="payonline_submit"
-        value="Pay Online"
-      />
-      <input
+        class="btn btn-success"
         type="submit"
         name="submission"
         value="Pay Online"
-        style="display:none;"
         id="submitbtn"
       />
       <input
-        class="btn btn-success"
+        class="btn btn-primary"
         name="submission"
         type="submit"
         value="Pay Cash"
@@ -215,7 +208,7 @@
       $("#submitbtn").click();
     }
   });
-  $("#payonline_submit").on("click", function(e) {
+  $("#submitbtn").on("click", function(e) {
     e.preventDefault();
     if (!$("#fullForm")[0].checkValidity()) {
       return;
@@ -240,4 +233,36 @@
       $("#studentNo").attr("required", null);
     }
   });
+</script>
+
+<script>
+    function validId(id) {
+        if (id.length !== 8) {
+            return false;
+        }
+        let validFormat = RegExp(/[1-5][0-9]{7}$/).test(id);
+        let validValue = ( 9 * parseInt(id[0]) +
+                           7 * parseInt(id[1]) +
+                           3 * parseInt(id[2]) +
+                           9 * parseInt(id[3]) +
+                           7 * parseInt(id[4]) +
+                           3 * parseInt(id[5]) +
+                           9 * parseInt(id[6]) ) % 10 === parseInt(id[7]);
+        return validFormat && validValue;
+    }
+
+    function checkId() {
+        let field = document.getElementById("studentNo");
+        let id = document.getElementById("studentNo").value;
+        console.log(id);
+        if (validId(id)) {
+            field.setCustomValidity("");
+        } else {
+            field.setCustomValidity("Must be exactly 8 numeric digits");
+        }
+    }
+
+    window.onload = function () {
+        document.getElementById("studentNo").onchange = checkId;
+    }
 </script>

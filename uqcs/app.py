@@ -7,6 +7,7 @@ from . import models as m
 from .admin import admin
 from .base import needs_db
 from .base import mailchimp_queue, mailer_queue
+from .models import Member
 
 
 app = Flask(__name__)
@@ -17,7 +18,7 @@ stripe.api_key = os.environ.get("STRIPE_API_KEY")
 
 def student_checksum(first_7, last_1):
     u = [int(d) for d in first_7]
-    return int(last_1) == (9*u[0] + 7*u[1]   + 3*u[2] + 9*u[3] + 7*u[4] + 3*u[5] + 9*u[6]) % 10
+    return int(last_1) == (9*u[0] + 7*u[1] + 3*u[2] + 9*u[3] + 7*u[4] + 3*u[5] + 9*u[6]) % 10
 
 
 def user_from_request(req):
@@ -74,7 +75,6 @@ def user_from_request(req):
         return m.Student(**info), "Success"
     else:
         return m.Member(**info), "Success"
-
 
 
 @app.route("/", methods=["GET", "POST"])

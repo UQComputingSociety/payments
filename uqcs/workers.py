@@ -4,7 +4,6 @@ import premailer
 import requests
 import requests.exceptions
 import os
-import threading
 import logging
 import hashlib
 import functools
@@ -20,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 def mailchimp_worker(queue: Queue):
     list_id = os.environ.get('MAILCHIMP_LIST_ID')
-    client = MailChimp(os.environ.get("MAILCHIMP_USERNAME"), os.environ.get("MAILCHIMP_KEY"))
+    client = MailChimp(os.environ.get("MAILCHIMP_KEY"), os.environ.get("MAILCHIMP_USERNAME"))
 
     for item in iter(queue.get, None):  # type: m.Member
         save_fn = None
@@ -43,6 +42,7 @@ def mailchimp_worker(queue: Queue):
                 'GENDER': item.gender or '',
             }
         }
+
         if item.paid is not None:
             data['merge_fields']['PAID'] = item.paid.strip()
         if item.member_type == "student":
