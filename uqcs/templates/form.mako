@@ -162,10 +162,18 @@
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
       <input
+        class="btn btn-primary"
+        name="submit"
+        type="submit"
+        id="payonline_submit"
+        value="Pay Online"
+      />
+      <input
         class="btn btn-success"
         type="submit"
         name="submission"
         value="Pay Online"
+        style="display:none;"
         id="submitbtn"
       />
       <input
@@ -208,7 +216,7 @@
       $("#submitbtn").click();
     }
   });
-  $("#submitbtn").on("click", function(e) {
+  $("#payonline_submit").on("click", function(e) {
     e.preventDefault();
     if (!$("#fullForm")[0].checkValidity()) {
       return;
