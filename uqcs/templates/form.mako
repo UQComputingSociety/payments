@@ -168,6 +168,10 @@
         id="payonline_submit"
         value="Pay Online"
       />
+      <div class="text-muted">
+        <p>Membership purchased today will expire on ${expiry_today}.</p>
+        <p>A membership purchased from ${start_future} will expire on ${expiry_future}.</p>
+      </div>
       <input
         class="btn btn-success"
         type="submit"

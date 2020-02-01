@@ -1,6 +1,8 @@
 import os
 import re
 import stripe
+from datetime import date
+from calendar import isleap
 from .templates import lookup
 from flask import Flask, request, session, flash, get_flashed_messages, redirect
 from . import models as m
@@ -80,10 +82,25 @@ def user_from_request(req):
 @app.route("/", methods=["GET", "POST"])
 @needs_db
 def form(s):
+    def expiry():
+        curr_year = date.today().year
+        expiry_today = f"Feb 29th, {curr_year + 1}" if isleap(
+            curr_year + 1) else f"Feb 28th, {curr_year + 1}"
+        start_future = f"Jan 1st, {curr_year + 1}"
+        expiry_future = f"Feb 29th, {curr_year + 2}" if isleap(
+            curr_year + 2) else f"Feb 28th, {curr_year + 2}"
+        return expiry_today, start_future, expiry_future
+
     stripe_pubkey = os.environ.get('STRIPE_PUBLIC_KEY')
     if request.method == "GET":
         template = lookup.get_template('form.mako')
-        return template.render(request=request, get_msgs=get_flashed_messages, STRIPE_PUBLIC_KEY=stripe_pubkey), 200
+        expiry_today, start_future, expiry_future = expiry()
+        return template.render(request=request,
+                               get_msgs=get_flashed_messages,
+                               expiry_today=expiry_today,
+                               start_future=start_future,
+                               expiry_future=expiry_future,
+                               STRIPE_PUBLIC_KEY=stripe_pubkey), 200
     else:
         if s.query(m.Member).filter(m.Member.email == request.form.get('email')).count() > 0:
             flash("That email has already been registered", 'danger')
