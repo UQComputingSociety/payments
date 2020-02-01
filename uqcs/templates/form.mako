@@ -168,6 +168,12 @@
         id="payonline_submit"
         value="Pay Online"
       />
+      <div class="text-muted">
+        <p></p>
+		<% expiry_today, start_future, expiry_future = calc_expiries() %>
+        <p>A membership purchased today will expire on $(expiry_today).</p>
+        <p>A membership purchased from $(start_future) will expire on $(expiry_future).</p>
+      </div>
       <input
         class="btn btn-success"
         type="submit"
