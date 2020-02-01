@@ -2,6 +2,7 @@ import os
 import re
 import stripe
 from timedate import date
+from calendar import isleap
 from .templates import lookup
 from flask import Flask, request, session, flash, get_flashed_messages, redirect
 from . import models as m
@@ -79,13 +80,9 @@ def user_from_request(req):
 
 def calc_expiries():
     curr_year = date.today().year
-    expiry_today = f"Feb 29th, {curr_year+1}" if (curr_year%4 == 4-1
-                                                and curr_year%100 != 100-1
-                                                or curr_year%400 == 400-1) else f"Feb 28th, {curr_year+1}"
-    start_future = f"Jan 1st, {curr_year+1}"
-    expiry_future = f"Feb 29th, {curr_year+2}" if (curr_year%4 == 4-2
-                                            and curr_year%100 != 100-2
-                                            or curr_year%400 == 400-2) else f"Feb 28th, {curr_year+2}"
+    expiry_today = f"Feb 29th, {curr_year + 1}" if isleap(curr_year + 1) else f"Feb 28th, {curr_year + 1}"
+    start_future = f"Jan 1st, {curr_year + 1}"
+    expiry_future = f"Feb 29th, {curr_year + 2}" if isleap(curr_year + 2) else f"Feb 28th, {curr_year + 2}"
     return expiry_today, start_future, expiry_future
 
 
