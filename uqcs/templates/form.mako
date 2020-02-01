@@ -187,23 +187,6 @@
       <p></p>
       <p>Online payments have a 40c card surcharge.</p>
     </div>
-    <h3>Want to register with QPAY?</h3>
-    <p style="text-align: justify; text-align-last: center;">
-      As nearly all clubs and societies will be required to use QPAY for 2019,
-      UQCS will offer QPAY signup as a secondary method. QPAY is not required
-      for interacting with UQCS other than co-hosted events with clubs that
-      choose to do ticketing with QPAY.
-    </p>
-    <div class="text-muted">
-      <p></p>
-      <p style="text-align: justify; text-align-last: center;">
-        UQCS does not endorse QPAY, you should do your own research to see if
-        QPAY is right for you.
-      </p>
-    </div>
-    <a role="button" class="btn btn-warning" href="https://joinuqcs.getqpay.com"
-      >Signup with QPAY</a
-    >
   </div>
 </div>
 <script src="https://checkout.stripe.com/checkout.js"></script>
