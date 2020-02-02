@@ -1,4 +1,4 @@
-from mailchimp3 import MailChimp
+from mailchimp3 import MailChimp, mailchimpclient
 import datetime as dt
 import premailer
 import requests
@@ -29,7 +29,7 @@ def mailchimp_worker(queue: Queue):
             digest = h.hexdigest()
             client.lists.members.get(list_id, digest)
             save_fn = functools.partial(client.lists.members.update, list_id, digest)
-        except requests.exceptions.HTTPError as e:
+        except (requests.exceptions.HTTPError, mailchimpclient.MailChimpError) as _:
             save_fn = functools.partial(client.lists.members.create, list_id)
 
         data = {
@@ -77,7 +77,7 @@ def mailer_worker(mailqueue):
                               'bcc': "receipts@uqcs.org.au",
                               'text': receiptText,
                               'html': premailer.transform(receiptHTML),
-                              'subject': "UQCS 2019 Membership Receipt",
+                              'subject': "UQCS 2020 Membership Receipt",
                           })
         except Exception as e:
             logger.exception(e)

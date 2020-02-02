@@ -304,7 +304,7 @@ a {
                 </tr>
                 <tr>
                   <td class="content-block">
-                    <h2 class="aligncenter">Welcome to UQCS in 2019</h2>
+                    <h2 class="aligncenter">Welcome to UQCS in 2020</h2>
                   </td>
                 </tr>
                 <tr>

@@ -213,7 +213,7 @@
     }
     handler.open({
       name: "UQCS",
-      description: "2019 Membership",
+      description: "2020 Membership",
       currency: "aud",
       amount: 540,
       email: $("#emailInput").val()

@@ -7,6 +7,7 @@ import threading
 import waitress
 import logging
 
+
 def main(args):
     logging.basicConfig(level=logging.DEBUG)
     app.config['SQLALCHEMY_DATABASE_URI'] = args[1]
@@ -16,7 +17,6 @@ def main(args):
         s = Session()
         m.Base.metadata.create_all(s.connection())
         s.commit()
-
 
     mailchimp_thread = threading.Thread(
         target=mailchimp_worker,

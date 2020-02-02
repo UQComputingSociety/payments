@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Join UQCS 2019</title>
+<title>Join UQCS 2020</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
