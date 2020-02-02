@@ -2,21 +2,21 @@ from .app import app
 from .workers import mailchimp_worker, mailer_worker
 from .base import mailchimp_queue, mailer_queue, Session, DB
 from . import models as m
-import sqlalchemy as sa
 import os
 import threading
 import waitress
 import logging
 
+
 def main(args):
     logging.basicConfig(level=logging.DEBUG)
     app.config['SQLALCHEMY_DATABASE_URI'] = args[1]
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     DB.init_app(app)
     with app.app_context():
         s = Session()
         m.Base.metadata.create_all(s.connection())
         s.commit()
-
 
     mailchimp_thread = threading.Thread(
         target=mailchimp_worker,

@@ -2,8 +2,9 @@
 
 <div class="row" style="text-align:center">
   <div id="body" class="col-sm-12 col-md-6 col-md-offset-3">
+    <br/>
     <img src="/static/logo.png" />
-    <h1>2019 UQCS Registration</h1>
+    <h1>2020 UQCS Registration</h1>
     <div class="flash">
       % for category, msg in get_msgs(with_categories=True):
       <div class="alert alert-${category} alert-dismissible" role="alert">
@@ -161,8 +162,9 @@
         </div>
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
+      <br/>
       <input
-        class="btn btn-primary"
+        class="btn btn-success"
         name="submit"
         type="submit"
         id="payonline_submit"
@@ -177,15 +179,20 @@
         id="submitbtn"
       />
       <input
-        class="btn btn-primary"
+        class="btn btn-success"
         name="submission"
         type="submit"
         value="Pay Cash"
       />
     </form>
+    <br/>
     <div class="text-muted">
       <p></p>
       <p>Online payments have a 40c card surcharge.</p>
+    </div>
+    <div class="text-muted">
+      <p>Membership purchased today will expire on ${expiry_today}.</p>
+      <p>Membership purchased from ${start_future} will expire on ${expiry_future}.</p>
     </div>
   </div>
 </div>
@@ -206,7 +213,7 @@
     }
     handler.open({
       name: "UQCS",
-      description: "2019 Membership",
+      description: "2020 Membership",
       currency: "aud",
       amount: 540,
       email: $("#emailInput").val()
