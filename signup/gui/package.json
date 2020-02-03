@@ -1,0 +1,8 @@
+{
+  "name": "signup-gui",
+  "version": "2.0.1",
+  "description": "React GUI for the UQCS signup portal",
+  "main": "src/index.js",
+  "repository": "https://github.com/UQComputingSociety/signup",
+  "license": "MIT"
+}
