@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import sys
 
 requires = [
-    'flask',
+    'Flask',
     'premailer',
     'requests',
     'sqlalchemy',
