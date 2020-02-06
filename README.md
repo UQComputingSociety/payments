@@ -6,19 +6,19 @@ The online membership form for the [UQ Computing Society](https://uqcs.org.au).
 ## Params
 
 ### Env Vars
- - `MAILCHIMP_USERNAME`
+ - `MAILCHIMP_USERNAME` 
  - `MAILCHIMP_KEY`
  - `MAILCHIMP_LIST_ID`
- - `STRIPE_API_KEY`
- - `STRIPE_PUBLIC_KEY`
- - `ADMIN_PASSWORD`
+ - `STRIPE_API_KEY` 
+ - `STRIPE_PUBLIC_KEY` 
+ - `MAILGUN_API_KEY` 
  - `APP_SECRET_KEY`
- - `MAILGUN_API_KEY`
 
-### Command line args
-
-1. DB connection string (sqlalchemy style)
-2. Host
+API keys can be found in these places:
+ - [Mailchimp](https://admin.mailchimp.com/account/api/)
+ - [Stripe](https://dashboard.stripe.com/apikeys) (test keys available)
+ - [Mailgun](https://app.mailgun.com/app/account/security/api_keys)
+ - `APP_SECRET_KEY` can be anything secret.
 
 ## Usage
 
