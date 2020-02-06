@@ -2,17 +2,16 @@
 
 <div class="row">
 <div id="body" class="col-md-12">
-<h1> Listing of all members</h1>
-<a href="#" class="btn btn-warning" onclick="window.location.reload()">Refresh</a>
-<p>Registered: ${members.count()}</p>
-<p>Paid: ${paid.count()}</p>
-<table class="table table-bordered table-hover">
+<h1> All Members</h1>
+<p><a href="#" class="btn btn-warning" onclick="window.location.reload()">Refresh</a></p>
+<p>Registered: ${members.count()}<br/>Paid: ${paid.count()}</p>
+<table class="table table-hover table-sm">
 <thead>
 <tr>
-<td>First Name</td>
-<td>Last Name</td>
-<td>Email</td>
-<td>Paid</td>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Paid</th>
 </tr>
 </thead>
 <tbody>
