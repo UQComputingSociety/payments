@@ -17,6 +17,7 @@
         </h2>
       </div>
     </div>
+    
     <div class="flash">
       % for category, msg in get_msgs(with_categories=True):
       <div class="alert alert-${category} alert-dismissible" role="alert">
@@ -244,7 +245,7 @@
     handler.close();
   });
   $("input[name=student]").change(function(e) {
-    if (e.target.value === 'on') {
+    if ($("input[name=student]:checked")[0].value === 'on') {
       $("#student-form-section").slideDown();
       $("#studentNo").attr("required", "true");
     } else {
@@ -287,4 +288,25 @@
     window.onload = function () {
         document.getElementById("studentNo").onchange = checkId;
     }
+</script>
+<%!
+import json
+def to_json(d):
+    return json.dumps(d)
+%>
+<script>
+  // Loads previous form state from server.
+  const form = ${to_json(form) | n};
+  if (form) {
+    ['fname', 'lname', 'email', 'student-no', 'degree'].forEach(name => {
+      $('input[name="'+name+'"]').val(form[name]);
+    });
+    ['gender', 'student', 'domORint', 'degreeType', 'year'].forEach(name => {
+      $('input[name="'+name+'"]').val([form[name]]);
+    });
+    // Update visibility of student details.
+    setTimeout(() => {
+      $("input[name=student]:checked").change();
+    }, 0);
+  }
 </script>
