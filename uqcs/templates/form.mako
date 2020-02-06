@@ -92,7 +92,7 @@
       </div>
       <div class="form-group">
         <label>Are you a current UQ student? <span class="reqstar">*</span></label> <br />
-        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+        <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
           <label class="btn btn-primary">
             <input type="radio" value="on" name="student" required id="studentCheckbox"/>
             Yes
@@ -121,7 +121,7 @@
         </div>
         <div class="form-group">
           <label>Domestic or International</label> <br />
-          <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" value="domestic" name="domORint" /> Domestic
             </label>
@@ -142,7 +142,7 @@
         </div>
         <div class="form-group">
           <label>Degree Type</label> <br />
-          <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" value="undergrad" name="degreeType" />
               Undergraduate
@@ -155,7 +155,7 @@
         </div>
         <div class="form-group">
           <label>Year</label> <br />
-          <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" name="year" value="1" /> 1
             </label>

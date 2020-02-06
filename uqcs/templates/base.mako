@@ -22,6 +22,8 @@ html,body{min-height: 100%}
 #header{margin-bottom:40px;margin-top:20px;}
 #logo{width: 200px;margin-bottom:20px;margin-top:20px;}
 hr{border-top:1px solid white;}
+.wide-buttons{display: flex;}
+.wide-buttons .btn{width: 100%;}
 </style>
 
 <%block name="head_extra">
