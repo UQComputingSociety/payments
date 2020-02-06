@@ -71,20 +71,19 @@
       <div class="form-group">
         <label>Gender</label><br />
         <div class="btn-group-toggle" data-toggle="buttons">
-          <div class="btn-group">
+          <div class="btn-group w-100">
             <label class="btn btn-primary"> 
               <input name="gender" type="radio" value="M" /> Male 
             </label>
             <label class="btn btn-primary">
               <input name="gender" type="radio" value="F" /> Female
             </label>
-            <label class="btn btn-primary active">
+            <label class="btn btn-primary">
               <input
                 name="gender"
                 type="radio"
                 value="null"
                 data-bind="checked: gender"
-                checked
               />
               Other / Unspecified
             </label>
@@ -93,20 +92,20 @@
       </div>
       <div class="form-group">
         <label>Are you a current UQ student? <span class="reqstar">*</span></label> <br />
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-primary active">
-            <input type="radio" value="on" name="student" checked id="studentCheckbox"/>
+        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+          <label class="btn btn-primary">
+            <input type="radio" value="on" name="student" required id="studentCheckbox"/>
             Yes
           </label>
           <label class="btn btn-primary">
             <!-- Using radio buttons to emulate a checkbox. 
               Server treats empty strings as false. -->
-            <input type="radio" value="" name="student"/>
+            <input type="radio" value="" name="student" required/>
             No
           </label>
         </div>
       </div>
-      <div id="student-form-section">
+      <div id="student-form-section" style="display: none;">
         <div class="form-group">
           <label for="student-no"
             >Student Number <span class="reqstar">*</span></label
@@ -122,7 +121,7 @@
         </div>
         <div class="form-group">
           <label>Domestic or International</label> <br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" value="domestic" name="domORint" /> Domestic
             </label>
@@ -143,7 +142,7 @@
         </div>
         <div class="form-group">
           <label>Degree Type</label> <br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" value="undergrad" name="degreeType" />
               Undergraduate
@@ -156,7 +155,7 @@
         </div>
         <div class="form-group">
           <label>Year</label> <br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" name="year" value="1" /> 1
             </label>
@@ -187,26 +186,22 @@
         style="display:none;"
       />
       
-      <div class="container-fluid mt-4 mb-4">
-        <div class="row">
-          <div class="col-6 pl-0 pr-1">
-            <input 
-              class="btn btn-info btn-block btn-lg" 
-              name="submit" 
-              type="submit" 
-              id="payonline_submit"
-              value="Pay Online"
-            />
-          </div>
-          <div class="col-6 pr-0 pl-1">
-            <input 
-              class="btn btn-info btn-block btn-lg"
-              name="submission" 
-              type="submit" 
-              value="Pay Cash"
-            />
-          </div>
-        </div>
+      <div class="btn-toolbar justify-content-between my-4">
+        <input 
+          style="width: 49%;"
+          class="btn btn-info btn-lg" 
+          name="submit" 
+          type="submit" 
+          id="payonline_submit"
+          value="Pay Online"
+        />
+        <input 
+          style="width: 49%;"
+          class="btn btn-info btn-lg"
+          name="submission" 
+          type="submit" 
+          value="Pay Cash"
+        />
       </div>
 
     </form>
