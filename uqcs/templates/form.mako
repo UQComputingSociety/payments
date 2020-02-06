@@ -177,6 +177,16 @@
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
       
+      <!-- This hidden button is clicked after successful stripe payments. -->
+      <input
+        class="btn btn-info btn-lg"
+        type="submit"
+        name="submission"
+        value="Pay Online"
+        id="submitbtn"
+        style="display:none;"
+      />
+      
       <div class="container-fluid mt-4 mb-4">
         <div class="row">
           <div class="col-6 pl-0 pr-1">
@@ -188,14 +198,6 @@
               value="Pay Online"
             />
           </div>
-          <!-- <input
-            class="btn btn-info btn-lg"
-            type="submit"
-            name="submission"
-            value="Pay Online"
-            style="display:none;"
-            id="submitbtn"
-      /> -->
           <div class="col-6 pr-0 pl-1">
             <input 
               class="btn btn-info btn-block btn-lg"
