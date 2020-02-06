@@ -118,7 +118,7 @@
             id="studentNo"
             placeholder="43108765"
           />
-          <p class="form-text text-muted">8 digits, without the 's'.</p>
+          <p class="form-text text-muted">8 digits, no 's'.</p>
         </div>
         <div class="form-group">
           <label>Domestic or International</label> <br />
@@ -211,7 +211,7 @@
 
     <p class="text-muted">
       Membership is <b>$5</b> for one year. 
-      Online payments have a 40c surcharge.
+      Online payments have a <b>40c</b> surcharge.
     </p>
     <p class="text-muted">
       Membership expires at the end of the February of the next calendar year
