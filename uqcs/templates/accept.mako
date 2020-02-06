@@ -8,7 +8,7 @@
 <thead>
 <tr>
 <th>First Name</th>
-<th>First Name</th>
+<th>Last Name</th>
 <th>Email</th>
 <th></th>
 <th></th>
