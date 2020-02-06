@@ -1,10 +1,23 @@
 <%inherit file="base.mako"/>
 
-<div class="row" style="text-align:center">
-  <div id="body" class="col-sm-12 col-md-6 col-md-offset-3">
-    <br/>
-    <img src="/static/logo.png" />
-    <h1>2020 UQCS Registration</h1>
+<%block name="head_extra">
+
+</% block>
+
+<div class="row justify-content-md-center">
+  <div id="body" class="col-sm-12 col-md-9 col-lg-5">
+    <div id="header" class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <img id="logo" class="col-lg-4 col-xl-5" src="/static/logo-blue-outline.svg"/>
+        <h2 
+          class="col-sm-12 col-lg-8 col-xl-7 text-center"
+          style="margin:0; line-height:1;"
+        >
+          UQCS 2020 Registration
+        </h2>
+      </div>
+    </div>
+    
     <div class="flash">
       % for category, msg in get_msgs(with_categories=True):
       <div class="alert alert-${category} alert-dismissible" role="alert">
@@ -22,78 +35,78 @@
     </div>
     <form method="POST" id="fullForm" action="/" name="payForm">
       <div class="form-group">
-        <label for="fnameInput">First Name<span class="reqstar">*</span></label>
+        <label for="fnameInput">First Name <span class="reqstar">*</span></label>
         <input
           type="text"
           class="form-control"
           id="fnameInput"
-          placeholder="First Name"
+          placeholder="John"
           name="fname"
           required="required"
         />
       </div>
       <div class="form-group">
-        <label for="lnameInput">Last Name<span class="reqstar">*</span></label>
+        <label for="lnameInput">Last Name <span class="reqstar">*</span></label>
         <input
           type="text"
           class="form-control"
           id="lnameInput"
-          placeholder="Last Name"
+          placeholder="Smith"
           name="lname"
           required="required"
         />
       </div>
       <div class="form-group">
         <label for="emailInput"
-          >Email address <span class="reqstar">*</span></label
+          >Email Address <span class="reqstar">*</span></label
         >
         <input
           name="email"
           type="email"
           class="form-control"
           id="emailInput"
-          placeholder="Email"
+          placeholder="john@example.com"
           required="required"
         />
       </div>
       <div class="form-group">
         <label>Gender</label><br />
         <div class="btn-group-toggle" data-toggle="buttons">
-          <div class="btn-group">
+          <div class="btn-group w-100">
             <label class="btn btn-primary"> 
               <input name="gender" type="radio" value="M" /> Male 
             </label>
             <label class="btn btn-primary">
               <input name="gender" type="radio" value="F" /> Female
             </label>
-          </div>
-          <br />
-          <div class="btn-group" style="padding-top:10px">
             <label class="btn btn-primary">
               <input
                 name="gender"
                 type="radio"
                 value="null"
                 data-bind="checked: gender"
-                checked
               />
-              Other / Prefer not to disclose
+              Other / Unspecified
             </label>
           </div>
         </div>
       </div>
       <div class="form-group">
-        <label for="memberType"
-          >Member Type <span class="reqstar">*</span></label
-        >
-        <div class="checkbox">
-          <label>
-            <input name="student" type="checkbox" id="studentCheckbox" /> Are
-            you currently a UQ student?
+        <label>Are you a current UQ student? <span class="reqstar">*</span></label> <br />
+        <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
+          <label class="btn btn-primary">
+            <input type="radio" value="on" name="student" required id="studentCheckbox"/>
+            Yes
+          </label>
+          <label class="btn btn-primary">
+            <!-- Using radio buttons to emulate a checkbox. 
+              Server treats empty strings as false. -->
+            <input type="radio" value="" name="student" required/>
+            No
           </label>
         </div>
       </div>
-      <div id="student-form-section" style="display:none;">
+      <div id="student-form-section" style="display: none;">
         <div class="form-group">
           <label for="student-no"
             >Student Number <span class="reqstar">*</span></label
@@ -105,11 +118,11 @@
             id="studentNo"
             placeholder="43108765"
           />
-          <p class="help-block">8 digits, no 's'</p>
+          <p class="form-text text-muted">8 digits, no 's'.</p>
         </div>
         <div class="form-group">
           <label>Domestic or International</label> <br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" value="domestic" name="domORint" /> Domestic
             </label>
@@ -120,29 +133,30 @@
           </div>
         </div>
         <div class="form-group">
-          <label>Degree/Program</label>
+          <label>Degree&thinsp;/&thinsp;Program</label>
           <input
             type="text"
             name="degree"
             class="form-control"
-            placeholder="e.g. BEng (Software)"
+            placeholder="BEng (Software)"
           />
         </div>
         <div class="form-group">
           <label>Degree Type</label> <br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" value="undergrad" name="degreeType" />
               Undergraduate
             </label>
             <label class="btn btn-primary">
-              <input type="radio" value="postgrad" name="degreeType" /> Postgraduate
+              <input type="radio" value="postgrad" name="degreeType" /> 
+              Postgraduate
             </label>
           </div>
         </div>
         <div class="form-group">
           <label>Year</label> <br />
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
               <input type="radio" name="year" value="1" /> 1
             </label>
@@ -162,38 +176,46 @@
         </div>
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
-      <br/>
+      
+      <!-- This hidden button is clicked after successful stripe payments. -->
       <input
-        class="btn btn-success"
-        name="submit"
-        type="submit"
-        id="payonline_submit"
-        value="Pay Online"
-      />
-      <input
-        class="btn btn-success"
+        class="btn btn-info btn-lg"
         type="submit"
         name="submission"
         value="Pay Online"
-        style="display:none;"
         id="submitbtn"
+        style="display:none;"
       />
-      <input
-        class="btn btn-success"
-        name="submission"
-        type="submit"
-        value="Pay Cash"
-      />
+      
+      <div class="btn-toolbar justify-content-between my-4">
+        <input 
+          style="width: 49%;"
+          class="btn btn-info btn-lg" 
+          name="submit" 
+          type="submit" 
+          id="payonline_submit"
+          value="Pay Online"
+        />
+        <input 
+          style="width: 49%;"
+          class="btn btn-info btn-lg"
+          name="submission" 
+          type="submit" 
+          value="Pay Cash"
+        />
+      </div>
+
     </form>
-    <br/>
-    <div class="text-muted">
-      <p></p>
-      <p>Online payments have a 40c card surcharge.</p>
-    </div>
-    <div class="text-muted">
-      <p>Membership purchased today will expire on ${expiry_today}.</p>
-      <p>Membership purchased from ${start_future} will expire on ${expiry_future}.</p>
-    </div>
+
+    <p class="text-muted">
+      Membership is <b>$5</b> for one year. 
+      Online payments have a <b>40c</b> surcharge.
+    </p>
+    <p class="text-muted">
+      Membership expires at the end of the February of the next calendar year
+      (${expiry_today}).
+      <!-- Membership purchased from ${start_future} will expire on ${expiry_future}. -->
+    </p>
   </div>
 </div>
 <script src="https://checkout.stripe.com/checkout.js"></script>
@@ -222,8 +244,8 @@
   $(window).on("popstate", function() {
     handler.close();
   });
-  $("#studentCheckbox").change(function(e) {
-    if ($("#studentCheckbox")[0].checked) {
+  $("input[name=student]").change(function(e) {
+    if ($("input[name=student]:checked")[0].value === 'on') {
       $("#student-form-section").slideDown();
       $("#studentNo").attr("required", "true");
     } else {
@@ -256,11 +278,35 @@
         if (validId(id)) {
             field.setCustomValidity("");
         } else {
-            field.setCustomValidity("Must be exactly 8 numeric digits");
+            let text = "Invalid student number.";
+            if (id.length != 8)
+                text = text + " Must be 8 digits.";
+            field.setCustomValidity(text);
         }
     }
 
     window.onload = function () {
         document.getElementById("studentNo").onchange = checkId;
     }
+</script>
+<%!
+import json
+def to_json(d):
+    return json.dumps(d)
+%>
+<script>
+  // Loads previous form state from server.
+  const form = ${to_json(form) | n};
+  if (form) {
+    ['fname', 'lname', 'email', 'student-no', 'degree'].forEach(name => {
+      $('input[name="'+name+'"]').val(form[name]);
+    });
+    ['gender', 'student', 'domORint', 'degreeType', 'year'].forEach(name => {
+      $('input[name="'+name+'"]').val([form[name]]);
+    });
+    // Update visibility of student details.
+    setTimeout(() => {
+      $("input[name=student]:checked").change();
+    }, 0);
+  }
 </script>

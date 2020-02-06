@@ -2,15 +2,16 @@
 
 <div class="row">
 <div id="body" class="col-md-12">
-<h1> Listing of unpaid members</h1>
-<a href="#" class="btn btn-warning" onclick="window.location.reload()">Refresh</a>
-<table class="table table-bordered table-hover">
+<h1>Unpaid Members</h1>
+<p><a href="#" class="btn btn-warning" onclick="window.location.reload()">Refresh</a></p>
+<table class="table table-hover" id="unpaid-members">
 <thead>
 <tr>
-<td>Name</td>
-<td>Email</td>
-<td></td>
-<td></td>
+<th>First Name</th>
+<th>First Name</th>
+<th>Email</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -19,7 +20,7 @@
 <td>${member.first_name}</td>
 <td>${member.last_name}</td>
 <td>${member.email}</td>
-<td><a href="/admin/paid/${member.id}" class="btn btn-default">Paid</a></td>
+<td><a href="/admin/paid/${member.id}" class="btn btn-success">Paid</a></td>
 <td><a href="/admin/delete/${member.id}" class="btn btn-danger">Delete</a></td>
 </tr>
 %endfor

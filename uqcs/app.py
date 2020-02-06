@@ -90,18 +90,20 @@ def form(s):
         expiry_future = f"Feb 29th, {curr_year + 2}" if isleap(
             curr_year + 2) else f"Feb 28th, {curr_year + 2}"
         return expiry_today, start_future, expiry_future
-
+    
     stripe_pubkey = os.environ.get('STRIPE_PUBLIC_KEY')
     if request.method == "GET":
         template = lookup.get_template('form.mako')
         expiry_today, start_future, expiry_future = expiry()
         return template.render(request=request,
+                               form=session.pop('form', None),
                                get_msgs=get_flashed_messages,
                                expiry_today=expiry_today,
                                start_future=start_future,
                                expiry_future=expiry_future,
                                STRIPE_PUBLIC_KEY=stripe_pubkey), 200
     else:
+        session['form'] = request.form
         if s.query(m.Member).filter(m.Member.email == request.form.get('email')).count() > 0:
             flash("That email has already been registered", 'danger')
             return redirect('/', 303)
