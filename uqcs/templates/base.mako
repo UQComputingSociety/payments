@@ -19,8 +19,9 @@ html,body{min-height: 100%}
 .container{padding-top: 20px;}
 #unpaid-members td {vertical-align:middle;}
 #body{color: white;min-height:100%;}
-#header{display:flex;align-items:center;margin-bottom:40px;margin-top:20px;}
-#logo{width: 100px;}
+#header{margin-bottom:40px;margin-top:20px;}
+#logo{width: 200px;margin-bottom:20px;margin-top:20px;}
+hr{border-top:1px solid white;}
 </style>
 
 <%block name="head_extra">

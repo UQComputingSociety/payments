@@ -1,10 +1,21 @@
 <%inherit file="base.mako"/>
 
+<%block name="head_extra">
+
+</% block>
+
 <div class="row justify-content-md-center">
-  <div id="body" class="col-sm-12 col-md-6 col-lg-4">
-    <div id="header" class="text-left">
-      <img id="logo" src="/static/logo-blue-outline.svg"/>
-      <h3 style="margin:0; margin-left: 20px;line-height:1;">UQCS 2020 Registration</h3>
+  <div id="body" class="col-sm-12 col-md-9 col-lg-5">
+    <div id="header" class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <img id="logo" class="col-lg-4 col-xl-5" src="/static/logo-blue-outline.svg"/>
+        <h2 
+          class="col-sm-12 col-lg-8 col-xl-7 text-center"
+          style="margin:0; line-height:1;"
+        >
+          UQCS 2020 Registration
+        </h2>
+      </div>
     </div>
     <div class="flash">
       % for category, msg in get_msgs(with_categories=True):
@@ -88,12 +99,13 @@
             Yes
           </label>
           <label class="btn btn-primary">
+            <!-- Using radio buttons to emulate a checkbox. 
+              Server treats empty strings as false. -->
             <input type="radio" value="" name="student"/>
             No
           </label>
         </div>
       </div>
-      <hr/>
       <div id="student-form-section">
         <div class="form-group">
           <label for="student-no"
@@ -162,44 +174,50 @@
             </label>
           </div>
         </div>
-        <hr/>
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
       
-      <p>
-        Membership is <b>$5</b> for one year. 
-        Online payments have a 40c surcharge.
-      </p>
-      <input
-        class="btn btn-info btn-lg"
-        name="submit"
-        type="submit"
-        id="payonline_submit"
-        value="Pay Online"
-      />
-      <input
-        class="btn btn-info btn-lg"
-        type="submit"
-        name="submission"
-        value="Pay Online"
-        style="display:none;"
-        id="submitbtn"
-      />
-      <input
-        class="btn btn-info btn-lg"
-        name="submission"
-        type="submit"
-        value="Pay Cash"
-      />
+      <div class="container-fluid mt-4 mb-4">
+        <div class="row">
+          <div class="col-6 pl-0 pr-1">
+            <input 
+              class="btn btn-info btn-block btn-lg" 
+              name="submit" 
+              type="submit" 
+              id="payonline_submit"
+              value="Pay Online"
+            />
+          </div>
+          <!-- <input
+            class="btn btn-info btn-lg"
+            type="submit"
+            name="submission"
+            value="Pay Online"
+            style="display:none;"
+            id="submitbtn"
+      /> -->
+          <div class="col-6 pr-0 pl-1">
+            <input 
+              class="btn btn-info btn-block btn-lg"
+              name="submission" 
+              type="submit" 
+              value="Pay Cash"
+            />
+          </div>
+        </div>
+      </div>
+
     </form>
-    <br/>
-    <div class="text-muted">
-      <p>
-        Membership expires at the end of the February of the next calendar year
-        (${expiry_today}).
-        <!-- Membership purchased from ${start_future} will expire on ${expiry_future}. -->
-      </p>
-    </div>
+
+    <p class="text-muted">
+      Membership is <b>$5</b> for one year. 
+      Online payments have a 40c surcharge.
+    </p>
+    <p class="text-muted">
+      Membership expires at the end of the February of the next calendar year
+      (${expiry_today}).
+      <!-- Membership purchased from ${start_future} will expire on ${expiry_future}. -->
+    </p>
   </div>
 </div>
 <script src="https://checkout.stripe.com/checkout.js"></script>
