@@ -212,7 +212,7 @@
       Online payments have a <b>40c</b> surcharge.
     </p>
     <p class="text-muted">
-      Membership expires at the end of the February of the next calendar year
+      Membership expires at the end of February of the <i>next</i> calendar year
       (${expiry_today}).
       <!-- Membership purchased from ${start_future} will expire on ${expiry_future}. -->
     </p>
@@ -230,7 +230,9 @@
   });
   $("#payonline_submit").on("click", function(e) {
     e.preventDefault();
-    if (!$("#fullForm")[0].checkValidity()) {
+    var form = $("#fullForm")[0];
+    if (!form.checkValidity()) {
+      form.reportValidity();
       return;
     }
     handler.open({
