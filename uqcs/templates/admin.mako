@@ -1,7 +1,7 @@
 <%inherit file="base.mako"/>
 
-<div class="row">
-<div id="body" class="col-sm-12 col-md-8 col-md-offset-2">
+<div class="row justify-content-md-center">
+<div id="body" class="col-sm-12 col-md-8">
 <div class="flash">
     % for category, msg in get_msgs(with_categories=True):
         <div class="alert alert-${category} alert-dismissible" role="alert">

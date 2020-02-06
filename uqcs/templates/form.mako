@@ -1,10 +1,11 @@
 <%inherit file="base.mako"/>
 
-<div class="row" style="text-align:center">
-  <div id="body" class="col-sm-12 col-md-6 col-md-offset-3">
-    <br/>
-    <img src="/static/logo.png" />
-    <h1>2020 UQCS Registration</h1>
+<div class="row justify-content-md-center">
+  <div id="body" class="col-sm-12 col-md-6 col-lg-4">
+    <div id="header" class="text-left">
+      <img id="logo" src="/static/logo-blue-outline.svg"/>
+      <h3 style="margin:0; margin-left: 20px;line-height:1;">UQCS 2020 Registration</h3>
+    </div>
     <div class="flash">
       % for category, msg in get_msgs(with_categories=True):
       <div class="alert alert-${category} alert-dismissible" role="alert">
@@ -22,37 +23,37 @@
     </div>
     <form method="POST" id="fullForm" action="/" name="payForm">
       <div class="form-group">
-        <label for="fnameInput">First Name<span class="reqstar">*</span></label>
+        <label for="fnameInput">First Name <span class="reqstar">*</span></label>
         <input
           type="text"
           class="form-control"
           id="fnameInput"
-          placeholder="First Name"
+          placeholder="John"
           name="fname"
           required="required"
         />
       </div>
       <div class="form-group">
-        <label for="lnameInput">Last Name<span class="reqstar">*</span></label>
+        <label for="lnameInput">Last Name <span class="reqstar">*</span></label>
         <input
           type="text"
           class="form-control"
           id="lnameInput"
-          placeholder="Last Name"
+          placeholder="Smith"
           name="lname"
           required="required"
         />
       </div>
       <div class="form-group">
         <label for="emailInput"
-          >Email address <span class="reqstar">*</span></label
+          >Email Address <span class="reqstar">*</span></label
         >
         <input
           name="email"
           type="email"
           class="form-control"
           id="emailInput"
-          placeholder="Email"
+          placeholder="john@example.com"
           required="required"
         />
       </div>
@@ -66,10 +67,7 @@
             <label class="btn btn-primary">
               <input name="gender" type="radio" value="F" /> Female
             </label>
-          </div>
-          <br />
-          <div class="btn-group" style="padding-top:10px">
-            <label class="btn btn-primary">
+            <label class="btn btn-primary active">
               <input
                 name="gender"
                 type="radio"
@@ -77,23 +75,26 @@
                 data-bind="checked: gender"
                 checked
               />
-              Other / Prefer not to disclose
+              Other / Unspecified
             </label>
           </div>
         </div>
       </div>
       <div class="form-group">
-        <label for="memberType"
-          >Member Type <span class="reqstar">*</span></label
-        >
-        <div class="checkbox">
-          <label>
-            <input name="student" type="checkbox" id="studentCheckbox" /> Are
-            you currently a UQ student?
+        <label>Are you a current UQ student? <span class="reqstar">*</span></label> <br />
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" value="on" name="student" checked id="studentCheckbox"/>
+            Yes
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" value="" name="student"/>
+            No
           </label>
         </div>
       </div>
-      <div id="student-form-section" style="display:none;">
+      <hr/>
+      <div id="student-form-section">
         <div class="form-group">
           <label for="student-no"
             >Student Number <span class="reqstar">*</span></label
@@ -105,7 +106,7 @@
             id="studentNo"
             placeholder="43108765"
           />
-          <p class="help-block">8 digits, no 's'</p>
+          <p class="form-text text-muted">8 digits, without the 's'.</p>
         </div>
         <div class="form-group">
           <label>Domestic or International</label> <br />
@@ -120,12 +121,12 @@
           </div>
         </div>
         <div class="form-group">
-          <label>Degree/Program</label>
+          <label>Degree&thinsp;/&thinsp;Program</label>
           <input
             type="text"
             name="degree"
             class="form-control"
-            placeholder="e.g. BEng (Software)"
+            placeholder="BEng (Software)"
           />
         </div>
         <div class="form-group">
@@ -136,7 +137,8 @@
               Undergraduate
             </label>
             <label class="btn btn-primary">
-              <input type="radio" value="postgrad" name="degreeType" /> Postgraduate
+              <input type="radio" value="postgrad" name="degreeType" /> 
+              Postgraduate
             </label>
           </div>
         </div>
@@ -160,18 +162,23 @@
             </label>
           </div>
         </div>
+        <hr/>
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
-      <br/>
+      
+      <p>
+        Membership is <b>$5</b> for one year. 
+        Online payments have a 40c surcharge.
+      </p>
       <input
-        class="btn btn-success"
+        class="btn btn-info btn-lg"
         name="submit"
         type="submit"
         id="payonline_submit"
         value="Pay Online"
       />
       <input
-        class="btn btn-success"
+        class="btn btn-info btn-lg"
         type="submit"
         name="submission"
         value="Pay Online"
@@ -179,7 +186,7 @@
         id="submitbtn"
       />
       <input
-        class="btn btn-success"
+        class="btn btn-info btn-lg"
         name="submission"
         type="submit"
         value="Pay Cash"
@@ -187,12 +194,11 @@
     </form>
     <br/>
     <div class="text-muted">
-      <p></p>
-      <p>Online payments have a 40c card surcharge.</p>
-    </div>
-    <div class="text-muted">
-      <p>Membership purchased today will expire on ${expiry_today}.</p>
-      <p>Membership purchased from ${start_future} will expire on ${expiry_future}.</p>
+      <p>
+        Membership expires at the end of the February of the next calendar year
+        (${expiry_today}).
+        <!-- Membership purchased from ${start_future} will expire on ${expiry_future}. -->
+      </p>
     </div>
   </div>
 </div>
@@ -222,8 +228,8 @@
   $(window).on("popstate", function() {
     handler.close();
   });
-  $("#studentCheckbox").change(function(e) {
-    if ($("#studentCheckbox")[0].checked) {
+  $("input[name=student]").change(function(e) {
+    if (e.target.value === 'on') {
       $("#student-form-section").slideDown();
       $("#studentNo").attr("required", "true");
     } else {
@@ -256,7 +262,10 @@
         if (validId(id)) {
             field.setCustomValidity("");
         } else {
-            field.setCustomValidity("Must be exactly 8 numeric digits");
+            let text = "Invalid student number.";
+            if (id.length != 8)
+                text = text + " Must be 8 digits.";
+            field.setCustomValidity(text);
         }
     }
 
