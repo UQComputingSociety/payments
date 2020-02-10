@@ -133,15 +133,6 @@
           </div>
         </div>
         <div class="form-group">
-          <label>Degree&thinsp;/&thinsp;Program</label>
-          <input
-            type="text"
-            name="degree"
-            class="form-control"
-            placeholder="BEng (Software)"
-          />
-        </div>
-        <div class="form-group">
           <label>Degree Type</label> <br />
           <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
             <label class="btn btn-primary">
@@ -154,6 +145,28 @@
             </label>
           </div>
         </div>
+        <div class="form-group">
+          <label>Degree&thinsp;/&thinsp;Program</label>
+          <input
+            type="text"
+            id="degreeInput"
+            name="degreeInput"
+            class="form-control"
+            placeholder="Bachelor of Engineering"
+          />
+        </div>
+        <div class="form-group">
+          <label>Major</label>
+          <input
+            type="text"
+            id="majorInput"
+            name="majorInput"
+            class="form-control"
+            placeholder="Software Engineering"
+          />
+        </div>
+        <input type="hidden" id="degree" name="degree">
+        
         <div class="form-group">
           <label>Year</label> <br />
           <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
@@ -256,7 +269,46 @@
     }
   });
 </script>
-
+<style>
+/* some styles lifted from Bootstrap */
+.autocomplete-suggestions { border: 1px solid #222; border-radius: 0.25rem; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { cursor: pointer; }
+.autocomplete-suggestion, .autocomplete-no-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; color: black; height: calc(1.5em + 0.75rem + 2px); padding: 0.375rem 0.75rem; line-height: 1.5}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.10/jquery.autocomplete.min.js" integrity="sha256-xv9tRiSlyBQMvBkQeqNyojOQf45uTVXQAtIMrmgqV18=" crossorigin="anonymous"></script>
+<script>
+  const degrees = [{"value": "Bachelor of Advanced Science", "data": "undergrad"}, {"value": "Bachelor of Biotechnology", "data": "undergrad"}, {"value": "Bachelor of Computer Science", "data": "undergrad"}, {"value": "Bachelor of Engineering", "data": "undergrad"}, {"value": "Bachelor of Engineering and Master of Engineering", "data": "undergrad"}, {"value": "Bachelor of Information Technology", "data": "undergrad"}, {"value": "Bachelor of Mathematics", "data": "undergrad"}, {"value": "Bachelors of Business Management/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Commerce/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Computer Science/Arts", "data": "undergrad"}, {"value": "Bachelors of Computer Science/Science", "data": "undergrad"}, {"value": "Bachelors of Engineering/Arts", "data": "undergrad"}, {"value": "Bachelors of Engineering/Biotechnology", "data": "undergrad"}, {"value": "Bachelors of Engineering/Business Management", "data": "undergrad"}, {"value": "Bachelors of Engineering/Commerce", "data": "undergrad"}, {"value": "Bachelors of Engineering/Computer Science", "data": "undergrad"}, {"value": "Bachelors of Engineering/Economics", "data": "undergrad"}, {"value": "Bachelors of Engineering/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Engineering/Mathematics", "data": "undergrad"}, {"value": "Bachelors of Engineering/Science", "data": "undergrad"}, {"value": "Bachelors of Information Technology/Arts", "data": "undergrad"}, {"value": "Bachelors of Information Technology/Science", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Arts", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Business Management", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Commerce", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Computer Science", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Economics", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Education (Secondary)", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Science", "data": "undergrad"}, {"value": "Graduate Certificate of Bioinformatics", "data": "postgrad"}, {"value": "Graduate Certificate of Biotechnology", "data": "postgrad"}, {"value": "Graduate Certificate of Computer Science", "data": "postgrad"}, {"value": "Graduate Certificate of Cyber Security", "data": "postgrad"}, {"value": "Graduate Certificate of Engineering Science", "data": "postgrad"}, {"value": "Graduate Certificate of Information Technology", "data": "postgrad"}, {"value": "Graduate Diploma of Biotechnology", "data": "postgrad"}, {"value": "Graduate Diploma of Computer Science", "data": "postgrad"}, {"value": "Graduate Diploma of Cyber Security", "data": "postgrad"}, {"value": "Graduate Diploma of Information Technology", "data": "postgrad"}, {"value": "Masters of Bioinformatics", "data": "postgrad"}, {"value": "Masters of Bioinformatics Research Extensive", "data": "postgrad"}, {"value": "Masters of Biotechnology", "data": "postgrad"}, {"value": "Masters of Biotechnology Research Extensive", "data": "postgrad"}, {"value": "Masters of Computer Science", "data": "postgrad"}, {"value": "Masters of Computer Science (Management)", "data": "postgrad"}, {"value": "Masters of Cyber Security", "data": "postgrad"}, {"value": "Masters of Data Science", "data": "postgrad"}, {"value": "Masters of Engineering", "data": "postgrad"}, {"value": "Masters of Engineering Science", "data": "postgrad"}, {"value": "Masters of Engineering Science (Management)", "data": "postgrad"}, {"value": "Masters of Financial Mathematics", "data": "postgrad"}, {"value": "Masters of Information Technology", "data": "postgrad"}];
+  let degreeType;
+  $("input[name=degreeType]").change(function(e) {
+    const selected = $("input[name=degreeType]:checked")[0];
+    degreeType = selected ? selected.value : null;
+  });
+  $('#degreeInput').autocomplete({
+    lookup: degrees,
+    showNoSuggestionNotice: true,
+    noSuggestionNotice: 'No suggestions, please enter manually.',
+    lookupFilter: function (suggestion, query, queryLowerCase) {
+      if (degreeType && suggestion.data != degreeType)
+        return false; // if degree type (under/postgrad) doesn't match, omit.
+      // match ALL space-separated tokens in query.
+      const s = suggestion.value.toLowerCase();
+      return queryLowerCase.split(' ')
+        .filter(q => q.length && s.indexOf(q) == -1).length == 0;
+    }
+  });
+  $('#fullForm').submit(function(ev) {
+    // fudge together combined degree field from degree name and major.
+    const major = $('#majorInput').val().trim();
+    let degree = $('#degreeInput').val().trim();
+    if (major)
+      degree = degree + ' (' + major + ')';
+    $('#degree').val(degree);
+  });
+</script>
 <script>
     function validId(id) {
         if (id.length !== 8) {
@@ -300,7 +352,7 @@ def to_json(d):
   // Loads previous form state from server.
   const form = ${to_json(form) | n};
   if (form) {
-    ['fname', 'lname', 'email', 'student-no', 'degree'].forEach(name => {
+    ['fname', 'lname', 'email', 'student-no', 'degree', 'degreeInput', 'majorInput'].forEach(name => {
       $('input[name="'+name+'"]').val(form[name]);
     });
     ['gender', 'student', 'domORint', 'degreeType', 'year'].forEach(name => {
