@@ -130,6 +130,8 @@ def form(s):
                 session['email'] = user.email
                 mailer_queue.put(user)
                 mailchimp_queue.put(user)
+                
+                session.pop('form', None)
                 return redirect('/complete', 303)
             except stripe.error.CardError as e:
                 flash(e.message, "danger")
@@ -137,6 +139,7 @@ def form(s):
         else:
             mailchimp_queue.put(user)
             session['email'] = user.email
+            session.pop('form', None)
             return redirect('/complete', 303)
 
 
