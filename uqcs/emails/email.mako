@@ -317,7 +317,7 @@ a {
                         <td>
                           <table class="invoice-items" cellpadding="0" cellspacing="0">
                             <tr>
-                              <td>UQCS 2019 Membership</td>
+                              <td>UQCS 2020 Membership</td>
                               <td class="alignright">$ 5.00</td>
                             </tr>
                             % if user.paid != "CASH":
