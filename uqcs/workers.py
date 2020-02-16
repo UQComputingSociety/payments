@@ -61,14 +61,34 @@ def mailchimp_worker(queue: Queue):
             logger.exception(e)
 
 
+def _cents_to_str(cents):
+    return str(cents // 100) + '.' + str(cents % 100).rjust(2, '0')
+
 def mailer_worker(mailqueue):
     for item in iter(mailqueue.get, None):
         try:
+            # membership is $5.00
+            cost = 500
+            payment = {
+                'cost': _cents_to_str(cost),
+                'surcharge': '',
+                'total': _cents_to_str(cost),
+            }
+            # surcharge applies for non-cash.
+            if item.paid != 'CASH':
+                # if item.paid is not SQUARE, it was Stripe.
+                surcharge = 10 if item.paid == 'SQUARE' else 40
+                total = cost + surcharge
+                payment['total'] = _cents_to_str(total)
+                payment['surcharge'] = _cents_to_str(surcharge)
+                payment['surcharge_text'] = ('Square' if item.paid == 'SQUARE' else 'Stripe') \
+                    + ' Payment Fee'
+            
             print(item.first_name + ' ' + item.last_name)
             receiptText = lookup.get_template("email.mtxt") \
-                .render(user=item, dt=dt)
+                .render(user=item, dt=dt, payment=payment)
             receiptHTML = lookup.get_template('email.mako') \
-                .render(user=item, dt=dt)
+                .render(user=item, dt=dt, payment=payment)
             requests.post("https://api.mailgun.net/v3/uqcs.org.au/messages",
                           auth=('api', os.environ.get("MAILGUN_API_KEY")),
                           data={

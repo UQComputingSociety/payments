@@ -299,12 +299,12 @@ a {
               <table width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="content-block">
-                    <h1 class="aligncenter">$${('5.40' if user.paid != "CASH" else '5.00')} Paid</h1>
+                    <h1 class="aligncenter">$${payment['total']} Paid</h1>
                   </td>
                 </tr>
                 <tr>
                   <td class="content-block">
-                    <h2 class="aligncenter">Welcome to UQCS in 2020</h2>
+                    <h2 class="aligncenter">Welcome to UQCS in 2020!</h2>
                   </td>
                 </tr>
                 <tr>
@@ -318,18 +318,18 @@ a {
                           <table class="invoice-items" cellpadding="0" cellspacing="0">
                             <tr>
                               <td>UQCS 2020 Membership</td>
-                              <td class="alignright">$ 5.00</td>
+                              <td class="alignright">$ ${payment['cost']}</td>
                             </tr>
-                            % if user.paid != "CASH":
+                            % if payment['surcharge']:
                             <tr >
-                              <td>Online Payment Fee</td>
-                              <td class="alignright">$ 0.40</td>
+                              <td>${payment['surcharge_text']}</td>
+                              <td class="alignright">$ ${payment['surcharge']}</td>
                             </tr>
                             % endif
 
                             <tr class="total">
                               <td class="alignright" width="80%">Total</td>
-                              <td class="alignright">$ ${('5.40' if user.paid != "CASH" else '5.00')}</td>
+                              <td class="alignright">$ ${payment['total']}</td>
                             </tr>
                           </table>
                         </td>

@@ -1,24 +1,24 @@
-**********
-$ ${'5.40' if user.paid != "CASH" else '5.00'} Paid
-**********
+***********
+$ ${payment['total']} Paid
+***********
 
------------------------
-Welcome to UQCS in 2020
------------------------
+------------------------
+Welcome to UQCS in 2020!
+------------------------
 
 ${user.first_name} ${user.last_name}
 ${str(dt.datetime.now())}
 
 UQCS 2020 Membership
-$ 5.00
+$ ${payment['cost']}
 
-% if user.paid != "CASH":
-Online Payment Fee
-$ 0.40
+% if payment['surcharge']:
+${payment['surcharge_text']}
+$ ${payment['surcharge']}
 
 % endif
 Total
-$ ${'5.40' if user.paid != "CASH" else '5.00'}
+$ ${payment['total']}
 
 UQ Computing Society
 
