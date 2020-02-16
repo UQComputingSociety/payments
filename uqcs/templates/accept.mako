@@ -20,7 +20,10 @@
 <td>${member.first_name}</td>
 <td>${member.last_name}</td>
 <td>${member.email}</td>
-<td><a href="/admin/paid/${member.id}" class="btn btn-success">Paid</a></td>
+<td>
+  <a href="/admin/paid/${member.id}?payment=CASH" class="btn btn-success mr-4">&#x1f4b2; Paid Cash</a>
+  <a href="/admin/paid/${member.id}?payment=SQUARE" class="btn btn-info">&#x1f4b3; Paid Square</a>
+</td>
 <td><a href="/admin/delete/${member.id}" class="btn btn-danger">Delete</a></td>
 </tr>
 %endfor

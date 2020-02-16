@@ -8,6 +8,8 @@ import logging
 import hashlib
 import functools
 from queue import Queue
+
+from uqcs.base import needs_db
 from .templates import lookup
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -61,23 +63,44 @@ def mailchimp_worker(queue: Queue):
             logger.exception(e)
 
 
+def _cents_to_str(cents):
+    return str(cents // 100) + '.' + str(cents % 100).rjust(2, '0')
+
+
 def mailer_worker(mailqueue):
     for item in iter(mailqueue.get, None):
         try:
+            # membership is $5.00
+            cost = 500
+            payment = {
+                'cost': _cents_to_str(cost),
+                'surcharge': '',
+                'total': _cents_to_str(cost),
+            }
+            # surcharge applies for non-cash
+            if item.paid != 'CASH':
+                # if item.paid is not SQUARE, it was Stripe
+                surcharge = 10 if item.paid == 'SQUARE' else 40
+                total = cost + surcharge
+                payment['total'] = _cents_to_str(total)
+                payment['surcharge'] = _cents_to_str(surcharge)
+                payment['surcharge_text'] = ('Square' if item.paid == 'SQUARE' else 'Stripe') \
+                    + ' Payment Fee'
+            
             print(item.first_name + ' ' + item.last_name)
-            receiptText = lookup.get_template("email.mtxt") \
-                .render(user=item, dt=dt)
-            receiptHTML = lookup.get_template('email.mako') \
-                .render(user=item, dt=dt)
+            receipt_text = lookup.get_template("email.mtxt") \
+                .render(user=item, dt=dt, payment=payment)
+            receipt_html = lookup.get_template('email.mako') \
+                .render(user=item, dt=dt, payment=payment)
             requests.post("https://api.mailgun.net/v3/uqcs.org.au/messages",
                           auth=('api', os.environ.get("MAILGUN_API_KEY")),
                           data={
                               'from': 'receipts@uqcs.org.au',
                               'to': item.email,
                               'bcc': "receipts@uqcs.org.au",
-                              'text': receiptText,
-                              'html': premailer.transform(receiptHTML),
+                              'text': receipt_text,
+                              'html': premailer.transform(receipt_html),
                               'subject': "UQCS 2020 Membership Receipt",
                           })
-        except Exception as e:
-            logger.exception(e)
+        except Exception as exception:
+            logger.exception(exception)

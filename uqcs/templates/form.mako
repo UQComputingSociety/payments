@@ -207,14 +207,14 @@
           name="submit" 
           type="submit" 
           id="payonline_submit"
-          value="Pay Online"
+          value="Pay online"
         />
         <input 
           style="width: 49%;"
           class="btn btn-info btn-lg"
           name="submission" 
           type="submit" 
-          value="Pay Cash"
+          value="Pay in person"
         />
       </div>
 
@@ -222,7 +222,8 @@
 
     <p class="text-muted">
       Membership is <b>$5</b> for one year. 
-      Online payments have a <b>40c</b> surcharge.
+      Online card payments have a <b>40c</b> surcharge. 
+      In person card payments have a <b>10c</b> surcharge.
     </p>
     <p class="text-muted">
       Membership expires at the end of February of the <i>next</i> calendar year
