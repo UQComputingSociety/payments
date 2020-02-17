@@ -77,8 +77,8 @@ def mailer_worker(mailqueue):
                 'surcharge': '',
                 'total': _cents_to_str(cost),
             }
-            # surcharge applies for non-cash
-            if item.paid != 'CASH':
+            # CASH and UQU payments have no surcharges
+            if item.paid not in ('CASH', 'UQU'):
                 # if item.paid is not SQUARE, it was Stripe
                 surcharge = 10 if item.paid == 'SQUARE' else 40
                 total = cost + surcharge

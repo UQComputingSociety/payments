@@ -131,7 +131,7 @@ def admin_list(s, admin_user):
 @admin.route('/paid/<int:member_id>')
 @needs_db_and_admin
 def paid(s, admin_user, member_id):
-    valid_payment = ('CASH', 'SQUARE')
+    valid_payment = ('CASH', 'SQUARE', 'UQU')
     payment_method = request.args.get('payment', None)
     if payment_method not in valid_payment:
         return abort(400, "Invalid or missing payment parameter. Must be one of " + str(valid_payment))
