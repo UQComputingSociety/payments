@@ -195,6 +195,9 @@
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
       
+      <!-- First hidden, disabled submit button prevents submission on Enter. -->
+      <input type="submit" disabled style="display: none" aria-hidden="true" />
+
       <!-- This hidden button is clicked after successful stripe payments. -->
       <input
         class="btn btn-info btn-lg"
