@@ -15,7 +15,7 @@ Come visit our market day stall or our welcome event to pay for your membership!
 </p>
 <p>
     <a href="/" class="btn btn-info" style="margin-right: 20px;">Back to form</a>
-    (redirecting in 15 seconds...)
+    (going back to form in 15 seconds...)
 </p>
 </div>
 </div>
