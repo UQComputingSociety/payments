@@ -40,7 +40,7 @@
           type="text"
           class="form-control"
           id="fnameInput"
-          placeholder="John"
+          placeholder="Alex"
           name="fname"
           required="required"
         />
@@ -65,9 +65,14 @@
           type="email"
           class="form-control"
           id="emailInput"
-          placeholder="john@example.com"
+          placeholder="a.smith@example.com"
           required="required"
         />
+        <p class="form-text text-muted">Valid UQ student email formats are:
+          <span style="white-space: nowrap;">first.last@uqconnect.edu.au</span>,
+          <span style="white-space: nowrap;">first.last@uq.net.au</span>,
+          <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
+        </p>
       </div>
       <div class="form-group">
         <label>Gender</label><br />
@@ -116,7 +121,7 @@
             name="student-no"
             class="form-control"
             id="studentNo"
-            placeholder="43108765"
+            placeholder="42345678"
           />
           <p class="form-text text-muted">8 digits, no 's'.</p>
         </div>
@@ -152,7 +157,7 @@
             id="degreeInput"
             name="degreeInput"
             class="form-control"
-            placeholder="Bachelor of Engineering"
+            placeholder="Search keywords, e.g. &quot;comp sci, engineering&quot;"
           />
         </div>
         <div class="form-group">
@@ -162,7 +167,7 @@
             id="majorInput"
             name="majorInput"
             class="form-control"
-            placeholder="Software Engineering"
+            placeholder="Leave blank if undeclared"
           />
         </div>
         <input type="hidden" id="degree" name="degree">
@@ -190,6 +195,9 @@
       </div>
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
       
+      <!-- First hidden, disabled submit button prevents submission on Enter. -->
+      <input type="submit" disabled style="display: none" aria-hidden="true" />
+
       <!-- This hidden button is clicked after successful stripe payments. -->
       <input
         class="btn btn-info btn-lg"
@@ -282,25 +290,39 @@
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.10/jquery.autocomplete.min.js" integrity="sha256-xv9tRiSlyBQMvBkQeqNyojOQf45uTVXQAtIMrmgqV18=" crossorigin="anonymous"></script>
 <script>
-  const degrees = [{"value": "Bachelor of Advanced Science", "data": "undergrad"}, {"value": "Bachelor of Advanced Business", "data": "undergrad"}, {"value": "Bachelor of Advanced Finance and Economics", "data": "undergrad"}, {"value": "Bachelor of Arts", "data": "undergrad"}, {"value": "Bachelor of Biomedical Science", "data": "undergrad"}, {"value": "Bachelor of Business Management", "data": "undergrad"}, {"value": "Bachelor of Biotechnology", "data": "undergrad"}, {"value": "Bachelor of Computer Science", "data": "undergrad"}, {"value": "Bachelor of Engineering", "data": "undergrad"}, {"value": "Bachelor of Engineering and Master of Engineering", "data": "undergrad"}, {"value": "Bachelor of Information Technology", "data": "undergrad"}, {"value": "Bachelor of Mathematics", "data": "undergrad"}, {"value": "Bachelors of Business Management/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Commerce/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Computer Science/Arts", "data": "undergrad"}, {"value": "Bachelors of Computer Science/Science", "data": "undergrad"}, {"value": "Bachelors of Engineering/Arts", "data": "undergrad"}, {"value": "Bachelors of Engineering/Biotechnology", "data": "undergrad"}, {"value": "Bachelors of Engineering/Business Management", "data": "undergrad"}, {"value": "Bachelors of Engineering/Commerce", "data": "undergrad"}, {"value": "Bachelors of Engineering/Computer Science", "data": "undergrad"}, {"value": "Bachelors of Engineering/Economics", "data": "undergrad"}, {"value": "Bachelors of Engineering/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Engineering/Mathematics", "data": "undergrad"}, {"value": "Bachelors of Engineering/Science", "data": "undergrad"}, {"value": "Bachelors of Information Technology/Arts", "data": "undergrad"}, {"value": "Bachelors of Information Technology/Science", "data": "undergrad"}, {"value": "Bachelor of Science", "data": "undergrad"}, {"value": "Bachelors of Science/Laws", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Arts", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Business Management", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Commerce", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Computer Science", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Economics", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Education (Secondary)", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Information Technology", "data": "undergrad"}, {"value": "Bachelors of Mathematics/Science", "data": "undergrad"},  {"value": "Doctor of Philosophy", "data": "postgrad"}, {"value": "Graduate Certificate of Bioinformatics", "data": "postgrad"}, {"value": "Graduate Certificate of Biotechnology", "data": "postgrad"}, {"value": "Graduate Certificate of Computer Science", "data": "postgrad"}, {"value": "Graduate Certificate of Cyber Security", "data": "postgrad"}, {"value": "Graduate Certificate of Engineering Science", "data": "postgrad"}, {"value": "Graduate Certificate of Information Technology", "data": "postgrad"}, {"value": "Graduate Diploma of Biotechnology", "data": "postgrad"}, {"value": "Graduate Diploma of Computer Science", "data": "postgrad"}, {"value": "Graduate Diploma of Cyber Security", "data": "postgrad"}, {"value": "Graduate Diploma of Information Technology", "data": "postgrad"}, {"value": "Graduate Certificate of Science", "data": "postgrad"}, {"value": "Masters of Bioinformatics", "data": "postgrad"}, {"value": "Masters of Bioinformatics Research Extensive", "data": "postgrad"}, {"value": "Masters of Biotechnology", "data": "postgrad"}, {"value": "Masters of Biotechnology Research Extensive", "data": "postgrad"}, {"value": "Masters of Computer Science", "data": "postgrad"}, {"value": "Masters of Computer Science (Management)", "data": "postgrad"}, {"value": "Masters of Cyber Security", "data": "postgrad"}, {"value": "Masters of Data Science", "data": "postgrad"}, {"value": "Masters of Engineering", "data": "postgrad"}, {"value": "Masters of Engineering Science", "data": "postgrad"}, {"value": "Masters of Engineering Science (Management)", "data": "postgrad"}, {"value": "Masters of Financial Mathematics", "data": "postgrad"}, {"value": "Master of Geographic Information Science", "data": "postgrad"},{"value": "Masters of Information Technology", "data": "postgrad"}, {"value": "Master of Interaction Design", "data": "postgrad"}, {"value": "Master of Philosophy", "data": "postgrad"}, {"value": "Master of Quantum Technology", "data": "postgrad"}];
   let degreeType;
   $("input[name=degreeType]").change(function(e) {
     const selected = $("input[name=degreeType]:checked")[0];
     degreeType = selected ? selected.value : null;
   });
-  $('#degreeInput').autocomplete({
-    lookup: degrees,
-    showNoSuggestionNotice: true,
-    noSuggestionNotice: 'No suggestions, please enter manually.',
-    lookupFilter: function (suggestion, query, queryLowerCase) {
-      if (degreeType && suggestion.data != degreeType)
-        return false; // if degree type (under/postgrad) doesn't match, omit.
-      // match ALL space-separated tokens in query.
-      const s = suggestion.value.toLowerCase();
-      return queryLowerCase.split(' ')
-        .filter(q => q.length && s.indexOf(q) == -1).length == 0;
-    }
-  });
+  fetch('/static/programs.json')
+    .then(response => {
+      // check for HTTP error response codes.
+      if (!response.ok) throw new Error('error loading degrees: ' + response.statusText);
+      return response.json();
+    })
+    .then(degrees => {
+      $('#degreeInput').autocomplete({
+        lookup: degrees,
+        showNoSuggestionNotice: true,
+        noSuggestionNotice: 'No suggestions, please enter manually.',
+        lookupFilter: function (suggestion, query, queryLowerCase) {
+          if (degreeType && suggestion.data != degreeType)
+            return false; // if degree type (under/postgrad) doesn't match, omit.
+          const s = suggestion.value.toLowerCase();
+          // split by space, remove non-alpha, to get tokens.
+          // then filters out tokens which DO appear in this suggestion.
+          return queryLowerCase.split(' ')
+            .map(q => q.replace(/[^a-z]/g, ''))
+            .filter(q => q.length && s.indexOf(q) == -1).length == 0;
+        }
+      });
+    })
+    .catch(error => {
+      // hide help text if loading failed.
+      $('#degreeInput').attr('placeholder', '');
+      throw error;
+    });
   $('#fullForm').submit(function(ev) {
     // fudge together combined degree field from degree name and major.
     const major = $('#majorInput').val().trim();
