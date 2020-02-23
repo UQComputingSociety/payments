@@ -68,7 +68,7 @@
           placeholder="a.smith@example.com"
           required="required"
         />
-        <p class="form-text text-muted">Valid UQ email formats are: 
+        <p class="form-text text-muted">Valid UQ student email formats are:
           <span style="white-space: nowrap;">first.last@uqconnect.edu.au</span>,
           <span style="white-space: nowrap;">first.last@uq.net.au</span>,
           <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
