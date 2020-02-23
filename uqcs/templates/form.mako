@@ -40,7 +40,7 @@
           type="text"
           class="form-control"
           id="fnameInput"
-          placeholder="John"
+          placeholder=""
           name="fname"
           required="required"
         />
@@ -51,7 +51,7 @@
           type="text"
           class="form-control"
           id="lnameInput"
-          placeholder="Smith"
+          placeholder=""
           name="lname"
           required="required"
         />
@@ -65,9 +65,14 @@
           type="email"
           class="form-control"
           id="emailInput"
-          placeholder="john@example.com"
+          placeholder=""
           required="required"
         />
+        <p class="form-text text-muted">Valid UQ emails are: 
+          <span style="white-space: nowrap;">first.lastxx@uqconnect.edu.au</span>,
+          <span style="white-space: nowrap;">first.lastxx@uq.net.au</span>,
+          <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
+        </p>
       </div>
       <div class="form-group">
         <label>Gender</label><br />
@@ -116,7 +121,7 @@
             name="student-no"
             class="form-control"
             id="studentNo"
-            placeholder="43108765"
+            placeholder=""
           />
           <p class="form-text text-muted">8 digits, no 's'.</p>
         </div>
@@ -152,7 +157,7 @@
             id="degreeInput"
             name="degreeInput"
             class="form-control"
-            placeholder="Bachelor of Engineering"
+            placeholder="Search with keywords, e.g. &quot;math, engineering&quot;"
           />
         </div>
         <div class="form-group">
@@ -162,7 +167,7 @@
             id="majorInput"
             name="majorInput"
             class="form-control"
-            placeholder="Software Engineering"
+            placeholder="Leave blank if undeclared"
           />
         </div>
         <input type="hidden" id="degree" name="degree">
