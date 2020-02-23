@@ -4,3 +4,4 @@ recursive-include uqcs *.css
 recursive-include uqcs *.js
 recursive-include uqcs *.png
 recursive-include uqcs *.svg
+recursive-include uqcs *.json
