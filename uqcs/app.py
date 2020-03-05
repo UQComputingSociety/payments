@@ -118,6 +118,7 @@ def form(s):
             flash(msg, 'danger')
             return redirect('/', 303)
         s.add(user)
+        
         if request.form['stripeToken'].strip():
             try:
                 charge = stripe.Charge.create(
@@ -128,6 +129,9 @@ def form(s):
                 )
                 user.paid = charge['id']
                 session['email'] = user.email
+                
+                s.flush()
+                s.expunge(user)
                 mailer_queue.put(user)
                 mailchimp_queue.put(user)
                 
@@ -137,6 +141,8 @@ def form(s):
                 flash(e.message, "danger")
                 return redirect('/payment', 303)
         else:
+            s.flush()
+            s.expunge(user)
             mailchimp_queue.put(user)
             session['email'] = user.email
             session.pop('form', None)
