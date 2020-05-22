@@ -121,11 +121,22 @@ def form(s):
         
         if request.form['stripeToken'].strip():
             try:
+                customer = stripe.Customer.create(
+                    name=user.first_name + ' ' + user.last_name,
+                    email=user.email,
+                    metadata={
+                        'member_type': user.member_type,
+                        'student_no': user.student_no 
+                            if user.member_type == 'student' else None
+                    },
+                    source=request.form['stripeToken'],
+                )
+
                 charge = stripe.Charge.create(
                     amount=540,
                     currency="aud",
-                    source=request.form['stripeToken'],
-                    description="UQCS Membership"
+                    description="UQCS Membership",
+                    customer=customer.id,
                 )
                 user.paid = charge['id']
                 session['email'] = user.email
