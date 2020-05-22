@@ -126,8 +126,8 @@ def form(s):
                     email=user.email,
                     metadata={
                         'member_type': user.member_type,
-                        'student_no': request.form['student-no'] 
-                            if request.form.get("student", False) else None
+                        'student_no': user.student_no 
+                            if user.member_type == 'student' else None
                     },
                     source=request.form['stripeToken'],
                 )
