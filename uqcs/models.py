@@ -71,7 +71,7 @@ class Student(Member):
     }
 
     def from_dict(self, d):
-        pass
+        raise NotImplementedError
 
     def from_member(self, m):
         return Student(
