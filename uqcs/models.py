@@ -52,12 +52,6 @@ class Member(Base):
         return self.paid is not None
 
 
-class LifeMember(Member):
-    __mapper_args__ = {
-        "polymorphic_identity": "life",
-    }
-
-
 class Student(Member):
     id = Column(Integer, ForeignKey(Member.id), primary_key=True)
     student_no = Column(String(8), unique=True)
@@ -71,7 +65,7 @@ class Student(Member):
     }
 
     def from_dict(self, d):
-        raise NotImplementedError
+        pass
 
     def from_member(self, m):
         return Student(
