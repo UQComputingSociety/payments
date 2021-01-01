@@ -57,6 +57,11 @@ class LifeMember(Member):
         "polymorphic_identity": "life",
     }
 
+    @declared_attr
+    def __tablename__(cls):
+        # life members and members are stored in the same table.
+        return 'member'
+
 
 class Student(Member):
     id = Column(Integer, ForeignKey(Member.id), primary_key=True)
