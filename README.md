@@ -53,6 +53,8 @@ API keys can be found in these places:
 5. The form will be available at port 9090 of the given host.
 
 ### Useful Tasks
-Generate a [bcrypt hash](https://bcrypt-generator.com/), then add it to the adminusers table with
+Generate a [bcrypt hash](https://bcrypt-generator.com/), then add it to the adminuser table with, for example:
 
-    INSERT INTO adminusers VALUES ('admin', 'Admin', '[hash]');
+    INSERT INTO adminuser VALUES ('admin', 'Admin', '$2y$12$uIcgKDdPYiiEaYKpWqYFXul1aOJrE3CUnbI/XfxgUhPQUu6u0a/ZC');
+
+This adds an admin user with usernamen "admin" and password "test".
