@@ -107,7 +107,7 @@ def admin_login(s):
             logger.debug('Logging in {} with {}'.format(user.username, user_session.token))
             return resp
         else:
-            flash('Username or password invalid')
+            flash('Username or password invalid', 'danger')
             logging.info('Failed attempt to log in user {}'.format(user.username))
             return redirect('/admin/login', 303)
 
