@@ -40,7 +40,7 @@ def user_from_request(req):
     else:
         info["email"] = req.form["email"].strip()
 
-    if req.form.get("gender", "null") not in ["null", 'M', 'F']:
+    if req.form.get("gender", "") not in ["", 'M', 'F']:
         return (None, "Invalid option for gender")
     else:
         info["gender"] = req.form.get("gender", "null")
@@ -54,7 +54,7 @@ def user_from_request(req):
         elif not student_checksum(info['student_no'][:7], info['student_no'][7]):
             return None, "Student number has valid format but is not a valid number"
 
-        if "year" in req.form:
+        if req.form.get('year'):
             if req.form['year'] == "5+":
                 info['year'] = 5
             else:
@@ -90,7 +90,7 @@ def form(s):
         expiry_future = f"Feb 29th, {curr_year + 2}" if isleap(
             curr_year + 2) else f"Feb 28th, {curr_year + 2}"
         return expiry_today, start_future, expiry_future
-    
+
     stripe_pubkey = os.environ.get('STRIPE_PUBLIC_KEY')
     if request.method == "GET":
         template = lookup.get_template('form.mako')
@@ -118,7 +118,7 @@ def form(s):
             flash(msg, 'danger')
             return redirect('/', 303)
         s.add(user)
-        
+
         if request.form['stripeToken'].strip():
             try:
                 customer = stripe.Customer.create(
@@ -126,7 +126,7 @@ def form(s):
                     email=user.email,
                     metadata={
                         'member_type': user.member_type,
-                        'student_no': user.student_no 
+                        'student_no': user.student_no
                             if user.member_type == 'student' else None
                     },
                     source=request.form['stripeToken'],
@@ -140,12 +140,12 @@ def form(s):
                 )
                 user.paid = charge['id']
                 session['email'] = user.email
-                
+
                 s.flush()
                 s.expunge(user)
                 mailer_queue.put(user)
                 mailchimp_queue.put(user)
-                
+
                 session.pop('form', None)
                 return redirect('/complete', 303)
             except stripe.error.CardError as e:
