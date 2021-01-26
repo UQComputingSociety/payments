@@ -78,42 +78,7 @@
           </div>
         </div>
       </div>
-        ## <div class="control m-t-md radio-buttons-as-buttons">
-        ##   <label class='button'>
-        ##     <input type="radio" value="M" name="gender" />
-        ##     Male
-        ##   </label>
 
-        ##   <label class='button'>
-        ##     <input type="radio" value="F" name="gender" />
-        ##     Female
-        ##   </label>
-
-        ##   <label class='button'>
-        ##     <input type="radio" value="" checked="checked" name="gender"/>
-        ##     Other / Unspecified
-        ##   </label>
-        ## </div>
-
-        ## <div class="btn-group-toggle" data-toggle="buttons">
-        ##   <div class="btn-group w-100">
-        ##     <label class="btn btn-primary">
-        ##       <input name="gender" type="radio" value="M" /> Male
-        ##     </label>
-        ##     <label class="btn btn-primary">
-        ##       <input name="gender" type="radio" value="F" /> Female
-        ##     </label>
-        ##     <label class="btn btn-primary">
-        ##       <input
-        ##         name="gender"
-        ##         type="radio"
-        ##         value="null"
-        ##         data-bind="checked: gender"
-        ##       />
-        ##       Other / Unspecified
-        ##     </label>
-        ##   </div>
-        ## </div>
       <div class="field">
         <label class="label">Are you a current UQ student? <span class="reqstar">*</span></label>
         <div class="control">
@@ -390,17 +355,4 @@ def to_json(d):
       $("input[name=student]:checked").change();
     }, 0);
   }
-</script>
-<script>
-// toggle buttons click implementation
-// see: https://gist.github.com/jipiboily/cfd8494fe174eb2a7f6202220196492a
-const inputs = document.querySelectorAll('.radio-buttons-as-buttons input')
-inputs.forEach(function(element) {
-  element.addEventListener('click', function(event){
-    // remove is-info to the current active button of this group (if there's one)
-    event.target.parentElement.parentElement.querySelectorAll('label').forEach(function(el){el.classList.remove('is-info')})
-    // add is-info to the new active
-    event.target.parentElement.classList.add('is-info')
-  });
-})
 </script>
