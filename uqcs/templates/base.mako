@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Join UQCS 2020</title>
+<title>Join UQCS 2021</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
@@ -13,7 +13,7 @@
 <style type="text/css">
 iframe{display:block;}
 .reqstar{color:red;}
-body{background-image: url('/static/bg.png'); background-repeat: repeat; padding-bottom: 50px;}
+body{background-color: #414141; padding-bottom: 50px;}
 html,body{min-height: 100%}
 .row,.container{min-height: 100%}
 .container{padding-top: 20px;}
