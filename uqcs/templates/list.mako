@@ -2,7 +2,11 @@
 
 <div id="body">
 <h1 class="title">All Members</h1>
+<div class="buttons">
 <button class="button is-link" onclick="window.location.reload()">Refresh</button>
+<a href="/admin/accept" class="button is-link">Unpaid</a>
+</div>
+
 <p class="my-4">
   Registered: ${members.count()}<br/>
   Paid: ${paid.count()}
