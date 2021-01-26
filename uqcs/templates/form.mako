@@ -11,21 +11,11 @@
       <h1 class="title my-5">2021 Registration</h1>
     </div>
 
-    <div class="flash">
-      % for category, msg in get_msgs(with_categories=True):
-      <div class="alert alert-${category} alert-dismissible" role="alert">
-        <button
-          type="button"
-          class="close"
-          data-dismiss="alert"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-        ${msg}
+    % for category, msg in get_msgs(with_categories=True):
+      <div class="message is-${category}" role="alert">
+        <div class="message-body">${msg}</div>
       </div>
-      % endfor
-    </div>
+    % endfor
 
     <form method="POST" id="fullForm" action="/" name="payForm">
       <div class="field">
