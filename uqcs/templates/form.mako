@@ -72,8 +72,8 @@
               <option value="">(unspecified)</option>
               <option value="M">Male</option>
               <option value="F">Female</option>
-              <option value="NB">Non-binary</option>
-              <option value="O">Other</option>
+              ## <option value="NB">Non-binary</option>
+              ## <option value="O">Other</option>
             </select>
           </div>
         </div>
