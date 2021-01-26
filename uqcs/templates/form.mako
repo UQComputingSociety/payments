@@ -4,22 +4,13 @@
 
 </% block>
 
-<div class="row justify-content-md-center">
-  <div id="body" class="col-sm-12 col-md-9 col-lg-5">
-    <div id="header" class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        <img id="logo" class="col-8" src="/static/Full-White.svg"/>
-      </div>
-      <div class="row justify-content-center align-items-center">
-        <h2 
-          class="col-12 text-center"
-          style="margin:0; line-height:1;"
-        >
-          2021 Registration
-        </h2>
-      </div>
+<div class="columns is-centered is-mobile">
+  <div id="body" class="column" style="max-width: 450px;">
+    <div id="header" class="my-1">
+      <img id="logo" src="/static/Full-White.svg"/>
+      <h1 class="title my-5">2021 Registration</h1>
     </div>
-    
+
     <div class="flash">
       % for category, msg in get_msgs(with_categories=True):
       <div class="alert alert-${category} alert-dismissible" role="alert">
@@ -35,168 +26,202 @@
       </div>
       % endfor
     </div>
+
     <form method="POST" id="fullForm" action="/" name="payForm">
-      <div class="form-group">
-        <label for="fnameInput">First Name <span class="reqstar">*</span></label>
+      <div class="field">
+        <label class="label" for="fnameInput">First Name <span class="reqstar">*</span></label>
+        <div class="control">
         <input
           type="text"
-          class="form-control"
+          class="input"
           id="fnameInput"
           placeholder="Alex"
           name="fname"
           required="required"
         />
+        </div>
       </div>
-      <div class="form-group">
-        <label for="lnameInput">Last Name <span class="reqstar">*</span></label>
+      <div class="field">
+        <label class="label" for="lnameInput">Last Name <span class="reqstar">*</span></label>
+        <div class="control">
         <input
           type="text"
-          class="form-control"
+          class="input"
           id="lnameInput"
           placeholder="Smith"
           name="lname"
           required="required"
         />
+        </div>
       </div>
-      <div class="form-group">
-        <label for="emailInput"
+      <div class="field">
+        <label class="label" for="emailInput"
           >Email Address <span class="reqstar">*</span></label
         >
+        <div class="control">
         <input
           name="email"
           type="email"
-          class="form-control"
+          class="input"
           id="emailInput"
           placeholder="a.smith@example.com"
           required="required"
         />
-        <p class="form-text text-muted">Valid UQ student email formats are:
+        </div>
+        <p class="help">Valid UQ student email formats are:
           <span style="white-space: nowrap;">first.last@uqconnect.edu.au</span>,
           <span style="white-space: nowrap;">first.last@uq.net.au</span>,
           <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
         </p>
       </div>
-      <div class="form-group">
-        <label>Gender</label><br />
-        <div class="btn-group-toggle" data-toggle="buttons">
-          <div class="btn-group w-100">
-            <label class="btn btn-primary"> 
-              <input name="gender" type="radio" value="M" /> Male 
-            </label>
-            <label class="btn btn-primary">
-              <input name="gender" type="radio" value="F" /> Female
-            </label>
-            <label class="btn btn-primary">
-              <input
-                name="gender"
-                type="radio"
-                value="null"
-                data-bind="checked: gender"
-              />
-              Other / Unspecified
-            </label>
+      <div class="field">
+        <label class="label">Gender</label>
+        <div class="control">
+          <div class="select">
+            <select name="gender">
+              <option value="">(unspecified)</option>
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+              <option value="NB">Non-binary</option>
+              <option value="O">Other</option>
+            </select>
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <label>Are you a current UQ student? <span class="reqstar">*</span></label> <br />
-        <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
-          <label class="btn btn-primary">
-            <input type="radio" value="on" name="student" required id="studentCheckbox"/>
+        ## <div class="control m-t-md radio-buttons-as-buttons">
+        ##   <label class='button'>
+        ##     <input type="radio" value="M" name="gender" />
+        ##     Male
+        ##   </label>
+
+        ##   <label class='button'>
+        ##     <input type="radio" value="F" name="gender" />
+        ##     Female
+        ##   </label>
+
+        ##   <label class='button'>
+        ##     <input type="radio" value="" checked="checked" name="gender"/>
+        ##     Other / Unspecified
+        ##   </label>
+        ## </div>
+
+        ## <div class="btn-group-toggle" data-toggle="buttons">
+        ##   <div class="btn-group w-100">
+        ##     <label class="btn btn-primary">
+        ##       <input name="gender" type="radio" value="M" /> Male
+        ##     </label>
+        ##     <label class="btn btn-primary">
+        ##       <input name="gender" type="radio" value="F" /> Female
+        ##     </label>
+        ##     <label class="btn btn-primary">
+        ##       <input
+        ##         name="gender"
+        ##         type="radio"
+        ##         value="null"
+        ##         data-bind="checked: gender"
+        ##       />
+        ##       Other / Unspecified
+        ##     </label>
+        ##   </div>
+        ## </div>
+      <div class="field">
+        <label class="label">Are you a current UQ student? <span class="reqstar">*</span></label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="student" value="on">
             Yes
           </label>
-          <label class="btn btn-primary">
-            <!-- Using radio buttons to emulate a checkbox. 
-              Server treats empty strings as false. -->
-            <input type="radio" value="" name="student" required/>
+          <label class="radio">
+            <input type="radio" name="student" value="">
             No
           </label>
         </div>
       </div>
-      <div id="student-form-section" style="display: none;">
-        <div class="form-group">
-          <label for="student-no"
+
+      <div id="student-form-section" class="block" style="display: none;">
+        <div class="field">
+          <label class="label" for="student-no"
             >Student Number <span class="reqstar">*</span></label
           >
           <input
             type="text"
             name="student-no"
-            class="form-control"
+            class="control input"
             id="studentNo"
             placeholder="42345678"
           />
-          <p class="form-text text-muted">8 digits, no 's'.</p>
+          <p class="help">8 digits, no 's'.</p>
         </div>
-        <div class="form-group">
-          <label>Domestic or International</label> <br />
-          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
-            <label class="btn btn-primary">
-              <input type="radio" value="domestic" name="domORint" /> Domestic
+
+        <div class="field">
+          <label class="label">Study Details</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="domORint" value="domestic">
+              Domestic
             </label>
-            <label class="btn btn-primary">
-              <input type="radio" value="international" name="domORint" />
+            <label class="radio">
+              <input type="radio" name="domORint" value="international">
               International
             </label>
           </div>
         </div>
-        <div class="form-group">
-          <label>Degree Type</label> <br />
-          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
-            <label class="btn btn-primary">
-              <input type="radio" value="undergrad" name="degreeType" />
+
+        <div class="field">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="degreeType" value="undergrad">
               Undergraduate
             </label>
-            <label class="btn btn-primary">
-              <input type="radio" value="postgrad" name="degreeType" /> 
+            <label class="radio">
+              <input type="radio" name="degreeType" value="postgrad">
               Postgraduate
             </label>
           </div>
         </div>
-        <div class="form-group">
-          <label>Degree&thinsp;/&thinsp;Program</label>
+
+        <div class="field">
+          <label class="label">Degree&thinsp;/&thinsp;Program</label>
           <input
             type="text"
             id="degreeInput"
             name="degreeInput"
-            class="form-control"
+            class="input control"
             placeholder="Search keywords, e.g. &quot;comp sci, engineering&quot;"
           />
         </div>
-        <div class="form-group">
-          <label>Major</label>
+
+        <div class="field">
+          <label class="label">Major</label>
           <input
             type="text"
             id="majorInput"
             name="majorInput"
-            class="form-control"
+            class="input control"
             placeholder="Leave blank if undeclared"
           />
         </div>
         <input type="hidden" id="degree" name="degree">
-        
-        <div class="form-group">
-          <label>Year</label> <br />
-          <div class="btn-group btn-group-toggle wide-buttons" data-toggle="buttons">
-            <label class="btn btn-primary">
-              <input type="radio" name="year" value="1" /> 1
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="year" value="2" /> 2
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="year" value="3" /> 3
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="year" value="4" /> 4
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="year" value="5" /> 5+
-            </label>
+
+        <div class="field">
+          <label class="label">Year</label>
+          <div class="control">
+            <div class="select">
+              <select name="year">
+                <option value="">(unspecified)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5+</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
+
       <input type="hidden" name="stripeToken" value="" id="stripeToken" />
-      
+
       <!-- First hidden, disabled submit button prevents submission on Enter. -->
       <input type="submit" disabled style="display: none" aria-hidden="true" />
 
@@ -209,33 +234,20 @@
         id="submitbtn"
         style="display:none;"
       />
-      
-      <div class="btn-toolbar justify-content-between my-4">
-        <input 
-          style="width: 49%;"
-          class="btn btn-info btn-lg" 
-          name="submit" 
-          type="submit" 
-          id="payonline_submit"
-          value="Pay online"
-        />
-        <input 
-          style="width: 49%;"
-          class="btn btn-info btn-lg"
-          name="submission" 
-          type="submit" 
-          value="Pay in person"
-        />
+
+      <div class="buttons wide mb-1">
+        <button id="payonline_submit" type="submit" class="button is-link"><b>Pay online</b></button>
+        <button type="submit" class="button is-link"><b>Pay in person</b></button>
       </div>
 
     </form>
 
-    <p class="text-muted">
-      Membership is <b>$5</b> for one year. 
-      Online card payments have a <b>40c</b> surcharge. 
+    <p class="help">
+      Membership is <b>$5</b> for one year.
+      Online card payments have a <b>40c</b> surcharge.
       In person card payments have a <b>10c</b> surcharge.
     </p>
-    <p class="text-muted">
+    <p class="help">
       Membership expires at the end of February of the <i>next</i> calendar year
       (${expiry_today}).
       <!-- Membership purchased from ${start_future} will expire on ${expiry_future}. -->
@@ -282,11 +294,11 @@
 </script>
 <style>
 /* some styles lifted from Bootstrap */
-.autocomplete-suggestions { border: 1px solid #222; border-radius: 0.25rem; background: #FFF; overflow: auto; }
+.autocomplete-suggestions { border: 1px solid #222; background: #FFF; overflow: auto; }
 .autocomplete-suggestion { cursor: pointer; }
 .autocomplete-suggestion, .autocomplete-no-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; color: black; height: calc(1.5em + 0.75rem + 2px); padding: 0.375rem 0.75rem; line-height: 1.5}
 .autocomplete-selected { background: #F0F0F0; }
-.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-suggestions strong { color: #50C3F0; }
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 </style>
@@ -388,4 +400,17 @@ def to_json(d):
       $("input[name=student]:checked").change();
     }, 0);
   }
+</script>
+<script>
+// toggle buttons click implementation
+// see: https://gist.github.com/jipiboily/cfd8494fe174eb2a7f6202220196492a
+const inputs = document.querySelectorAll('.radio-buttons-as-buttons input')
+inputs.forEach(function(element) {
+  element.addEventListener('click', function(event){
+    // remove is-info to the current active button of this group (if there's one)
+    event.target.parentElement.parentElement.querySelectorAll('label').forEach(function(el){el.classList.remove('is-info')})
+    // add is-info to the new active
+    event.target.parentElement.classList.add('is-info')
+  });
+})
 </script>

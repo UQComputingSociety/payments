@@ -12,13 +12,14 @@
 <link rel="stylesheet" href="//static.uqcs.org/bulma/main.css">
 <style type="text/css">
 .reqstar{color:red;}
-body{background-color: #414141; padding-bottom: 50px;}
+body{color: white; background-color: #414141;}
 html,body{min-height: 100vh}
 #unpaid-members td {vertical-align:middle;}
-#body{color: white;min-height:100%;}
-#header{margin-bottom:40px;margin-top:20px;}
-#logo{width: 200px;margin-bottom:20px;margin-top:20px;}
+#logo{width: 200px;}
 hr{border-top:1px solid white;}
+.title,.label,.radio:hover{color: white;}
+.buttons.wide{width: 100%; display: flex;}
+.buttons.wide .button{flex: 1;}
 </style>
 
 <%block name="head_extra">
@@ -29,7 +30,9 @@ hr{border-top:1px solid white;}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" integrity="sha256-Tjl7WVgF1hgGMgUKZZfzmxOrtoSf8qltZ9wMujjGNQk=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <section class="section">
+<div class="container">
 ${next.body()}
+</div>
 </section>
 </body>
 </html>
