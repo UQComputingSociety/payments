@@ -67,7 +67,7 @@
       <div class="field">
         <label class="label">Gender</label>
         <div class="control">
-          <div class="select">
+          <div class="select wide">
             <select name="gender">
               <option value="">(unspecified)</option>
               <option value="M">Male</option>
@@ -196,7 +196,7 @@
         <div class="field">
           <label class="label">Year</label>
           <div class="control">
-            <div class="select">
+            <div class="select wide">
               <select name="year">
                 <option value="">(unspecified)</option>
                 <option value="1">1</option>

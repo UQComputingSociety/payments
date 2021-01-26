@@ -22,6 +22,7 @@ hr{border-top:1px solid white;}
 .buttons.wide .button{flex: 1;}
 .table,.table thead th{background-color: inherit;color: inherit;}
 .table.is-striped tbody tr:not(.is-selected):nth-child(even){background-color: rgba(255, 255, 255, 0.075);}
+.select.wide,.select.wide>select{ width:100%; }
 </style>
 
 <%block name="head_extra">
