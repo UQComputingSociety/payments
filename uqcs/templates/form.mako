@@ -8,12 +8,14 @@
   <div id="body" class="col-sm-12 col-md-9 col-lg-5">
     <div id="header" class="container-fluid">
       <div class="row justify-content-center align-items-center">
-        <img id="logo" class="col-lg-4 col-xl-5" src="/static/logo-blue-outline.svg"/>
+        <img id="logo" class="col-8" src="/static/Full-White.svg"/>
+      </div>
+      <div class="row justify-content-center align-items-center">
         <h2 
-          class="col-sm-12 col-lg-8 col-xl-7 text-center"
+          class="col-12 text-center"
           style="margin:0; line-height:1;"
         >
-          UQCS 2020 Registration
+          2021 Registration
         </h2>
       </div>
     </div>

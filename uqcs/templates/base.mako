@@ -11,6 +11,8 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/static/bootstrap.min.css">
 <style type="text/css">
+@import url('https://rsms.me/inter/inter.css');
+html, body { font-family: 'Inter', sans-serif; }
 iframe{display:block;}
 .reqstar{color:red;}
 body{background-color: #414141; padding-bottom: 50px;}
