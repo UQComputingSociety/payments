@@ -20,6 +20,8 @@ hr{border-top:1px solid white;}
 .title,.label,.radio:hover{color: white;}
 .buttons.wide{width: 100%; display: flex;}
 .buttons.wide .button{flex: 1;}
+.table,.table thead th{background-color: inherit;color: inherit;}
+.table.is-striped tbody tr:not(.is-selected):nth-child(even){background-color: rgba(255, 255, 255, 0.075);}
 </style>
 
 <%block name="head_extra">
