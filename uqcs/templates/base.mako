@@ -23,6 +23,7 @@ hr{border-top:1px solid white;}
 .table,.table thead th{background-color: inherit;color: inherit;}
 .table.is-striped tbody tr:not(.is-selected):nth-child(even){background-color: rgba(255, 255, 255, 0.075);}
 .select.wide,.select.wide>select{ width:100%; }
+#student-form-section{ transition: opacity 250ms linear; }
 </style>
 
 <%block name="head_extra">
@@ -30,8 +31,6 @@ hr{border-top:1px solid white;}
 
 </head>
 <body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" integrity="sha256-Tjl7WVgF1hgGMgUKZZfzmxOrtoSf8qltZ9wMujjGNQk=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <section class="section">
 <div class="container">
 ${next.body()}
