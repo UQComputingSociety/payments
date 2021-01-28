@@ -145,6 +145,9 @@
             placeholder="Search keywords, e.g. &quot;comp sci, engineering&quot;"
           />
         </div>
+        <div class="autoComplete_wrapper">
+          <input id="test" type="text" tabindex="1">
+        </div>
 
         <div class="field">
           <label class="label">Major</label>
@@ -209,7 +212,9 @@
     </p>
   </div>
 </div>
-<script src="https://checkout.stripe.com/checkout.js"></script>
+## <script src="https://checkout.stripe.com/checkout.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/8.2.3/css/autoComplete.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/8.2.3/js/autoComplete.min.js"></script>
 <script src="/static/form.js"></script>
 <style>
 /* some styles lifted from Bootstrap */
