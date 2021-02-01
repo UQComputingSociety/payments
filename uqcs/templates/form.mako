@@ -1,7 +1,17 @@
 <%inherit file="base.mako"/>
 
 <%block name="head_extra">
-
+<style>
+.autocomplete-suggestions { border: 1px solid #222; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { cursor: pointer; }
+.autocomplete-suggestion, .autocomplete-no-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; color: black; height: calc(1.5em + 0.75rem + 2px); padding: 0.375rem 0.75rem; line-height: 1.5}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { color: #50C3F0; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.10/jquery.autocomplete.min.js" integrity="sha256-xv9tRiSlyBQMvBkQeqNyojOQf45uTVXQAtIMrmgqV18=" crossorigin="anonymous"></script>
 </% block>
 
 <div class="columns is-centered is-mobile">
@@ -140,14 +150,12 @@
           <input
             type="text"
             id="degreeInput"
-            name="degreeInput"
-            class="input control"
+            name="degree"
+            class="input"
             placeholder="Search keywords, e.g. &quot;comp sci, engineering&quot;"
           />
         </div>
-        <div class="autoComplete_wrapper">
-          <input id="test" type="text" tabindex="1">
-        </div>
+
 
         <div class="field">
           <label class="label">Major</label>
@@ -159,7 +167,6 @@
             placeholder="Leave blank if undeclared"
           />
         </div>
-        <input type="hidden" id="degree" name="degree">
 
         <div class="field">
           <label class="label">Year</label>
@@ -212,60 +219,4 @@
     </p>
   </div>
 </div>
-## <script src="https://checkout.stripe.com/checkout.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/8.2.3/css/autoComplete.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tarekraafat-autocomplete.js/8.2.3/js/autoComplete.min.js"></script>
 <script src="/static/form.js"></script>
-<style>
-/* some styles lifted from Bootstrap */
-.autocomplete-suggestions { border: 1px solid #222; background: #FFF; overflow: auto; }
-.autocomplete-suggestion { cursor: pointer; }
-.autocomplete-suggestion, .autocomplete-no-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; color: black; height: calc(1.5em + 0.75rem + 2px); padding: 0.375rem 0.75rem; line-height: 1.5}
-.autocomplete-selected { background: #F0F0F0; }
-.autocomplete-suggestions strong { color: #50C3F0; }
-.autocomplete-group { padding: 2px 5px; }
-.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
-</style>
-## <script>
-##   let degreeType;
-##   $("input[name=degreeType]").change(function(e) {
-##     const selected = $("input[name=degreeType]:checked")[0];
-##     degreeType = selected ? selected.value : null;
-##   });
-##   fetch('/static/programs.json')
-##     .then(response => {
-##       // check for HTTP error response codes.
-##       if (!response.ok) throw new Error('error loading degrees: ' + response.statusText);
-##       return response.json();
-##     })
-##     .then(degrees => {
-##       $('#degreeInput').autocomplete({
-##         lookup: degrees,
-##         showNoSuggestionNotice: true,
-##         noSuggestionNotice: 'No suggestions, please enter manually.',
-##         lookupFilter: function (suggestion, query, queryLowerCase) {
-##           if (degreeType && suggestion.data != degreeType)
-##             return false; // if degree type (under/postgrad) doesn't match, omit.
-##           const s = suggestion.value.toLowerCase();
-##           // split by space, remove non-alpha, to get tokens.
-##           // then filters out tokens which DO appear in this suggestion.
-##           return queryLowerCase.split(' ')
-##             .map(q => q.replace(/[^a-z]/g, ''))
-##             .filter(q => q.length && s.indexOf(q) == -1).length == 0;
-##         }
-##       });
-##     })
-##     .catch(error => {
-##       // hide help text if loading failed.
-##       $('#degreeInput').attr('placeholder', '');
-##       throw error;
-##     });
-##   $('#fullForm').submit(function(ev) {
-##     // fudge together combined degree field from degree name and major.
-##     const major = $('#majorInput').val().trim();
-##     let degree = $('#degreeInput').val().trim();
-##     if (major)
-##       degree = degree + ' (' + major + ')';
-##     $('#degree').val(degree);
-##   });
-## </script>
