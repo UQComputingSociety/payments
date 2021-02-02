@@ -6,12 +6,13 @@ The online membership form for the [UQ Computing Society](https://uqcs.org.au).
 ## Params
 
 ### Env Vars
- - `MAILCHIMP_USERNAME` 
+ - `MAILCHIMP_USERNAME`
  - `MAILCHIMP_KEY`
  - `MAILCHIMP_LIST_ID`
- - `STRIPE_API_KEY` 
- - `STRIPE_PUBLIC_KEY` 
- - `MAILGUN_API_KEY` 
+ - `STRIPE_API_KEY`
+ - `STRIPE_PUBLIC_KEY`
+ - `STRIPE_PRICE_ID`
+ - `MAILGUN_API_KEY`
  - `APP_SECRET_KEY`
 
 API keys can be found in these places:
@@ -30,7 +31,7 @@ API keys can be found in these places:
        CREATE DATABASE uqcs;
 
 4. Load the UUID extension in this database:
- 
+
        \connect uqcs
        CREATE EXTENSION "uuid-ossp";
 
@@ -41,11 +42,11 @@ API keys can be found in these places:
 3. Using Python 3, run:
 
        python setup.py install --user
-       
+
 4. Run the signup form with
 
        python -m uqcs [database] [host]
-       
+
     where [database] is a [SQLAlchemy database string](https://docs.sqlalchemy.org/13/core/engines.html#database-urls) and [host] is the IP to bind to. For example,
 
        python -m uqcs postgresql://postgres:password@localhost:5432/uqcs localhost
