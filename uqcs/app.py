@@ -135,7 +135,6 @@ def form_post(s):
         return jsonify(errors=errors)
     s.add(user)
     s.flush()
-    s.expunge(user)
 
     session['email'] = user.email
     return jsonify(success=True, email=user.email)
@@ -159,9 +158,10 @@ def complete(s):
             checkout_id, expand=['payment_intent'])
         charge_id = checkout.payment_intent.charges.data[0].id
 
-        mailer_queue.put(user)
-        mailchimp_queue.put(user)
         user.paid = charge_id
         s.flush()
+        s.expunge(user)
+        mailer_queue.put(user)
+        mailchimp_queue.put(user)
 
     return lookup.get_template("complete.mako").render(member=user)
