@@ -11,6 +11,7 @@ def get_program_name(program):
 
     if 'units)' in name:
         name = name.split(' (')[0]
+    if type == 'Masters': type = 'Master'
     return f'{type} of {name}'
 
 def format_data(data):
