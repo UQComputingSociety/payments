@@ -140,26 +140,6 @@ def form_post(s):
     session['email'] = user.email
     return jsonify(success=True, email=user.email)
 
-    #         user.paid = charge['id']
-    #         session['email'] = user.email
-
-    #         s.flush()
-    #         s.expunge(user)
-    #         mailer_queue.put(user)
-    #         mailchimp_queue.put(user)
-
-    #         session.pop('form', None)
-    #         return redirect('/complete', 303)
-    #     except stripe.error.CardError as e:
-    #         flash(e.message, "danger")
-    #         return redirect('/payment', 303)
-    # else:
-    #     s.flush()
-    #     s.expunge(user)
-    #     mailchimp_queue.put(user)
-    #     session['email'] = user.email
-    #     session.pop('form', None)
-    #     return redirect('/complete', 303)
 
 @app.route("/complete")
 @needs_db
@@ -170,13 +150,18 @@ def complete(s):
         .filter(m.Member.email == session["email"])\
         .one()
 
-    checkout = request.args.get('session')
-    if checkout:
-        print('stripe session', checkout)
+    # if the user has paid via stripe, verify their payment and add them to
+    # relevant queues.
+    checkout_id = request.args.get('checkout')
+    if checkout_id and not user.has_paid():
+
+        checkout = stripe.checkout.Session.retrieve(
+            checkout_id, expand=['payment_intent'])
+        charge_id = checkout.payment_intent.charges.data[0].id
+
         mailer_queue.put(user)
         mailchimp_queue.put(user)
-        user.paid = checkout
+        user.paid = charge_id
         s.flush()
 
-    return lookup.get_template("complete.mako").render(
-        member=user)
+    return lookup.get_template("complete.mako").render(member=user)

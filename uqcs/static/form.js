@@ -116,7 +116,7 @@ function setupForm(stripePublicKey, stripePriceId) {
         }],
         customerEmail: resp.email,
         mode: 'payment',
-        successUrl: origin + '/complete?session={{CHECKOUT_SESSION_ID}}',
+        successUrl: origin + '/complete?checkout={CHECKOUT_SESSION_ID}',
         cancelUrl: origin,
       });
     }
@@ -201,8 +201,8 @@ async function setupAutocomplete() {
 
     const template = `
     <div class="field has-addons">
-      <input class="input control is-expanded" readonly name="majors[]" value="${major}"/>
-      <button class="control button" type="button">&times;</button>
+      <input class="input control is-expanded is-small" readonly name="majors[]" value="${major}"/>
+      <button class="control button is-small" type="button">&times;</button>
     </div>
     `;
     const fragment = document.createRange().createContextualFragment(template);
