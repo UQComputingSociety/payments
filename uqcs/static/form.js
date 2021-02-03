@@ -124,8 +124,9 @@ function setupForm(stripePublicKey, stripePriceId) {
 }
 
 
-function initAutocomplete(inputElement) {
+function initAutocomplete(inputElement, containerClass) {
   return inputElement.autocomplete({
+    containerClass: containerClass,
     lookup: [],
     autoSelectFirst: true,
     // orientation: 'auto',
@@ -149,11 +150,11 @@ function initAutocomplete(inputElement) {
 async function setupAutocomplete() {
   // init autocomplete
   const $degreeInput = jQuery('#degreeInput');
-  const $degreeAutocomplete = initAutocomplete($degreeInput);
+  const $degreeAutocomplete = initAutocomplete($degreeInput, 'autocomplete-suggestions degree');
 
   const majorInput = $('#majorInput');
   const $majorInput = jQuery(majorInput);
-  const $majorAutocomplete = initAutocomplete($majorInput);
+  const $majorAutocomplete = initAutocomplete($majorInput, 'autocomplete-suggestions major');
 
   // load autocomplete data
   const data = await fetch('/static/programs_with_majors.json')
@@ -173,7 +174,7 @@ async function setupAutocomplete() {
     ...data.postgrad,
   };
 
-  const allMajors = Array.from(new Set(Object.values(data).map(Object.values).flat(2))).sort();
+  const allMajors = Array.from(new Set(Object.values(data).map(Object.values).flat(2))).filter(x => x).sort();
 
   $$("input[name=degreeType]").forEach(el => el.addEventListener('change', function(e) {
     const lookup = [];
@@ -184,8 +185,8 @@ async function setupAutocomplete() {
     $degreeAutocomplete.setOptions({lookup})
   }));
 
-  $degreeInput.change(function(e) {
-    const lookup = allData[this.value] || allMajors;
+  majorInput.addEventListener('focus', (ev) => {
+    const lookup = allData[degreeInput.value] || allMajors;
     $majorAutocomplete.setOptions({lookup})
   });
 
@@ -224,7 +225,9 @@ async function setupAutocomplete() {
   majorInput.addEventListener('keyup', (ev) => ev.key === 'Enter' && addMajorAndClear());
 
   // hack because autocomplete library does not handle touchpad clicks properly.
-  jQuery('.autocomplete-suggestions').on('pointerdown', (ev) => {
-    $majorAutocomplete.select(ev.target.dataset.index);
+  jQuery('.autocomplete-suggestion').on('pointerdown', function (ev) {
+    const autocomplete = this.parentElement.classList.contains('degree')
+      ? $degreeAutocomplete : $majorAutocomplete;
+    autocomplete.select(this.dataset.index);
   });
 };
