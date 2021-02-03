@@ -127,26 +127,18 @@ def _check_form(s, form):
         return user, []
 
 
-@app.route("/check", methods=['POST'])
-@needs_db
-def check(s):
-    _, errors = _check_form(s, request.form)
-    return jsonify(errors=errors)
-
 @app.route("/", methods=["POST"])
 @needs_db
 def form_post(s):
     user, errors = _check_form(s, request.form)
     if errors:
-        for msg in errors:
-            flash(msg, 'danger')
-        return redirect('/', 303)
+        return jsonify(errors=errors)
     s.add(user)
     s.flush()
+    s.expunge(user)
 
-    if request.form.get('paymentMethod', 'person') == 'online':
-        session['id'] = user.id
-        return redirect('/checkout', 303)
+    session['email'] = user.email
+    return jsonify(success=True, email=user.email)
 
     #         user.paid = charge['id']
     #         session['email'] = user.email
@@ -169,22 +161,6 @@ def form_post(s):
     #     session.pop('form', None)
     #     return redirect('/complete', 303)
 
-@app.route('/checkout')
-@needs_db
-def checkout(s):
-    id = session.get('id')
-    if not id:
-        return redirect('/', 303)
-    user = s.query(m.Member).filter(m.Member.id == id).one()
-    if user.has_paid():
-        return redirect('/', 303)
-
-    return lookup.get_template('checkout.mako').render(
-        STRIPE_PUBLIC_KEY=STRIPE_PUBLIC_KEY,
-        STRIPE_PRICE_ID=STRIPE_PRICE_ID,
-        id=id
-    )
-
 @app.route("/complete")
 @needs_db
 def complete(s):
@@ -193,5 +169,14 @@ def complete(s):
     user = s.query(m.Member)\
         .filter(m.Member.email == session["email"])\
         .one()
+
+    checkout = request.args.get('session')
+    if checkout:
+        print('stripe session', checkout)
+        mailer_queue.put(user)
+        mailchimp_queue.put(user)
+        user.paid = checkout
+        s.flush()
+
     return lookup.get_template("complete.mako").render(
         member=user)

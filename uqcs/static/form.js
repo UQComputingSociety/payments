@@ -37,7 +37,7 @@ function showFormErrors(messages) {
 
   for (const msg of messages) {
     const template = `
-    <div class="notification is-danger is-light">
+    <div class="notification is-danger is-light is-small">
       <button class="delete" onclick="_deleteParent(this)"></button>
       ${msg}
     </div>`;
@@ -46,7 +46,11 @@ function showFormErrors(messages) {
   }
 }
 
-function setupForm() {
+function setupForm(stripePublicKey, stripePriceId) {
+  if (!stripePublicKey || !stripePriceId) {
+    console.warn('Missing Stripe public key or price ID.');
+  }
+
   $$("input[name=student]").forEach(el => el.addEventListener('change', function (e) {
     const studentForm = $("#student-form-section");
     /** @type {HTMLInputElement} */
@@ -86,22 +90,36 @@ function setupForm() {
     }
 
     const data = new FormData(form);
-    const resp = await fetch('/check', { method: 'POST', body: data });
-    if (!resp.ok) {
-      showFormErrors([`Server error: ${resp.status} ${resp.statusText}`]);
+    const req = await fetch('/', { method: 'POST', body: data });
+    if (!req.ok) {
+      showFormErrors([`Server error: ${req.status} ${req.statusText}`]);
       return;
     }
 
-    const errors = (await resp.json()).errors;
-    if (errors.length) {
-      showFormErrors(errors);
+    const resp = await req.json();
+    if (resp.errors) {
+      showFormErrors(resp.errors);
       return;
     }
 
     const paymentMethod = el.id == 'pay-online' ? 'online' : 'person';
-    $('#payment-method').value = paymentMethod;
+    if (paymentMethod === 'person') {
+      window.location.href = '/complete';
+    } else {
+      const stripe = Stripe(stripePublicKey);
+      const origin = window.location.origin;
 
-    $('#submit').click();
+      stripe.redirectToCheckout({
+        lineItems: [{
+          price: stripePriceId,
+          quantity: 1,
+        }],
+        customerEmail: resp.email,
+        mode: 'payment',
+        successUrl: origin + '/complete?session={{CHECKOUT_SESSION_ID}}',
+        cancelUrl: origin,
+      });
+    }
   }));
 }
 
@@ -190,7 +208,7 @@ async function setupAutocomplete() {
     const fragment = document.createRange().createContextualFragment(template);
 
     const el = majorInput.insertAdjacentElement('beforebegin', fragment.firstElementChild);
-    el.querySelector('button').addEventListener('click', () => removeElement(el));
+    el.querySelector('button').addEventListener('click', () => _deleteElement(el));
   }
 
   function addMajorAndClear(value) {

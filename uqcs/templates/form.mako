@@ -1,7 +1,19 @@
 <%inherit file="base.mako"/>
 
 <%block name="head_extra">
-
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js" integrity="sha512-uxCwHf1pRwBJvURAMD/Gg0Kz2F2BymQyXDlTqnayuRyBFE7cisFCh2dSb1HIumZCRHuZikgeqXm8ruUoaxk5tA==" crossorigin="anonymous"></script>
+<style>
+/* some styles lifted from Bootstrap */
+.autocomplete-suggestions { border: 1px solid #222; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { cursor: pointer; }
+.autocomplete-suggestion, .autocomplete-no-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; color: black; height: calc(1.5em + 0.75rem + 2px); padding: 0.375rem 0.75rem; line-height: 1.5}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { color: #50C3F0; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+</style>
 </% block>
 
 <div class="columns is-centered is-mobile">
@@ -178,21 +190,6 @@
       <!-- First hidden, disabled submit button prevents submission on Enter. -->
       <input type="submit" disabled style="display: none" aria-hidden="true" />
 
-      <!-- This hidden button is clicked after successful form validation. -->
-      <input
-        type="submit"
-        id="submit"
-        style="display:none;"
-      />
-
-      <!-- Used to communicate payment method to server. Set in Javascript. -->
-      <input
-        type="text"
-        id="payment-method"
-        name="paymentMethod"
-        style="display: none;"
-      />
-
       <div class="buttons wide mb-1">
         <button id="pay-online" type="button" class="button is-link"><b>Pay online</b></button>
         <button id="pay-person" type="button" class="button is-link"><b>Pay in person</b></button>
@@ -214,6 +211,6 @@
 </div>
 <script src="/static/form.js"></script>
 <script>
-setupForm();
+setupForm("${STRIPE_PUBLIC_KEY}", "${STRIPE_PRICE_ID}");
 setupAutocomplete();
 </script>
