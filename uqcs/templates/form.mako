@@ -105,7 +105,7 @@
         </div>
       </div>
 
-      <div id="student-form-section" class="block" style="display: none;">
+      <div id="student-form-section" class="block" style="display: none; opacity: 0;">
         <div class="field">
           <label class="label" for="student-no"
             >Student Number <span class="reqstar">*</span></label
@@ -152,11 +152,12 @@
           <input
             type="text"
             id="degreeInput"
-            name="degreeInput"
-            class="input control"
+            name="degree"
+            class="input"
             placeholder="Search keywords, e.g. &quot;comp sci, engineering&quot;"
           />
         </div>
+
 
         <div class="field">
           <label class="label">Major(s)</label>
@@ -168,7 +169,6 @@
             placeholder="Leave blank if undeclared"
           />
         </div>
-        <input type="hidden" id="degree" name="degree">
 
         <div class="field">
           <label class="label">Year</label>
