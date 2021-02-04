@@ -18,11 +18,10 @@ html,body{min-height: 100vh}
 #logo{width: 200px;}
 hr{border-top:1px solid white;}
 .title,.label,.radio:hover{color: white;}
-.buttons.wide{width: 100%; display: flex;}
-.buttons.wide .button{flex: 1;}
 .table,.table thead th{background-color: inherit;color: inherit;}
 .table.is-striped tbody tr:not(.is-selected):nth-child(even){background-color: rgba(255, 255, 255, 0.075);}
 .select.wide,.select.wide>select{ width:100%; }
+.field.is-grouped.is-equal-width > .control {flex-basis: 1px;}
 #student-form-section{ transition: opacity 250ms linear; }
 </style>
 

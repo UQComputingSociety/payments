@@ -43,12 +43,12 @@ def user_from_request(form):
     else:
         info["email"] = form["email"].strip()
 
-    if form.get("gender", None) not in [None, 'M', 'F']:
+    if form.get("gender", '') not in ['', 'M', 'F', 'NB', 'O']:
         return (None, "Invalid option for gender")
     else:
-        info["gender"] = form.get("gender", "null")
-        if info["gender"] == "null":
-            info["gender"] = None
+        info["gender"] = form.get("gender", None) or None
+
+    info["gender_text"] = form.get("gender_text", "")[:100]
 
     if form.get("student", False):
         info['student_no'] = form["student-no"]
