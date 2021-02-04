@@ -77,6 +77,8 @@ def user_from_request(form):
             info["undergrad"] = form['degreeType'].lower() == 'undergrad'
         if 'degree' in form:
             info['program'] = form['degree'][:100]
+        if 'majors' in form:
+            info['majors'] = '|'.join(form.getlist('majors'))[:1000]
         return m.Student(**info), "Success"
     else:
         return m.Member(**info), "Success"

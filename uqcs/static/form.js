@@ -197,12 +197,12 @@ async function setupAutocomplete() {
   function addMajor(major) {
     major = major.trim();
     if (!major) return;
-    document.querySelectorAll(`input[name="majors[]"][value="${major}"]`)
+    document.querySelectorAll(`input[name="majors"][value="${major}"]`)
       .forEach(_deleteParent);
 
     const template = `
     <div class="field has-addons">
-      <input class="input control is-expanded is-small" readonly name="majors[]" value="${major}"/>
+      <input class="input control is-expanded is-small" readonly name="majors" value="${major}"/>
       <button class="control button is-small" type="button">&times;</button>
     </div>
     `;

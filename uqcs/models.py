@@ -69,6 +69,7 @@ class Student(Member):
     domestic = Column(Boolean)
     year = Column(Integer)
     program = Column(String(100))
+    majors = Column(String(1000))
     undergrad = Column(Boolean)
 
     __mapper_args__ = {
