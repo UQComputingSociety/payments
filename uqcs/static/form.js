@@ -6,39 +6,6 @@ const $ = (x) => document.querySelector(x);
 /** @type {function(string): NodeListOf<HTMLElement>} */
 const $$ = (x) => document.querySelectorAll(x);
 
-const STRIPE_PUBLIC_KEY = "${STRIPE_PUBLIC_KEY}";
-
-function setupStripe() {
-  var handler = StripeCheckout.configure({
-    key: STRIPE_PUBLIC_KEY,
-    locale: "auto",
-    token: function (token) {
-      $("#stripeToken").value = token.id;
-      $("#submitbtn").click();
-    },
-  });
-
-  $("#payonline_submit").addEventListener("click", function (e) {
-    e.preventDefault();
-    var form = $("#fullForm");
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-    handler.open({
-      name: "UQCS",
-      description: "2020 Membership",
-      currency: "aud",
-      amount: 540,
-      email: $("#emailInput").value,
-    });
-  });
-
-  window.addEventListener('popstate', function () {
-    handler.close();
-  });
-}
-
 
 function validId(id) {
   if (id.length !== 8) {
@@ -55,7 +22,35 @@ function validId(id) {
   return validFormat && validValue;
 }
 
-function setupForm() {
+function _deleteElement(el) {
+  el.parentElement.removeChild(el);
+}
+
+function _deleteParent(el) {
+  _deleteElement(el.parentElement)
+}
+
+function showFormErrors(messages) {
+  const header = $('#header');
+
+  $$('.notification').forEach(_deleteElement);
+
+  for (const msg of messages) {
+    const template = `
+    <div class="notification is-danger is-light is-small">
+      <button class="delete" onclick="_deleteParent(this)"></button>
+      ${msg}
+    </div>`;
+    const fragment = document.createRange().createContextualFragment(template);
+    header.insertAdjacentElement('afterend', fragment.firstElementChild);
+  }
+}
+
+function setupForm(stripePublicKey, stripePriceId) {
+  if (!stripePublicKey || !stripePriceId) {
+    console.warn('Missing Stripe public key or price ID.');
+  }
+
   $$("input[name=student]").forEach(el => el.addEventListener('change', function (e) {
     const studentForm = $("#student-form-section");
     /** @type {HTMLInputElement} */
@@ -75,7 +70,6 @@ function setupForm() {
   function checkId() {
     let field = document.getElementById("studentNo");
     let id = document.getElementById("studentNo").value;
-    console.log(id);
     if (validId(id)) {
       field.setCustomValidity("");
     } else {
@@ -87,14 +81,55 @@ function setupForm() {
   }
 
   document.getElementById("studentNo").onchange = checkId;
+
+  const form = $('#fullForm');
+  $$('#pay-online, #pay-person').forEach(el => el.addEventListener('click', async () => {
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const data = new FormData(form);
+    const req = await fetch('/', { method: 'POST', body: data });
+    if (!req.ok) {
+      showFormErrors([`Server error: ${req.status} ${req.statusText}`]);
+      return;
+    }
+
+    const resp = await req.json();
+    if (resp.errors) {
+      showFormErrors(resp.errors);
+      return;
+    }
+
+    const paymentMethod = el.id == 'pay-online' ? 'online' : 'person';
+    if (paymentMethod === 'person') {
+      window.location.href = '/complete';
+    } else {
+      const stripe = Stripe(stripePublicKey);
+      const origin = window.location.origin;
+
+      stripe.redirectToCheckout({
+        lineItems: [{
+          price: stripePriceId,
+          quantity: 1,
+        }],
+        customerEmail: resp.email,
+        mode: 'payment',
+        successUrl: origin + '/complete?checkout={CHECKOUT_SESSION_ID}',
+        cancelUrl: origin,
+      });
+    }
+  }));
 }
 
 
-function initAutocomplete(inputElement) {
+function initAutocomplete(inputElement, containerClass) {
   return inputElement.autocomplete({
+    containerClass: containerClass,
     lookup: [],
     autoSelectFirst: true,
-    orientation: 'auto',
+    // orientation: 'auto',
     showNoSuggestionNotice: true,
     noSuggestionNotice: 'No suggestions, please enter manually.',
     lookupLimit: 10,
@@ -115,11 +150,11 @@ function initAutocomplete(inputElement) {
 async function setupAutocomplete() {
   // init autocomplete
   const $degreeInput = jQuery('#degreeInput');
-  const $degreeAutocomplete = initAutocomplete($degreeInput);
+  const $degreeAutocomplete = initAutocomplete($degreeInput, 'autocomplete-suggestions degree');
 
   const majorInput = $('#majorInput');
   const $majorInput = jQuery(majorInput);
-  const $majorAutocomplete = initAutocomplete($majorInput);
+  const $majorAutocomplete = initAutocomplete($majorInput, 'autocomplete-suggestions major');
 
   // load autocomplete data
   const data = await fetch('/static/programs_with_majors.json')
@@ -139,7 +174,7 @@ async function setupAutocomplete() {
     ...data.postgrad,
   };
 
-  const allMajors = Array.from(new Set(Object.values(data).map(Object.values).flat(2))).sort();
+  const allMajors = Array.from(new Set(Object.values(data).map(Object.values).flat(2))).filter(x => x).sort();
 
   $$("input[name=degreeType]").forEach(el => el.addEventListener('change', function(e) {
     const lookup = [];
@@ -150,34 +185,31 @@ async function setupAutocomplete() {
     $degreeAutocomplete.setOptions({lookup})
   }));
 
-  $degreeInput.change(function(e) {
-    const lookup = allData[this.value] || allMajors;
+  majorInput.addEventListener('focus', (ev) => {
+    const lookup = allData[degreeInput.value] || allMajors;
     $majorAutocomplete.setOptions({lookup})
   });
 
   $degreeAutocomplete.setOptions({lookup: [...Object.keys(data.undergrad), ...Object.keys(data.postgrad)]});
   $majorAutocomplete.setOptions({lookup: allMajors});
 
-  function removeElement(el) {
-    el.parentElement.removeChild(el);
-  }
 
   function addMajor(major) {
     major = major.trim();
     if (!major) return;
     document.querySelectorAll(`input[name="majors[]"][value="${major}"]`)
-      .forEach(el => removeElement(el.parentElement));
+      .forEach(_deleteParent);
 
     const template = `
     <div class="field has-addons">
-      <input class="input control is-expanded" readonly name="majors[]" value="${major}"/>
-      <button class="control button" type="button">&times;</button>
+      <input class="input control is-expanded is-small" readonly name="majors[]" value="${major}"/>
+      <button class="control button is-small" type="button">&times;</button>
     </div>
     `;
     const fragment = document.createRange().createContextualFragment(template);
 
     const el = majorInput.insertAdjacentElement('beforebegin', fragment.firstElementChild);
-    el.querySelector('button').addEventListener('click', () => removeElement(el));
+    el.querySelector('button').addEventListener('click', () => _deleteElement(el));
   }
 
   function addMajorAndClear(value) {
@@ -193,11 +225,9 @@ async function setupAutocomplete() {
   majorInput.addEventListener('keyup', (ev) => ev.key === 'Enter' && addMajorAndClear());
 
   // hack because autocomplete library does not handle touchpad clicks properly.
-  jQuery('.autocomplete-suggestions').on('pointerdown', (ev) => {
-    $majorAutocomplete.select(ev.target.dataset.index);
+  jQuery('.autocomplete-suggestion').on('pointerdown', function (ev) {
+    const autocomplete = this.parentElement.classList.contains('degree')
+      ? $degreeAutocomplete : $majorAutocomplete;
+    autocomplete.select(this.dataset.index);
   });
 };
-
-// setupStripe();
-setupForm();
-setupAutocomplete();

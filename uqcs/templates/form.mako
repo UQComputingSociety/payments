@@ -1,7 +1,11 @@
 <%inherit file="base.mako"/>
 
 <%block name="head_extra">
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js" integrity="sha512-uxCwHf1pRwBJvURAMD/Gg0Kz2F2BymQyXDlTqnayuRyBFE7cisFCh2dSb1HIumZCRHuZikgeqXm8ruUoaxk5tA==" crossorigin="anonymous"></script>
 <style>
+/* some styles lifted from Bootstrap */
 .autocomplete-suggestions { border: 1px solid #222; background: #FFF; overflow: auto; }
 .autocomplete-suggestion { cursor: pointer; }
 .autocomplete-suggestion, .autocomplete-no-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; color: black; height: calc(1.5em + 0.75rem + 2px); padding: 0.375rem 0.75rem; line-height: 1.5}
@@ -10,8 +14,6 @@
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.10/jquery.autocomplete.min.js" integrity="sha256-xv9tRiSlyBQMvBkQeqNyojOQf45uTVXQAtIMrmgqV18=" crossorigin="anonymous"></script>
 </% block>
 
 <div class="columns is-centered is-mobile">
@@ -158,7 +160,7 @@
 
 
         <div class="field">
-          <label class="label">Major</label>
+          <label class="label">Major(s)</label>
           <input
             type="text"
             id="majorInput"
@@ -185,24 +187,12 @@
         </div>
       </div>
 
-      <input type="hidden" name="stripeToken" value="" id="stripeToken" />
-
       <!-- First hidden, disabled submit button prevents submission on Enter. -->
       <input type="submit" disabled style="display: none" aria-hidden="true" />
 
-      <!-- This hidden button is clicked after successful stripe payments. -->
-      <input
-        class="btn btn-info btn-lg"
-        type="submit"
-        name="submission"
-        value="Pay Online"
-        id="submitbtn"
-        style="display:none;"
-      />
-
       <div class="buttons wide mb-1">
-        <button id="payonline_submit" type="submit" class="button is-link"><b>Pay online</b></button>
-        <button type="submit" class="button is-link"><b>Pay in person</b></button>
+        <button id="pay-online" type="button" class="button is-link"><b>Pay online</b></button>
+        <button id="pay-person" type="button" class="button is-link"><b>Pay in person</b></button>
       </div>
 
     </form>
@@ -220,3 +210,7 @@
   </div>
 </div>
 <script src="/static/form.js"></script>
+<script>
+setupForm("${STRIPE_PUBLIC_KEY}", "${STRIPE_PRICE_ID}");
+setupAutocomplete();
+</script>
