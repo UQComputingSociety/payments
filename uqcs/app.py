@@ -1,8 +1,7 @@
 import os
 import re
 import stripe
-from datetime import date
-from calendar import isleap
+from datetime import date, timedelta
 from .templates import lookup
 from flask import Flask, request, session, flash, get_flashed_messages, redirect, jsonify
 from . import models as m
@@ -89,12 +88,12 @@ def user_from_request(form):
 def form_get(s):
     def expiry():
         curr_year = date.today().year
-        expiry_today = f"Feb 29th, {curr_year + 1}" if isleap(
-            curr_year + 1) else f"Feb 28th, {curr_year + 1}"
-        start_future = f"Jan 1st, {curr_year + 1}"
-        expiry_future = f"Feb 29th, {curr_year + 2}" if isleap(
-            curr_year + 2) else f"Feb 28th, {curr_year + 2}"
-        return expiry_today, start_future, expiry_future
+        format_date = lambda d: d.strftime('%d').lstrip('0') + d.strftime(' %B %Y')
+        # compute the last day of february as the day before march 1.
+        expiry_today = date(curr_year + 1, 3, 1) - timedelta(days=1)
+        start_future = date(curr_year + 1, 1, 1)
+        expiry_future = date(curr_year + 2, 3, 1) - timedelta(days=1)
+        return map(format_date, (expiry_today, start_future, expiry_future))
 
     template = lookup.get_template('form.mako')
     expiry_today, start_future, expiry_future = expiry()
