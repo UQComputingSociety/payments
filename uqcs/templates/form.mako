@@ -77,31 +77,37 @@
         </p>
       </div>
 
-      <label class="label">Gender</label>
-      <div class="field is-grouped is-equal-width">
-        <div class="control is-expanded">
-          <div class="select wide">
-            <select name="gender">
-              <option value="">(unspecified)</option>
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-              <option value="NB">Non-binary</option>
-              <option value="O">Other</option>
-            </select>
+      <div class="field">
+        <label class="label">Gender</label>
+        <div class="field is-grouped is-equal-width mb-0">
+          <div class="control is-expanded">
+            <div class="select wide">
+              <select name="gender">
+                <option value="">(unspecified)</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="NB">Non-binary</option>
+                <option value="O">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control is-expanded">
+            <input
+              name="gender_text"
+              type="text"
+              class="input"
+              id="gender_text"
+              placeholder="(optional extra details)"
+            />
           </div>
         </div>
-        <div class="control is-expanded">
-          <input
-            name="gender_text"
-            type="text"
-            class="input"
-            id="gender_text"
-            placeholder="(optional extra details)"
-          />
-        </div>
+        <p class="help">
+          We ask for gender information to track our diversity initiatives.
+          Feel free to answer in as much or as little detail as you want.
+        </p>
       </div>
 
-      <div class="field">
+      <div class="field mb-4">
         <label class="label">Are you a current UQ student? <span class="reqstar">*</span></label>
         <div class="control">
           <label class="radio">
