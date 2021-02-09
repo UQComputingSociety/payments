@@ -102,7 +102,7 @@
           </div>
         </div>
         <p class="help">
-          Provinding this information is completely optional.
+          Providing this information is completely optional.
           We gather aggregate gender statistics only to inform and assess our diversity initiatives.
         </p>
       </div>
