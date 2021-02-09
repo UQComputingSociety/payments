@@ -59,3 +59,34 @@ Generate a [bcrypt hash](https://bcrypt-generator.com/), then add it to the admi
     INSERT INTO adminuser VALUES ('admin', 'Admin', '$2y$12$uIcgKDdPYiiEaYKpWqYFXul1aOJrE3CUnbI/XfxgUhPQUu6u0a/ZC');
 
 This adds an admin user with usernamen "admin" and password "test".
+
+## Database Migration
+
+Unfortunately, there's currently no robust process for migrating the database schema.
+
+What you can do (very carefully!) is this:
+
+1. **Backup the database** with:
+
+       sudo -u postgres pg_dump uqcs --column-inserts > backup.sql
+
+2. Make the schema changes in models.py.
+   Make sure that the new schema is a *superset* of the old schema so data can be
+   cleanly restored. If not, these steps will likely not work.
+
+3. Connect to a psql shell:
+
+       sudo -u postgres psql -d uqcs
+
+4. Drop the current tables and types
+   (you'll need to uncomment the COMMIT line or type it manually):
+
+       BEGIN;
+       DROP TABLE member CASCADE;
+       DROP TABLE student CASCADE;
+       DROP TYPE gender;
+       -- COMMIT;
+
+5. Restore the data from the backup:
+
+       sudo -u postgres psql -d uqcs -f backup.sql

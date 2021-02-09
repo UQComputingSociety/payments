@@ -45,9 +45,9 @@ def user_from_request(form):
     if form.get("gender", '') not in ['', 'M', 'F', 'NB', 'O']:
         return (None, "Invalid option for gender")
     else:
-        info["gender"] = form.get("gender", None) or None
+        info["gender"] = form.get("gender", '') or None
 
-    info["gender_text"] = form.get("gender_text", "")[:100]
+    info["gender_text"] = form.get("gender_text", None)
 
     if form.get("student", False):
         info['student_no'] = form["student-no"]
@@ -75,9 +75,9 @@ def user_from_request(form):
                 return None, "Invalid degree type option"
             info["undergrad"] = form['degreeType'].lower() == 'undergrad'
         if 'degree' in form:
-            info['program'] = form['degree'][:100]
+            info['program'] = form['degree']
         if 'majors' in form:
-            info['majors'] = '|'.join(form.getlist('majors'))[:1000]
+            info['majors'] = form.getlist('majors')
         return m.Student(**info), "Success"
     else:
         return m.Member(**info), "Success"
