@@ -102,8 +102,8 @@
           </div>
         </div>
         <p class="help">
-          We ask for gender information to track our diversity initiatives.
-          Feel free to answer in as much or as little detail as you want.
+          Provinding this information is completely optional.
+          We gather aggregate gender statistics only to inform and assess our diversity initiatives.
         </p>
       </div>
 
