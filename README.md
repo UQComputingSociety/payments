@@ -66,19 +66,25 @@ Unfortunately, there's currently no robust process for migrating the database sc
 
 What you can do (very carefully!) is this:
 
-1. **Backup the database** with:
+1. **Backup the database**. This is a full backup and can be used to restore the database in case something goes wrong.
 
        sudo -u postgres pg_dump uqcs --column-inserts > backup.sql
 
-2. Make the schema changes in models.py.
+2. Dump a copy of the data. This is almost the same as above but omits the schema definitions.
+
+       sudo -u postgres pg_dump uqcs --column-inserts --data-only > data.sql
+
+3. Make the schema changes in models.py.
    Make sure that the new schema is a *superset* of the old schema so data can be
    cleanly restored. If not, these steps will likely not work.
 
-3. Connect to a psql shell:
+4. Run the signup form to create the tables.
+
+5. Connect to a psql shell:
 
        sudo -u postgres psql -d uqcs
 
-4. Drop the current tables and types
+6. Drop the current tables and types
    (you'll need to uncomment the COMMIT line or type it manually):
 
        BEGIN;
@@ -87,6 +93,6 @@ What you can do (very carefully!) is this:
        DROP TYPE gender;
        -- COMMIT;
 
-5. Restore the data from the backup:
+7. Insert the previous data:
 
-       sudo -u postgres psql -d uqcs -f backup.sql
+       sudo -u postgres psql -d uqcs -f data.sql
