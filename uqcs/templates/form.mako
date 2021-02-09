@@ -84,8 +84,8 @@
             <div class="select wide">
               <select name="gender">
                 <option value="">(unspecified)</option>
-                <option value="M">Male</option>
                 <option value="F">Female</option>
+                <option value="M">Male</option>
                 <option value="NB">Non-binary</option>
                 <option value="O">Other</option>
               </select>
