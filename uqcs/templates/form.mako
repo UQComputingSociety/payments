@@ -61,14 +61,14 @@
           >Email Address <span class="reqstar">*</span></label
         >
         <div class="control">
-        <input
-          name="email"
-          type="email"
-          class="input"
-          id="emailInput"
-          placeholder="a.smith@example.com"
-          required="required"
-        />
+          <input
+            name="email"
+            type="email"
+            class="input"
+            id="emailInput"
+            placeholder="a.smith@example.com"
+            required="required"
+          />
         </div>
         <p class="help">Valid UQ student email formats are:
           <span style="white-space: nowrap;">first.last@uqconnect.edu.au</span>,
@@ -76,22 +76,38 @@
           <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
         </p>
       </div>
-      <div class="field">
-        <label class="label">Gender</label>
-        <div class="control">
-          <div class="select wide">
-            <select name="gender">
-              <option value="">(unspecified)</option>
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-              ## <option value="NB">Non-binary</option>
-              ## <option value="O">Other</option>
-            </select>
-          </div>
-        </div>
-      </div>
 
       <div class="field">
+        <label class="label">Gender</label>
+        <div class="field is-grouped is-equal-width mb-0">
+          <div class="control is-expanded">
+            <div class="select wide">
+              <select name="gender">
+                <option value="">(unspecified)</option>
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+                <option value="NB">Non-binary</option>
+                <option value="O">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control is-expanded">
+            <input
+              name="gender_text"
+              type="text"
+              class="input"
+              id="gender_text"
+              placeholder="(optional extra details)"
+            />
+          </div>
+        </div>
+        <p class="help">
+          Provinding this information is completely optional.
+          We gather aggregate gender statistics only to inform and assess our diversity initiatives.
+        </p>
+      </div>
+
+      <div class="field mb-4">
         <label class="label">Are you a current UQ student? <span class="reqstar">*</span></label>
         <div class="control">
           <label class="radio">
@@ -190,9 +206,9 @@
       <!-- First hidden, disabled submit button prevents submission on Enter. -->
       <input type="submit" disabled style="display: none" aria-hidden="true" />
 
-      <div class="buttons wide mb-1">
-        <button id="pay-online" type="button" class="button is-link"><b>Pay online</b></button>
-        <button id="pay-person" type="button" class="button is-link"><b>Pay in person</b></button>
+      <div class="field is-grouped is-equal-width">
+        <button id="pay-online" type="button" class="control is-expanded button is-link"><b>Pay online</b></button>
+        <button id="pay-person" type="button" class="control is-expanded button is-link"><b>Pay in person</b></button>
       </div>
 
     </form>
