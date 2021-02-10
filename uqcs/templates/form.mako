@@ -24,8 +24,8 @@
     </div>
 
     % for category, msg in get_msgs(with_categories=True):
-      <div class="message is-${category}" role="alert">
-        <div class="message-body">${msg}</div>
+      <div class="notification is-${category} is-light is-small">
+        ${msg}
       </div>
     % endfor
 

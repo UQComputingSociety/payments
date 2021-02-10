@@ -117,7 +117,7 @@ function setupForm(stripePublicKey, stripePriceId) {
         customerEmail: resp.email,
         mode: 'payment',
         successUrl: origin + '/complete?checkout={CHECKOUT_SESSION_ID}',
-        cancelUrl: origin,
+        cancelUrl: origin + '/cancel',
       });
     }
   }));
