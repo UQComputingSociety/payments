@@ -24,9 +24,9 @@
 <td>${member.last_name}</td>
 <td>${member.email}</td>
 <td>
-  <a href="/admin/paid/${member.id}?payment=CASH" class="button is-link mr-2">&#x1f4b2; Cash</a>
-  <a href="/admin/paid/${member.id}?payment=SQUARE" class="button is-link mr-2">&#x1f4b3; Square</a>
-  <a href="/admin/paid/${member.id}?payment=UQU" class="button is-link">&#x1F3AB; UQU</a>
+  <a href="/admin/paid/${member.id}?payment=CASH" class="button is-link m-1">&#x1f4b2; Cash</a>
+  <a href="/admin/paid/${member.id}?payment=SQUARE" class="button is-link m-1">&#x1f4b3; Square</a>
+  <a href="/admin/paid/${member.id}?payment=UQU" class="button is-link m-1">&#x1F3AB; UQU</a>
 </td>
 <td><a href="/admin/delete/${member.id}" class="button is-danger">Delete</a></td>
 </tr>

@@ -1,5 +1,6 @@
 import os
 import re
+import logging
 import stripe
 from datetime import date, timedelta
 from .templates import lookup
@@ -10,6 +11,7 @@ from .base import needs_db
 from .base import mailchimp_queue, mailer_queue
 from .models import Member
 
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 app.register_blueprint(admin, url_prefix='/admin')
@@ -77,7 +79,7 @@ def user_from_request(form):
         if 'degree' in form:
             info['program'] = form['degree']
         if 'majors' in form:
-            info['majors'] = form.getlist('majors')
+            info['majors'] = [x.strip() for x in form.getlist('majors') if x.strip()]
         return m.Student(**info), "Success"
     else:
         return m.Member(**info), "Success"
@@ -94,6 +96,10 @@ def form_get(s):
         start_future = date(curr_year + 1, 1, 1)
         expiry_future = date(curr_year + 2, 3, 1) - timedelta(days=1)
         return map(format_date, (expiry_today, start_future, expiry_future))
+
+    if not STRIPE_PUBLIC_KEY or not STRIPE_PRICE_ID:
+        logger.error(
+            'missing Stripe environment variables may lead to unexpected failures.')
 
     template = lookup.get_template('form.mako')
     expiry_today, start_future, expiry_future = expiry()
@@ -134,35 +140,56 @@ def form_post(s):
     user, errors = _check_form(s, request.form)
     if errors:
         return jsonify(errors=errors)
-    s.add(user)
-    s.flush()
 
-    session['email'] = user.email
+    # store form in session. user is not created until /complete is hit.
+    session['form'] = request.form
     return jsonify(success=True, email=user.email)
 
 
 @app.route("/complete")
 @needs_db
 def complete(s):
-    if "email" not in session:
+    if 'form' not in session:
+        logger.debug('rejecting attempt to access /complete without form.')
+        flash('Invalid request to /complete (session is missing form).', 'danger')
         return redirect('/', 303)
-    user = s.query(m.Member)\
-        .filter(m.Member.email == session["email"])\
-        .one()
+
+    user, errors = _check_form(s, session['form'])
+    if errors:
+        logger.debug('errors while creating user on /complete: ' + str(errors))
+        flash('Failed to create member after payment. '
+              'Please contact UQCS if you have been charged twice.',
+              'danger')
+        flash('\n'.join(errors), 'danger')
+        return redirect('/', 303)
 
     # if the user has paid via stripe, verify their payment and add them to
     # relevant queues.
     checkout_id = request.args.get('checkout')
     if checkout_id and not user.has_paid():
-
-        checkout = stripe.checkout.Session.retrieve(
-            checkout_id, expand=['payment_intent'])
-        charge_id = checkout.payment_intent.charges.data[0].id
+        try:
+            checkout = stripe.checkout.Session.retrieve(
+                checkout_id, expand=['payment_intent'])
+            charge_id = checkout.payment_intent.charges.data[0].id
+        except Exception as e:
+            flash('Failed to verify Stripe payment.', 'danger')
+            logger.exception('exception while verifying checkout session')
+            return redirect('/', 303)
 
         user.paid = charge_id
-        s.flush()
-        s.expunge(user)
-        mailer_queue.put(user)
-        mailchimp_queue.put(user)
+
+    # if we get to this point, we are fairly sure the user has been created
+    # successfully.
+    s.add(user)
+    s.flush()
+    logger.info('added user: ' + user.email)
+
+    s.expunge(user)
+    mailer_queue.put(user)
+    mailchimp_queue.put(user)
 
     return lookup.get_template("complete.mako").render(member=user)
+
+@app.route("/cancel", methods=["GET"])
+def cancel():
+    return lookup.get_template("cancel.mako").render()

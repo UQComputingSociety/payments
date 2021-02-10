@@ -24,8 +24,8 @@
     </div>
 
     % for category, msg in get_msgs(with_categories=True):
-      <div class="message is-${category}" role="alert">
-        <div class="message-body">${msg}</div>
+      <div class="notification is-${category} is-light is-small">
+        ${msg}
       </div>
     % endfor
 
@@ -111,7 +111,7 @@
         <label class="label">Are you a current UQ student? <span class="reqstar">*</span></label>
         <div class="control">
           <label class="radio">
-            <input type="radio" name="student" value="on">
+            <input type="radio" name="student" value="on" checked>
             Yes
           </label>
           <label class="radio">
@@ -121,7 +121,7 @@
         </div>
       </div>
 
-      <div id="student-form-section" class="block" style="display: none; opacity: 0;">
+      <div id="student-form-section" class="block">
         <div class="field">
           <label class="label" for="student-no"
             >Student Number <span class="reqstar">*</span></label
@@ -132,6 +132,7 @@
             class="control input"
             id="studentNo"
             placeholder="42345678"
+            required
           />
           <p class="help">8 digits, no 's'.</p>
         </div>
@@ -177,10 +178,11 @@
 
         <div class="field">
           <label class="label">Major(s)</label>
+          <!-- search value is included in submitted majors parameter. -->
           <input
             type="text"
             id="majorInput"
-            name="majorInput"
+            name="majors"
             class="input control"
             placeholder="Leave blank if undeclared"
           />
