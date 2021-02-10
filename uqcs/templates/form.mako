@@ -178,10 +178,11 @@
 
         <div class="field">
           <label class="label">Major(s)</label>
+          <!-- search value is included in submitted majors parameter. -->
           <input
             type="text"
             id="majorInput"
-            name="majorInput"
+            name="majors"
             class="input control"
             placeholder="Leave blank if undeclared"
           />

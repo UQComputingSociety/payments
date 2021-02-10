@@ -79,7 +79,7 @@ def user_from_request(form):
         if 'degree' in form:
             info['program'] = form['degree']
         if 'majors' in form:
-            info['majors'] = form.getlist('majors')
+            info['majors'] = [x.strip() for x in form.getlist('majors') if x.strip()]
         return m.Student(**info), "Success"
     else:
         return m.Member(**info), "Success"

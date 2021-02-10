@@ -132,7 +132,7 @@ function initAutocomplete(inputElement, containerClass) {
     // orientation: 'auto',
     showNoSuggestionNotice: true,
     noSuggestionNotice: 'No suggestions, please enter manually.',
-    lookupLimit: 10,
+    // lookupLimit: 10,
     lookupFilter: function (suggestion, query, queryLowerCase) {
       const s = suggestion.value.toLowerCase();
       // split by space, remove non-alpha, to get tokens.
@@ -174,6 +174,13 @@ async function setupAutocomplete() {
     ...data.postgrad,
   };
 
+  const allDegrees = Object.keys(allData);
+
+  // sort by ascending order of string length. rationale is to find longer ones,
+  // you can always add more search terms but not for shorter degrees.
+  const sortByLength = (a, b) => a.length - b.length;
+  allDegrees.sort(sortByLength);
+
   const allMajors = Array.from(new Set(Object.values(data).map(Object.values).flat(2))).filter(x => x).sort();
 
   $$("input[name=degreeType]").forEach(el => el.addEventListener('change', function(e) {
@@ -182,6 +189,7 @@ async function setupAutocomplete() {
       lookup.push(...Object.keys(data.undergrad));
     if (this.value === 'postgrad')
       lookup.push(...Object.keys(data.postgrad));
+    lookup.sort(sortByLength);
     $degreeAutocomplete.setOptions({lookup})
   }));
 
@@ -190,7 +198,9 @@ async function setupAutocomplete() {
     $majorAutocomplete.setOptions({lookup})
   });
 
-  $degreeAutocomplete.setOptions({lookup: [...Object.keys(data.undergrad), ...Object.keys(data.postgrad)]});
+
+
+  $degreeAutocomplete.setOptions({lookup: allDegrees});
   $majorAutocomplete.setOptions({lookup: allMajors});
 
 
@@ -202,8 +212,8 @@ async function setupAutocomplete() {
 
     const template = `
     <div class="field has-addons">
-      <input class="input control is-expanded is-small" readonly name="majors" value="${major}"/>
-      <button class="control button is-small" type="button">&times;</button>
+      <input class="input control is-expanded" readonly name="majors" value="${major}"/>
+      <button class="control button" type="button">&times;</button>
     </div>
     `;
     const fragment = document.createRange().createContextualFragment(template);
@@ -221,13 +231,17 @@ async function setupAutocomplete() {
     onSelect: (suggestion) => addMajorAndClear(suggestion.value),
   });
 
-  majorInput.addEventListener('blur', addMajorAndClear);
   majorInput.addEventListener('keyup', (ev) => ev.key === 'Enter' && addMajorAndClear());
 
   // hack because autocomplete library does not handle touchpad clicks properly.
   jQuery('.autocomplete-suggestion').on('pointerdown', function (ev) {
-    const autocomplete = this.parentElement.classList.contains('degree')
-      ? $degreeAutocomplete : $majorAutocomplete;
+    const isDegree = this.parentElement.classList.contains('degree');
+    const autocomplete = isDegree ? $degreeAutocomplete : $majorAutocomplete;
+    const input = isDegree ? degreeInput : majorInput;
+
+    // clear to prevent blur listener from adding the incomplete text.
+    input.value = '';
+    // select clicked suggestion.
     autocomplete.select(this.dataset.index);
   });
 };
