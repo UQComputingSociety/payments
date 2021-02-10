@@ -156,7 +156,8 @@ def complete(s):
         return redirect('/', 303)
 
     # need to convert serialised dict from session back to MultiDict.
-    user, errors = _check_form(s, MultiDict(session['form']))
+    form = MultiDict(session['form'])
+    user, errors = _check_form(s, form)
     if errors:
         logger.debug('errors while creating user on /complete: ' + str(errors))
         flash('Failed to create member after payment. '
@@ -184,7 +185,7 @@ def complete(s):
     # successfully.
     s.add(user)
     s.flush()
-    logger.info('added user: ' + user.email)
+    logger.info('added user: ' + user.email + '\nform: ' + str(form))
 
     s.expunge(user)
     mailer_queue.put(user)
