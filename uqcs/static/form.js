@@ -44,6 +44,10 @@ function showFormErrors(messages) {
     const fragment = document.createRange().createContextualFragment(template);
     header.insertAdjacentElement('afterend', fragment.firstElementChild);
   }
+
+  if (messages.length) {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 }
 
 function setupForm(stripePublicKey, stripePriceId) {
@@ -118,6 +122,16 @@ function setupForm(stripePublicKey, stripePriceId) {
         mode: 'payment',
         successUrl: origin + '/complete?checkout={CHECKOUT_SESSION_ID}',
         cancelUrl: origin + '/cancel',
+      })
+      .then((result) => {
+        if (result.error) {
+          console.error(result);
+          throw new Error(result.error.message);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        showFormErrors(['Stripe Error: ' + error.message]);
       });
     }
   }));
