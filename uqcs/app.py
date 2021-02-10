@@ -5,6 +5,7 @@ import stripe
 from datetime import date, timedelta
 from .templates import lookup
 from flask import Flask, request, session, flash, get_flashed_messages, redirect, jsonify
+from werkzeug.datastructures import MultiDict
 from . import models as m
 from .admin import admin
 from .base import needs_db
@@ -141,8 +142,8 @@ def form_post(s):
     if errors:
         return jsonify(errors=errors)
 
-    # store form in session. user is not created until /complete is hit.
-    session['form'] = request.form
+    session['form'] = request.form.to_dict(flat=False)
+    # store copy of form in session. user is not created until /complete is hit.
     return jsonify(success=True, email=user.email)
 
 
@@ -154,7 +155,8 @@ def complete(s):
         flash('Invalid request to /complete (session is missing form).', 'danger')
         return redirect('/', 303)
 
-    user, errors = _check_form(s, session['form'])
+    # need to convert serialised dict from session back to MultiDict.
+    user, errors = _check_form(s, MultiDict(session['form']))
     if errors:
         logger.debug('errors while creating user on /complete: ' + str(errors))
         flash('Failed to create member after payment. '
