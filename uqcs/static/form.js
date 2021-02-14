@@ -59,7 +59,6 @@ function setupForm(stripePublicKey, stripePriceId) {
     const studentForm = $("#student-form-section");
     /** @type {HTMLInputElement} */
     const studentNo = $("#studentNo");
-
     if (this.value === "on") {
       studentNo.required = true;
       studentForm.style.display = null;
@@ -70,6 +69,12 @@ function setupForm(stripePublicKey, stripePriceId) {
       setTimeout(() => studentForm.style.display = 'none', 250);
     }
   }));
+
+  // dispatch change event so student form is shown/hidden according to cached
+  // form state.
+  setTimeout(() => {
+    $('input[name=student]:checked').dispatchEvent(new Event('change'));
+  }, 1);
 
   function checkId() {
     let field = document.getElementById("studentNo");
