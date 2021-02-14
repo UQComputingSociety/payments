@@ -186,10 +186,11 @@ def complete(s):
     s.add(user)
     s.flush()
     logger.info('added user: ' + user.email + '\nform: ' + str(form))
-
     s.expunge(user)
-    mailer_queue.put(user)
-    mailchimp_queue.put(user)
+
+    if user.has_paid():
+        mailer_queue.put(user)
+        mailchimp_queue.put(user)
 
     return lookup.get_template("complete.mako").render(member=user)
 

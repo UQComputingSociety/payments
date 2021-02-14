@@ -5,6 +5,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy.sql.sqltypes import ARRAY
+from sqlalchemy.orm import with_polymorphic
 import bcrypt
 import logging
 import datetime as dt
@@ -156,7 +157,5 @@ class Session(Base):
         self.expiry_datetime = dt.datetime.now() + self.EXPIRY_TIME
 
 
-def register_from_request(request=None):
-    if request is None:
-        return
-    pass
+# used to load Member with all Student subclass fields
+member_polymorphic = with_polymorphic(Member, [Student])

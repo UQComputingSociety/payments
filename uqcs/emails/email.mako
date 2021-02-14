@@ -304,20 +304,20 @@ a {
                 </tr>
                 <tr>
                   <td class="content-block">
-                    <h2 class="aligncenter">Welcome to UQCS in 2020!</h2>
+                    <h2 class="aligncenter">Welcome to UQCS in 2021!</h2>
                   </td>
                 </tr>
                 <tr>
                   <td class="content-block aligncenter">
                     <table class="invoice">
                       <tr>
-                        <td>${user.first_name} ${user.last_name}<br/>${str(dt.datetime.now())}</td>
+                        <td>${user.first_name} ${user.last_name}<br/>${time_paid}</td>
                       </tr>
                       <tr>
                         <td>
                           <table class="invoice-items" cellpadding="0" cellspacing="0">
                             <tr>
-                              <td>UQCS 2020 Membership</td>
+                              <td>UQCS 2021 Membership</td>
                               <td class="alignright">$ ${payment['cost']}</td>
                             </tr>
                             % if payment['surcharge']:

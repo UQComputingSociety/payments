@@ -3,13 +3,13 @@ $ ${payment['total']} Paid
 ***********
 
 ------------------------
-Welcome to UQCS in 2020!
+Welcome to UQCS in 2021!
 ------------------------
 
 ${user.first_name} ${user.last_name}
-${str(dt.datetime.now())}
+${time_paid}
 
-UQCS 2020 Membership
+UQCS 2021 Membership
 $ ${payment['cost']}
 
 % if payment['surcharge']:

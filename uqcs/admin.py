@@ -135,7 +135,7 @@ def paid(s, admin_user, member_id):
     payment_method = request.args.get('payment', None)
     if payment_method not in valid_payment:
         return abort(400, "Invalid or missing payment parameter. Must be one of " + str(valid_payment))
-    user = s.query(m.Member).filter(m.Member.id == member_id).one()
+    user = s.query(m.member_polymorphic).filter(m.Member.id == member_id).one()
     user.paid = payment_method
     s.flush()
     s.expunge(user)
