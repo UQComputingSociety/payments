@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export MAILCHIMP_USERNAME=uqcomputing
+export MAILCHIMP_LIST_ID=ed3e9a667b
+export MAILCHIMP_KEY=
+
+export STRIPE_API_KEY=
+export STRIPE_PUBLIC_KEY=
+export STRIPE_PRICE_ID=
+
+export MAILGUN_API_KEY=
+
+export APP_SECRET_KEY=testing-app-secret

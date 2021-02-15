@@ -1,3 +1,6 @@
+variables.sh
+.vscode/
+
 *.xml
 *.iml
 .idea/

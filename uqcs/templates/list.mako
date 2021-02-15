@@ -1,11 +1,18 @@
 <%inherit file="base.mako"/>
 
-<div class="row">
-<div id="body" class="col-md-12">
-<h1> All Members</h1>
-<p><a href="#" class="btn btn-warning" onclick="window.location.reload()">Refresh</a></p>
-<p>Registered: ${members.count()}<br/>Paid: ${paid.count()}</p>
-<table class="table table-hover table-sm">
+<div id="body">
+<h1 class="title">All Members</h1>
+<div class="buttons">
+<button class="button is-link" onclick="window.location.reload()">Refresh</button>
+<a href="/admin/accept" class="button is-link">Unpaid</a>
+</div>
+
+<p class="my-4">
+  Registered: ${members.count()}<br/>
+  Paid: ${paid.count()}
+</p>
+
+<table class="table is-fullwidth is-narrow is-striped">
 <thead>
 <tr>
 <th>First Name</th>
@@ -25,5 +32,4 @@
 %endfor
 </tbody>
 </table>
-</div>
 </div>

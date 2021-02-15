@@ -21,7 +21,14 @@ logger = logging.getLogger(__name__)
 
 def mailchimp_worker(queue: Queue):
     list_id = os.environ.get('MAILCHIMP_LIST_ID')
-    client = MailChimp(os.environ.get("MAILCHIMP_KEY"), os.environ.get("MAILCHIMP_USERNAME"))
+    mailchimp_key = os.environ.get("MAILCHIMP_KEY")
+    mailchimp_user = os.environ.get("MAILCHIMP_USERNAME")
+
+    if not all((list_id, mailchimp_key, mailchimp_key)):
+        logger.error(
+            'msising mailchimp variables, newsletter list updating may fail.')
+
+    client = MailChimp(mailchimp_key, mailchimp_user)
 
     for item in iter(queue.get, None):  # type: m.Member
         save_fn = None
@@ -68,8 +75,18 @@ def _cents_to_str(cents):
 
 
 def mailer_worker(mailqueue):
+    MAILGUN_KEY = os.environ.get("MAILGUN_API_KEY")
+
+    if not MAILGUN_KEY:
+        logger.warn('missing MAILGUN_API_KEY, receipt emails will not work.')
+
     for item in iter(mailqueue.get, None):
         try:
+            if not item.has_paid():
+                logger.warn('refusing to send receipt email to unpaid member: '
+                    + item.email)
+                continue
+
             # membership is $5.00
             cost = 500
             payment = {
@@ -80,27 +97,32 @@ def mailer_worker(mailqueue):
             # CASH and UQU payments have no surcharges
             if item.paid not in ('CASH', 'UQU'):
                 # if item.paid is not SQUARE, it was Stripe
-                surcharge = 10 if item.paid == 'SQUARE' else 40
+                is_square = item.paid == 'SQUARE'
+                surcharge = 10 if is_square else 40
                 total = cost + surcharge
                 payment['total'] = _cents_to_str(total)
                 payment['surcharge'] = _cents_to_str(surcharge)
-                payment['surcharge_text'] = ('Square' if item.paid == 'SQUARE' else 'Stripe') \
+                payment['surcharge_text'] = ('Square' if is_square else 'Stripe') \
                     + ' Payment Fee'
-            
-            print(item.first_name + ' ' + item.last_name)
+
+            logger.info('sending receipt email to: ' + item.email
+                + ', payment: ' + str(payment))
+
+            time_paid = item.time_paid.strftime('%c')
             receipt_text = lookup.get_template("email.mtxt") \
-                .render(user=item, dt=dt, payment=payment)
+                .render(user=item, time_paid=time_paid, payment=payment)
             receipt_html = lookup.get_template('email.mako') \
-                .render(user=item, dt=dt, payment=payment)
+                .render(user=item, time_paid=time_paid, payment=payment)
+
             requests.post("https://api.mailgun.net/v3/uqcs.org.au/messages",
-                          auth=('api', os.environ.get("MAILGUN_API_KEY")),
+                          auth=('api', MAILGUN_KEY),
                           data={
                               'from': 'receipts@uqcs.org.au',
                               'to': item.email,
                               'bcc': "receipts@uqcs.org.au",
                               'text': receipt_text,
                               'html': premailer.transform(receipt_html),
-                              'subject': "UQCS 2020 Membership Receipt",
+                              'subject': "UQCS 2021 Membership Receipt",
                           })
         except Exception as exception:
             logger.exception(exception)

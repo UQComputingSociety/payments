@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Join UQCS 2020</title>
+<title>Join UQCS 2021</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
@@ -9,21 +9,20 @@
 <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16">
 <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/static/bootstrap.min.css">
+<link rel="stylesheet" href="//static.uqcs.org/bulma/main.css">
 <style type="text/css">
-iframe{display:block;}
 .reqstar{color:red;}
-body{background-image: url('/static/bg.png'); background-repeat: repeat; padding-bottom: 50px;}
-html,body{min-height: 100%}
-.row,.container{min-height: 100%}
-.container{padding-top: 20px;}
+body{color: white; background-color: #414141;}
+html,body{min-height: 100vh}
 #unpaid-members td {vertical-align:middle;}
-#body{color: white;min-height:100%;}
-#header{margin-bottom:40px;margin-top:20px;}
-#logo{width: 200px;margin-bottom:20px;margin-top:20px;}
+#logo{width: 200px;}
 hr{border-top:1px solid white;}
-.wide-buttons{display: flex;}
-.wide-buttons .btn{width: 100%;}
+.title,.label,.radio:hover{color: white;}
+.table,.table thead th{background-color: inherit;color: inherit;}
+.table.is-striped tbody tr:not(.is-selected):nth-child(even){background-color: rgba(255, 255, 255, 0.075);}
+.select.wide,.select.wide>select{ width:100%; }
+.field.is-grouped.is-equal-width > .control {flex-basis: 1px;}
+#student-form-section{ transition: opacity 250ms linear; }
 </style>
 
 <%block name="head_extra">
@@ -31,11 +30,10 @@ hr{border-top:1px solid white;}
 
 </head>
 <body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" integrity="sha256-Tjl7WVgF1hgGMgUKZZfzmxOrtoSf8qltZ9wMujjGNQk=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<section class="section">
 <div class="container">
 ${next.body()}
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+</section>
 </body>
 </html>

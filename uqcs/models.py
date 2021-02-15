@@ -4,6 +4,8 @@ from sqlalchemy import (
     Column, Integer, Enum, String, UnicodeText, Text, Boolean, ForeignKey, func, Interval, text, DateTime
 )
 from sqlalchemy.ext.hybrid import hybrid_property
+from sqlalchemy.sql.sqltypes import ARRAY
+from sqlalchemy.orm import with_polymorphic
 import bcrypt
 import logging
 import datetime as dt
@@ -29,7 +31,8 @@ class Member(Base):
     last_name = Column(UnicodeText)
     email = Column(Text)
     member_type = Column(String(20))
-    gender = Column(Enum("M", "F", name="gender"), nullable=True)
+    gender = Column(Enum("M", "F", "NB", "O", name="gender"), nullable=True)
+    gender_text = Column(Text)
     _paid = Column('paid', String(40))
     time_registered = Column(DateTime, default=dt.datetime.utcnow)
     time_paid = Column(DateTime)
@@ -68,7 +71,8 @@ class Student(Member):
     student_no = Column(String(8), unique=True)
     domestic = Column(Boolean)
     year = Column(Integer)
-    program = Column(String(100))
+    program = Column(Text)
+    majors = Column(ARRAY(Text)) # postgres-specific array type
     undergrad = Column(Boolean)
 
     __mapper_args__ = {
@@ -153,7 +157,5 @@ class Session(Base):
         self.expiry_datetime = dt.datetime.now() + self.EXPIRY_TIME
 
 
-def register_from_request(request=None):
-    if request is None:
-        return
-    pass
+# used to load Member with all Student subclass fields
+member_polymorphic = with_polymorphic(Member, [Student])
