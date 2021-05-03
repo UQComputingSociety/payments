@@ -23,6 +23,13 @@
       <h1 class="title my-5">2021 Registration</h1>
     </div>
 
+    <noscript>
+      <div class="notification is-danger is-light is-small">
+        <strong>Your browser has JavaScript disabled.</strong> This is not
+        supported and the form may not be functional.
+      </div>
+    </noscript>
+
     % for category, msg in get_msgs(with_categories=True):
       <div class="notification is-${category} is-light is-small">
         ${msg}
