@@ -40,7 +40,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: uqcs-signup:${{ github.sha }}
+        tags: signup:${{ github.sha }}
         file: ./Dockerfile    # if you want to use a different dockerfile, put here
 
   deploy:
