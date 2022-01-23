@@ -31,7 +31,7 @@ def main(args):
 
     app.secret_key = os.environ.get("APP_SECRET_KEY")
     print("Host:", args[1])
-    waitress.serve(app, host=args[1], port=9090)
+    waitress.serve(app, host=args[1], port=9001)
 
     mailchimp_queue.put(None)
     mailer_queue.put(None)

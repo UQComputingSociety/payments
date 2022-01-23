@@ -57,7 +57,7 @@ NOTE: The database to be used is specified in an environment variable as an [SQL
 
        python -m uqcs localhost
 
-5. The form will be available at port 9090 of the given host.
+5. The form will be available at port 9001 of the given host.
 
 ### Useful Tasks
 Generate a [bcrypt hash](https://bcrypt-generator.com/), then add it to the adminuser table with, for example:
