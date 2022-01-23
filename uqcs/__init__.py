@@ -10,7 +10,7 @@ import logging
 
 def main(args):
     logging.basicConfig(level=logging.DEBUG)
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SQLALCHEMY_DATABSE_URI")
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SQLALCHEMY_DATABASE_URI")
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     DB.init_app(app)
     with app.app_context():

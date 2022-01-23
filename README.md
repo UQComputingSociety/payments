@@ -14,7 +14,7 @@ The online membership form for the [UQ Computing Society](https://uqcs.org.au).
  - `STRIPE_PRICE_ID`
  - `MAILGUN_API_KEY`
  - `APP_SECRET_KEY`
- - `SQLALCHEMY_DATABSE_URI`
+ - `SQLALCHEMY_DATABASE_URI`
 
 API keys can be found in these places:
  - [Mailchimp](https://admin.mailchimp.com/account/api/)
@@ -38,7 +38,7 @@ API keys can be found in these places:
        
 NOTE: The database to be used is specified in an environment variable as an [SQLAlchemy database string](https://docs.sqlalchemy.org/13/core/engines.html#database-urls). This should be set before running, e.g.
 
-       export SQLALCHEMY_DATABSE_URI=postgresql://postgres:password@localhost:5432/uqcs
+       export SQLALCHEMY_DATABASE_URI=postgresql://postgres:password@localhost:5432/uqcs
 
 ### Signup Form
 1. Windows machines will need the Microsoft Visual C++ Build Tools, which can be found [here](https://visualstudio.microsoft.com/vs/downloads/).

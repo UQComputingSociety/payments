@@ -58,4 +58,4 @@ jobs:
         app-name: 'uqcs-signup'
         slot-name: 'production'
         publish-profile: ${{ secrets.AZURE_APP_SERVICE_PUBLISH_PROFILE }}
-        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
