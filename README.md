@@ -29,16 +29,18 @@ API keys can be found in these places:
 2. Open a psql shell.
 3. Create a database for signups if it does not exist:
 
-       CREATE DATABASE uqcs;
+       CREATE DATABASE <uqcs_database_name>;
 
 4. Load the UUID extension in this database:
 
-       \connect uqcs
+       \connect <uqcs_database_name>
        CREATE EXTENSION "uuid-ossp";
        
 NOTE: The database to be used is specified in an environment variable as an [SQLAlchemy database string](https://docs.sqlalchemy.org/13/core/engines.html#database-urls). This should be set before running, e.g.
 
-       export SQLALCHEMY_DATABASE_URI=postgresql://postgres:password@localhost:5432/uqcs
+       export SQLALCHEMY_DATABASE_URI=postgresql://postgres:password@localhost:5432/<uqcs_database_name>
+
+5. Run the signup sheet to create the tables
 
 ### Signup Form
 1. Windows machines will need the Microsoft Visual C++ Build Tools, which can be found [here](https://visualstudio.microsoft.com/vs/downloads/).
@@ -66,37 +68,6 @@ This adds an admin user with usernamen "admin" and password "test".
 
 ## Database Migration
 
-Unfortunately, there's currently no robust process for migrating the database schema.
+If you are committee and looking for how to move the database, or how to create a new database for a new year, you're looking in the wrong place. Look at infrastructure notes for the membership database.
 
-What you can do (very carefully!) is this:
-
-1. **Backup the database**. This is a full backup and can be used to restore the database in case something goes wrong.
-
-       sudo -u postgres pg_dump uqcs --column-inserts > backup.sql
-
-2. Dump a copy of the data. This is almost the same as above but omits the schema definitions.
-
-       sudo -u postgres pg_dump uqcs --column-inserts --data-only > data.sql
-
-3. Make the schema changes in models.py.
-   Make sure that the new schema is a *superset* of the old schema so data can be
-   cleanly restored. If not, these steps will likely not work.
-
-4. Run the signup form to create the tables.
-
-5. Connect to a psql shell:
-
-       sudo -u postgres psql -d uqcs
-
-6. Drop the current tables and types
-   (you'll need to uncomment the COMMIT line or type it manually):
-
-       BEGIN;
-       DROP TABLE member CASCADE;
-       DROP TABLE student CASCADE;
-       DROP TYPE gender;
-       -- COMMIT;
-
-7. Insert the previous data:
-
-       sudo -u postgres psql -d uqcs -f data.sql
+If you are not committee, then hi. Banana.
