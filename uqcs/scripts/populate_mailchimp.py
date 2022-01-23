@@ -5,11 +5,12 @@ from .. import models as m
 import sqlalchemy as sa
 from queue import Queue
 import threading
+import os
 
 
 def main(args):
     logging.basicConfig(level=logging.DEBUG)
-    app.config['SQLALCHEMY_DATABASE_URI'] = args[1]
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SQLALCHEMY_DATABASE_URI")
     DB.init_app(app)
 
     with app.app_context():
@@ -22,5 +23,4 @@ def main(args):
 
 
 if __name__ == "__main__":
-    import sys
-    main(sys.argv)
+    main()

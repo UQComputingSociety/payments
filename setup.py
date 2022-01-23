@@ -2,7 +2,6 @@ from setuptools import setup, find_packages
 import sys
 
 requires = [
-    'Flask',
     'premailer',
     'requests',
     'sqlalchemy',
@@ -14,6 +13,7 @@ requires = [
     'bcrypt',
     'tzlocal',
     'flask-sqlalchemy',
+    'flask',
 ]
 
 if sys.version_info < (3, 5):

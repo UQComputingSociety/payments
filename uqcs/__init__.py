@@ -10,7 +10,7 @@ import logging
 
 def main(args):
     logging.basicConfig(level=logging.DEBUG)
-    app.config['SQLALCHEMY_DATABASE_URI'] = args[1]
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SQLALCHEMY_DATABSE_URI")
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     DB.init_app(app)
     with app.app_context():
@@ -30,7 +30,7 @@ def main(args):
     mailer_thread.start()
 
     app.secret_key = os.environ.get("APP_SECRET_KEY")
-    waitress.serve(app, host=args[2], port=9090)
+    waitress.serve(app, host=args[1], port=9090)
 
     mailchimp_queue.put(None)
     mailer_queue.put(None)
