@@ -10,4 +10,4 @@ COPY ./uqcs ./uqcs
 COPY ./util ./util
 
 EXPOSE 9090
-CMD python -m uqcs 0.0.0.0
+CMD python -m uqcs "0.0.0.0"

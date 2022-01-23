@@ -30,6 +30,7 @@ def main(args):
     mailer_thread.start()
 
     app.secret_key = os.environ.get("APP_SECRET_KEY")
+    print("Host:", args[1])
     waitress.serve(app, host=args[1], port=9090)
 
     mailchimp_queue.put(None)
