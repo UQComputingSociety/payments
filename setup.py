@@ -26,8 +26,8 @@ setup(
     install_requires=requires,
     url='https://join.uqcs.org.au',
     license='MIT',
-    author='Tom Manderson',
-    author_email='me@trm.io',
+    author='UQCS Committee',
+    author_email='contact@uqcs.org.au',
     description='The UQCS payment systems for membership signup',
     include_package_data=True,
 )
