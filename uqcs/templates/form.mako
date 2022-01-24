@@ -20,7 +20,7 @@
   <div id="body" class="column" style="max-width: 450px;">
     <div id="header" class="my-1">
       <img id="logo" src="/static/Full-White.svg"/>
-      <h1 class="title my-5">2021 Registration</h1>
+      <h1 class="title my-5">2022 Registration</h1>
     </div>
 
     <noscript>

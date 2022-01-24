@@ -30,7 +30,7 @@ with open('pgpg.json') as f:
 ug2 = format_data(ug)
 pg2 = format_data(pg)
 
-# research programs from https://future-students.uq.edu.au/study/programs?level[Research]=Research&year=2021
+# research programs from https://future-students.uq.edu.au/study/programs?level[Research]=Research&year=2022
 for x in ('Doctor of Biotechnology', 'Master of Philosophy', 'Doctor of Philosophy', 'Doctor of Veterinary Clinical Science'):
     pg2[x] = None # no specific majors listed.
 
