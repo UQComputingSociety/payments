@@ -8,7 +8,7 @@ import threading
 import os
 
 
-def main(args):
+def main():
     logging.basicConfig(level=logging.DEBUG)
     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("SQLALCHEMY_DATABASE_URI")
     DB.init_app(app)
