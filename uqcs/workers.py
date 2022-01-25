@@ -104,7 +104,7 @@ def mailer_worker(mailqueue):
                 surcharge = 0
                 total = cost + surcharge
                 payment['total'] = _cents_to_str(total)
-                payment['surcharge'] = "no surcharge!"
+                payment['surcharge'] = _cents_to_str(surcharge)
                 payment['surcharge_text'] = ('Square' if is_square else 'Stripe') \
                     + ' Payment Fee'
 
