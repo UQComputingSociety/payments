@@ -66,6 +66,10 @@ Generate a [bcrypt hash](https://bcrypt-generator.com/), then add it to the admi
 
 This adds an admin user with usernamen "admin" and password "test".
 
+### Program Data
+
+Read through details for updating student program data [here](util/README.md).
+
 ## Database Migration
 
 If you are committee and looking for how to move the database, or how to create a new database for a new year, you're looking in the wrong place. Look at infrastructure notes for the membership database.

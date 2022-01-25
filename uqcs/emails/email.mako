@@ -304,7 +304,7 @@ a {
                 </tr>
                 <tr>
                   <td class="content-block">
-                    <h2 class="aligncenter">Welcome to UQCS in 2021!</h2>
+                    <h2 class="aligncenter">Welcome to UQCS in 2022!</h2>
                   </td>
                 </tr>
                 <tr>
@@ -317,7 +317,7 @@ a {
                         <td>
                           <table class="invoice-items" cellpadding="0" cellspacing="0">
                             <tr>
-                              <td>UQCS 2021 Membership</td>
+                              <td>UQCS 2022 Membership</td>
                               <td class="alignright">$ ${payment['cost']}</td>
                             </tr>
                             % if payment['surcharge']:

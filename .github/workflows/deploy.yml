@@ -8,6 +8,7 @@ on:
     branches:
       - main
 
+
 env:
   # github repository formatted as <account>/<repo>
   REGISTRY: ghcr.io

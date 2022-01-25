@@ -20,7 +20,6 @@
       "Drama",
       "English Literature",
       "History",
-      "Mathematics",
       "Music",
       "Philosophy",
       "Studies in Religion",
@@ -77,6 +76,7 @@
       "Immunology",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -162,6 +162,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -212,6 +213,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -319,12 +321,12 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
       "Korean",
       "Latin",
-      "Legal Education Studies",
       "Linguistics",
       "Mathematics",
       "Media and Digital Cultures",
@@ -336,6 +338,7 @@
       "Popular Music and Technology",
       "Professional Writing and Communication",
       "Psychology",
+      "Russian",
       "Sociology",
       "Spanish",
       "Sports Studies",
@@ -371,6 +374,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -388,7 +392,7 @@
       "Popular Music and Technology",
       "Professional Writing and Communication",
       "Psychology",
-      "Sociology",
+      "Russian",
       "Spanish",
       "Sports Studies",
       "Studies in Religion",
@@ -421,6 +425,7 @@
       "Hotel and Hospitality Management",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -438,6 +443,7 @@
       "Popular Music and Technology",
       "Professional Writing and Communication",
       "Psychology",
+      "Russian",
       "Sociology",
       "Spanish",
       "Sports Studies",
@@ -548,6 +554,7 @@
       "Innovation and Entrepreneurship",
       "International Business",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -567,6 +574,7 @@
       "Popular Music and Technology",
       "Professional Writing and Communication",
       "Psychology",
+      "Russian",
       "Sociology",
       "Spanish",
       "Sports Studies",
@@ -754,6 +762,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -771,6 +780,7 @@
       "Popular Music and Technology",
       "Professional Writing and Communication",
       "Psychology",
+      "Russian",
       "Sociology",
       "Spanish",
       "Sports Studies",
@@ -847,7 +857,10 @@
     ],
     "Bachelor of Communication": [
       "Digital Media",
-      "Public Relations"
+      "Interaction Design",
+      "Journalism",
+      "Public Relations",
+      "Writing"
     ],
     "Bachelor of Communication (Honours)": [
       "Communication (Honours)"
@@ -879,6 +892,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -905,7 +919,9 @@
     ],
     "Bachelors of Communication / Journalism": [
       "Digital Media",
-      "Public Relations"
+      "Interaction Design",
+      "Public Relations",
+      "Writing"
     ],
     "Bachelor of Computer Science": [
       "Cyber Security",
@@ -945,6 +961,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -964,6 +981,7 @@
       "Professional Writing and Communication",
       "Programming Languages",
       "Psychology",
+      "Russian",
       "Scientific Computing",
       "Sociology",
       "Spanish",
@@ -1099,7 +1117,6 @@
       "Chinese Translation and Interpreting",
       "Criminology",
       "Drama",
-      "Economics",
       "Economics and Public Policy",
       "Economics of Strategy and Behaviour",
       "English",
@@ -1115,6 +1132,7 @@
       "Indonesian",
       "International Relations",
       "International and Financial Economics",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -1235,6 +1253,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -1298,30 +1317,16 @@
       "Software Engineering"
     ],
     "Bachelors of Engineering (Honours) / Computer Science": [
-      "Aerospace Engineering",
-      "Biomedical Engineering",
-      "Bioprocess Engineering",
       "Chemical Engineering",
       "Civil Engineering",
-      "Computer Engineering",
       "Cyber Security",
       "Data Science",
       "Electrical Engineering",
-      "Environmental Engineering",
-      "Fire Safety Engineering",
-      "General Civil Engineering",
-      "Geotechnical Engineering",
       "Machine Learning",
-      "Materials Engineering",
       "Mechanical Engineering",
       "Mechatronic Engineering",
-      "Metallurgical Engineering",
-      "Mining Engineering",
       "Programming Languages",
-      "Scientific Computing",
-      "Structural Engineering",
-      "Transport Engineering",
-      "Water and Marine Engineering"
+      "Scientific Computing"
     ],
     "Bachelors of Engineering (Honours) / Design": [
       "Anthropology",
@@ -1360,82 +1365,48 @@
       "User Experience Design"
     ],
     "Bachelors of Engineering (Honours) / Mathematics": [
-      "Aerospace Engineering",
       "Applied Mathematics",
-      "Biomedical Engineering",
-      "Bioprocess Engineering",
       "Chemical Engineering",
       "Civil Engineering",
-      "Computer Engineering",
-      "Computing",
       "Data Analytics and Operations Research",
-      "Data Science",
-      "Design",
       "Electrical Engineering",
-      "Environmental Engineering",
-      "Fire Safety Engineering",
-      "General Civil Engineering",
-      "Geotechnical Engineering",
-      "Materials Engineering",
       "Mathematical Physics",
       "Mechanical Engineering",
       "Mechatronic Engineering",
-      "Metallurgical Engineering",
-      "Mining Engineering",
       "Pure Mathematics",
       "Software Engineering",
-      "Statistics",
-      "Structural Engineering",
-      "Transport Engineering",
-      "Water and Marine Engineering"
+      "Statistics"
     ],
     "Bachelors of Engineering (Honours) / Science": [
-      "Aerospace Engineering",
       "Applied Mathematics",
       "Archaeological Science",
       "Biochemistry and Molecular Biology",
       "Bioinformatics",
-      "Biomedical Engineering",
       "Biomedical Science",
-      "Bioprocess Engineering",
       "Cell Biology",
       "Chemical Engineering",
       "Chemistry",
       "Civil Engineering",
       "Coastal and Ocean Science",
-      "Computer Engineering",
       "Computer Science",
-      "Computing",
-      "Data Science",
-      "Design",
       "Earth Science",
       "Ecology and Conservation Biology",
       "Electrical Engineering",
-      "Environmental Engineering",
-      "Fire Safety Engineering",
       "Food Science and Nutrition",
       "Food Technology",
-      "General Civil Engineering",
       "Genetics",
       "Geographical Science",
-      "Geotechnical Engineering",
       "Marine Biology",
-      "Materials Engineering",
       "Mathematics",
       "Mechanical Engineering",
       "Mechatronic Engineering",
-      "Metallurgical Engineering",
       "Microbiology",
-      "Mining Engineering",
       "Physics",
       "Plant Science",
       "Psychology",
       "Public Health",
       "Software Engineering",
       "Statistics",
-      "Structural Engineering",
-      "Transport Engineering",
-      "Water and Marine Engineering",
       "Zoology"
     ],
     "Bachelor of Engineering (Honours) and Master of Engineering": [
@@ -1535,6 +1506,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -1615,19 +1587,19 @@
       "International History",
       "International Inequality and Development",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Korean",
       "Peace and Conflict Studies",
-      "Russian",
       "Spanish"
     ],
     "Bachelor of International Studies (Honours)": [
       "Chinese",
       "French",
       "German",
-      "History",
       "Indonesian",
+      "International History",
       "International Inequality and Development",
       "International Relations",
       "Japanese",
@@ -1637,10 +1609,14 @@
       "Spanish"
     ],
     "Bachelor of Journalism": [
+      "Digital Media",
+      "Economics",
       "Film and Television Studies",
       "Political Science",
       "Popular Music and Technology",
-      "Sports Studies"
+      "Public Relations",
+      "Sports Studies",
+      "Writing"
     ],
     "Bachelor of Journalism (Honours)": [
       "Journalism (Honours)"
@@ -1671,6 +1647,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Korean",
@@ -1708,7 +1685,6 @@
       "Japanese Advanced",
       "Korean",
       "Latin",
-      "Russian",
       "Spanish"
     ],
     "Bachelor of Laws (Honours)": [
@@ -1756,6 +1732,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -1764,6 +1741,7 @@
       "Legal Education Studies",
       "Linguistics",
       "Mathematical Physics",
+      "Mathematics",
       "Media and Digital Cultures",
       "Music",
       "Music Psychology",
@@ -1916,6 +1894,7 @@
       "History",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -2066,6 +2045,7 @@
       "Immunology",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -2224,6 +2204,7 @@
       "Immunology",
       "Indonesian",
       "International Relations",
+      "Italian",
       "Japanese",
       "Japanese Advanced",
       "Journalism and Mass Communication",
@@ -2369,6 +2350,8 @@
     ],
     "Bachelor of Social Science (Honours)": [
       "Development",
+      "Environment and Society",
+      "Health and Social Policy",
       "Health and Society",
       "Social and Public Policy"
     ],
@@ -2402,10 +2385,7 @@
   },
   "postgrad": {
     "Master of Advanced Economics": [
-      "Advanced Economics (24 units)"
-    ],
-    "Master of Advanced Nursing": [
-      "Advanced Nursing"
+      "Advanced Economics (16 units)"
     ],
     "Graduate Certificate of Agribusiness": [
       "Agribusiness"
@@ -2420,9 +2400,6 @@
       "Agronomy",
       "Horticulture",
       "Plant Protection"
-    ],
-    "Graduate Certificate of Alcohol, Tobacco and Other Drug Studies": [
-      "Alcohol, Tobacco and Other Drug Studies"
     ],
     "Graduate Certificate of Animal Science": [
       "Animal Science"
@@ -2452,17 +2429,21 @@
     "Master of Arts in Chinese Translation and Interpreting": [
       "Arts in Chinese Translation and Interpreting (32 units)"
     ],
-    "Graduate Certificate of Arts in Japanese Interpreting": [
-      "Arts in Japanese Interpreting"
+    "Graduate Certificate of Arts in Interpreting": [
+      "Chinese",
+      "Japanese"
     ],
-    "Graduate Diploma of Arts in Japanese Interpreting and Translation": [
-      "Arts in Japanese Interpreting and Translation"
+    "Graduate Certificate of Arts in Translation": [
+      "Chinese",
+      "Japanese"
     ],
-    "Master of Arts in Japanese Interpreting and Translation": [
-      "Arts in Japanese Interpreting and Translation"
+    "Graduate Diploma of Arts in Translation and Interpreting": [
+      "Chinese",
+      "Japanese"
     ],
-    "Graduate Certificate of Arts in Japanese Translation": [
-      "Arts in Japanese Translation"
+    "Master of Arts in Translation and Interpreting": [
+      "Chinese",
+      "Japanese"
     ],
     "Master of Audiology Studies": [
       "Audiology Studies"
@@ -2492,10 +2473,14 @@
       "Biotechnology"
     ],
     "Master of Biotechnology": [
-      "Agricultural Biotechnology"
+      "Agricultural Biotechnology",
+      "Medical Biotechnology",
+      "Synthetic Biology and Industrial Biotechnology"
     ],
     "Master of Biotechnology Research Extensive": [
-      "Agricultural Biotechnology"
+      "Agricultural Biotechnology",
+      "Medical Biotechnology",
+      "Synthetic Biology and Industrial Biotechnology"
     ],
     "Graduate Certificate of Business": [
       "Business"
@@ -2527,7 +2512,7 @@
       "Business Analytics"
     ],
     "Master of Business Psychology": [
-      "Business Psychology"
+      "Business Psychology (32 units)"
     ],
     "Graduate Diploma of Business Research Methods": [
       "Business Research Methods"
@@ -2540,6 +2525,9 @@
       "Periodontics",
       "Prosthodontics",
       "Special Needs Dentistry"
+    ],
+    "Graduate Certificate of Clinical Informatics and Digital Health": [
+      "Clinical Informatics and Digital Health"
     ],
     "Graduate Certificate of Clinical Pharmacy": [
       "Clinical Pharmacy"
@@ -2577,6 +2565,9 @@
     ],
     "Master of Computer Science (Management)": [
       "Computer Science (Management)"
+    ],
+    "Graduate Certificate of Conservation Biology": [
+      "Conservation Biology"
     ],
     "Master of Conservation Biology": [
       "Conservation Biology (24 units)"
@@ -2636,7 +2627,7 @@
       "Economics and Public Policy (32 units)"
     ],
     "Graduate Certificate of Educational Studies": [
-      "Behaviour Management",
+      "Behaviour Support",
       "Curriculum",
       "Guidance, Counselling and Careers",
       "Leadership",
@@ -2645,7 +2636,7 @@
       "Supporting Diverse Learners"
     ],
     "Master of Educational Studies": [
-      "Behaviour Management",
+      "Behaviour Support",
       "Curriculum",
       "Guidance, Counselling and Careers",
       "Leadership",
@@ -2658,8 +2649,8 @@
       "Chemical Engineering",
       "Civil Engineering",
       "Electrical Engineering",
+      "Materials and Manufacturing Engineering",
       "Mechanical Engineering",
-      "Petroleum Engineering",
       "Renewable Energy Engineering",
       "Software Engineering",
       "Urban Water Engineering"
@@ -2669,17 +2660,24 @@
       "Chemical Engineering",
       "Civil Engineering",
       "Electrical Engineering",
+      "Fire Safety Engineering",
       "Materials and Manufacturing Engineering",
       "Mechanical Engineering",
       "Mechatronic Engineering",
-      "Petroleum Engineering",
       "Software Engineering",
       "Urban Water Engineering"
     ],
     "Master of Engineering Science": [
+      "Bioengineering",
+      "Chemical Engineering",
+      "Civil Engineering",
       "Electrical Engineering",
       "Fire Safety Engineering",
-      "Software Engineering"
+      "Materials and Manufacturing Engineering",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Software Engineering",
+      "Urban Water Engineering"
     ],
     "Master of Engineering Science (Management)": [
       "Bioengineering",
@@ -2689,7 +2687,6 @@
       "Materials and Manufacturing Engineering",
       "Mechanical Engineering",
       "Mechatronic Engineering",
-      "Petroleum Engineering",
       "Software Engineering"
     ],
     "Graduate Certificate of Entrepreneurship and Innovation": [
@@ -2728,6 +2725,9 @@
     ],
     "Master of Epidemiology": [
       "Epidemiology (24 units)"
+    ],
+    "Graduate Diploma of Financial Mathematics": [
+      "Financial Mathematics"
     ],
     "Master of Financial Mathematics": [
       "Financial Mathematics (32 units)"
@@ -2851,15 +2851,6 @@
       "Art Therapy",
       "Psychotherapy"
     ],
-    "Graduate Certificate of Mental Health Nursing": [
-      "Mental Health Nursing"
-    ],
-    "Graduate Diploma of Mental Health Nursing": [
-      "Mental Health Nursing"
-    ],
-    "Master of Mental Health Nursing": [
-      "Mental Health Nursing"
-    ],
     "Graduate Certificate of Molecular Biology": [
       "Molecular Biology"
     ],
@@ -2890,14 +2881,17 @@
     "Master of Nurse Practitioner": [
       "Nurse Practitioner"
     ],
-    "Graduate Certificate of Nursing": [
-      "Nursing"
-    ],
     "Master of Nursing Studies": [
       "Nursing Studies"
     ],
     "Master of Occupational Health and Safety Science": [
       "Occupational Health and Safety Science (24 units)"
+    ],
+    "Master of Occupational Hygiene": [
+      "Occupational Hygiene"
+    ],
+    "Master of Occupational Hygiene / Occupational Health and Safety Science": [
+      "Occupational Hygiene / Occupational Health and Safety Science"
     ],
     "Master of Occupational Therapy Studies": [
       "Occupational Therapy Studies"
@@ -2953,23 +2947,23 @@
       "Nutrition",
       "Standard"
     ],
+    "Graduate Diploma of Quantitative Biology": [
+      "Quantitative Biology"
+    ],
     "Master of Quantitative Biology": [
       "Quantitative Biology (32 units)"
     ],
     "Master of Quantum Technology": [
       "Quantum Technology"
     ],
-    "Graduate Certificate of Science": [
-      "Mathematics",
-      "Physics",
-      "Statistics"
-    ],
     "Graduate Diploma of Science": [
+      "Applied Mathematics",
       "Mathematics",
       "Physics",
       "Statistics"
     ],
     "Master of Science": [
+      "Applied Mathematics",
       "Mathematics",
       "Physics",
       "Statistics"
@@ -3031,9 +3025,6 @@
     ],
     "Master of Urban and Regional Planning": [
       "Urban and Regional Planning (32 units)"
-    ],
-    "Master of Veterinary Science": [
-      "Veterinary Diagnostic Pathology"
     ],
     "Graduate Certificate of Writing, Editing and Publishing": [
       "Writing, Editing and Publishing"

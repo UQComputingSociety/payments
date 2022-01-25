@@ -1,3370 +1,3353 @@
 [
-    {
-      "name": "Advanced Business (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Information Systems",
-        "Finance",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Marketing"
-      ]
-    },
-    {
-      "name": "Advanced Finance and Economics (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Economics",
-        "Finance"
-      ]
-    },
-    {
-      "name": "Advanced Humanities (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Ancient History",
-        "Art History",
-        "Drama",
-        "English Literature",
-        "History",
-        "Mathematics",
-        "Music",
-        "Philosophy",
-        "Studies in Religion",
-        "Western Civilisation"
-      ]
-    },
-    {
-      "name": "Advanced Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Art History",
-        "Astrophysics",
-        "Australian Studies",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Criminology",
-        "Data Science",
-        "Design",
-        "Developmental Biology",
-        "Drama",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Entomology",
-        "Film and Television Studies",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "German",
-        "History",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Marine Biology",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Microbiology",
-        "Music",
-        "Music Psychology",
-        "Neuroscience",
-        "Peace and Conflict Studies",
-        "Pharmacology",
-        "Philosophy",
-        "Physics",
-        "Plant Science",
-        "Political Science",
-        "Popular Music and Technology",
-        "Population and Place",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Public Health",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Statistics",
-        "Studies in Religion",
-        "Writing",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Agribusiness",
-      "type": "Bachelor",
-      "majors": [
-        "Agribusiness"
-      ]
-    },
-    {
-      "name": "Agribusiness",
-      "type": "Bachelor",
-      "majors": [
-        "Agribusiness"
-      ]
-    },
-    {
-      "name": "Agricultural Science",
-      "type": "Bachelor",
-      "majors": [
-        "Agronomy",
-        "Animal Science",
-        "Horticulture"
-      ]
-    },
-    {
-      "name": "Agricultural Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Agricultural Science (Honours)"
-      ]
-    },
-    {
-      "name": "Agricultural Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Agricultural Science (Honours)"
-      ]
-    },
-    {
-      "name": "Architectural Design",
-      "type": "Bachelor",
-      "majors": [
-        "Architectural Design"
-      ]
-    },
-    {
-      "name": "Architectural Design",
-      "type": "Bachelor",
-      "majors": [
-        "Architectural Design"
-      ]
-    },
-    {
-      "name": "Arts",
-      "type": "Bachelor",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Arts (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Ancient History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Chinese",
-        "Classical Languages",
-        "Communication and Cultural Studies",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English Literature",
-        "French",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Linguistics",
-        "Mathematics",
-        "Music",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Psychology",
-        "Public Policy",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion"
-      ]
-    },
-    {
-      "name": "Arts",
-      "type": "Diploma",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Agribusiness / Agricultural Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Agronomy",
-        "Animal Science",
-        "Horticulture"
-      ]
-    },
-    {
-      "name": "Agribusiness / Equine Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Agribusiness / Equine Science"
-      ]
-    },
-    {
-      "name": "Agribusiness / Equine Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Agribusiness / Equine Science"
-      ]
-    },
-    {
-      "name": "Agribusiness / Wildlife Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Agribusiness / Wildlife Science"
-      ]
-    },
-    {
-      "name": "Agribusiness / Wildlife Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Agribusiness / Wildlife Science"
-      ]
-    },
-    {
-      "name": "Arts / Education (Secondary)",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Ancient History/History",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Drama",
-        "Economics",
-        "English",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Geography",
-        "German",
-        "Japanese",
-        "Japanese Advanced",
-        "Legal Education Studies",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Popular Music and Technology",
-        "Psychology",
-        "Spanish"
-      ]
-    },
-    {
-      "name": "Arts / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Arts / Social Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Development",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Environment and Society",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "Health and Social Policy",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Arts / Tourism, Hospitality and Event Management",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Hotel and Hospitality Management",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Tourism and Event Management",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Biomedical Science",
-      "type": "Bachelor",
-      "majors": [
-        "Biomedical Science"
-      ]
-    },
-    {
-      "name": "Biomedical Science",
-      "type": "Bachelor",
-      "majors": [
-        "Biomedical Science"
-      ]
-    },
-    {
-      "name": "Biomedical Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Biomedical Science (Honours)"
-      ]
-    },
-    {
-      "name": "Biomedical Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Biomedical Science (Honours)"
-      ]
-    },
-    {
-      "name": "Biotechnology",
-      "type": "Bachelor",
-      "majors": [
-        "Agricultural Biotechnology",
-        "Bioinformatics",
-        "Chemical and Nano Biotechnology",
-        "Innovation and Entrepreneurship",
-        "Medical Biotechnology",
-        "Molecular and Microbial Biotechnology",
-        "Synthetic Biology and Industrial Biotechnology"
-      ]
-    },
-    {
-      "name": "Biotechnology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Agricultural Biotechnology",
-        "Chemical and Nano Biotechnology",
-        "Medical Biotechnology",
-        "Molecular and Microbial Biotechnology",
-        "Synthetic Biology and Industrial Biotechnology"
-      ]
-    },
-    {
-      "name": "Business Management",
-      "type": "Bachelor",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing"
-      ]
-    },
-    {
-      "name": "Business Management (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Business Management (Honours)"
-      ]
-    },
-    {
-      "name": "Business Management (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Business Management (Honours)"
-      ]
-    },
-    {
-      "name": "Biomedical Science / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Business Management / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Business Economics",
-        "Business Information Systems",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Human Resources",
-        "Indonesian",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Leadership and Management Science",
-        "Legal Education Studies",
-        "Linguistics",
-        "Marketing",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Business Management / Commerce",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Economics",
-        "Business Information Systems",
-        "Finance",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing"
-      ]
-    },
-    {
-      "name": "Business Management / Communication",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Digital Media",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing",
-        "Public Relations"
-      ]
-    },
-    {
-      "name": "Business Management / Design",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Anthropology",
-        "Buildings and Environments",
-        "Business Economics",
-        "Business Information Systems",
-        "Environment and Society",
-        "Human Resources",
-        "Information Environments",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing",
-        "Media and Digital Cultures"
-      ]
-    },
-    {
-      "name": "Business Management / Economics",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Information Systems",
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "International and Financial Economics",
-        "Leadership and Management Science",
-        "Marketing",
-        "Quantitative Analysis"
-      ]
-    },
-    {
-      "name": "Business Management / Education (Secondary)",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Economics"
-      ]
-    },
-    {
-      "name": "Business Management / Information Technology",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing",
-        "Software Design",
-        "Software Information Systems",
-        "User Experience Design"
-      ]
-    },
-    {
-      "name": "Business Management / Journalism",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing"
-      ]
-    },
-    {
-      "name": "Business Management / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing"
-      ]
-    },
-    {
-      "name": "Business Management / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Business Economics",
-        "Business Information Systems",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Human Resources",
-        "Immunology",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marine Biology",
-        "Marketing",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Business Management / Tourism, Hospitality and Event Management",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Hospitality Management",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing",
-        "Tourism and Event Management"
-      ]
-    },
-    {
-      "name": "Clinical Exercise Physiology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Clinical Exercise Physiology (Honours)"
-      ]
-    },
-    {
-      "name": "Clinical Exercise Physiology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Clinical Exercise Physiology (Honours)"
-      ]
-    },
-    {
-      "name": "Commerce",
-      "type": "Bachelor",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Information Systems",
-        "Finance"
-      ]
-    },
-    {
-      "name": "Commerce (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Commerce (Honours)"
-      ]
-    },
-    {
-      "name": "Commerce (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Commerce (Honours)"
-      ]
-    },
-    {
-      "name": "Communication",
-      "type": "Bachelor",
-      "majors": [
-        "Digital Media",
-        "Public Relations"
-      ]
-    },
-    {
-      "name": "Communication (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Communication (Honours)"
-      ]
-    },
-    {
-      "name": "Communication (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Communication (Honours)"
-      ]
-    },
-    {
-      "name": "Computer Science",
-      "type": "Bachelor",
-      "majors": [
-        "Cyber Security",
-        "Data Science",
-        "Machine Learning",
-        "Programming Languages",
-        "Scientific Computing"
-      ]
-    },
-    {
-      "name": "Computer Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Computer Science (Honours)"
-      ]
-    },
-    {
-      "name": "Computer Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Computer Science (Honours)"
-      ]
-    },
-    {
-      "name": "Criminology and Criminal Justice (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Criminology and Criminal Justice (Honours)"
-      ]
-    },
-    {
-      "name": "Criminology and Criminal Justice (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Criminology and Criminal Justice (Honours)"
-      ]
-    },
-    {
-      "name": "Computer Science / Cyber Security",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Cryptography",
-        "Cyber Defence",
-        "Cyber Security",
-        "Data Science",
-        "Machine Learning",
-        "Programming Languages",
-        "Scientific Computing"
-      ]
-    },
-    {
-      "name": "Computer Science / Data Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Cyber Security",
-        "Data Science",
-        "Machine Learning",
-        "Programming Languages",
-        "Scientific Computing"
-      ]
-    },
-    {
-      "name": "Commerce / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Accounting",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Business Analytics",
-        "Business Information Systems",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "Finance",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Commerce / Economics",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Information Systems",
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "Finance",
-        "International and Financial Economics",
-        "Quantitative Analysis"
-      ]
-    },
-    {
-      "name": "Commerce / Information Technology",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Information Systems",
-        "Finance",
-        "Software Design",
-        "Software Information Systems",
-        "User Experience Design"
-      ]
-    },
-    {
-      "name": "Commerce / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Information Systems",
-        "Finance"
-      ]
-    },
-    {
-      "name": "Commerce / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Accounting",
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Business Analytics",
-        "Business Information Systems",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Finance",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Communication / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Digital Media",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Public Relations",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Communication / Journalism",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Digital Media",
-        "Public Relations"
-      ]
-    },
-    {
-      "name": "Computer Science / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Cyber Security",
-        "Data Science",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Machine Learning",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Programming Languages",
-        "Psychology",
-        "Scientific Computing",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Computer Science / Business Management",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Cyber Security",
-        "Data Science",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Machine Learning",
-        "Marketing",
-        "Programming Languages",
-        "Scientific Computing"
-      ]
-    },
-    {
-      "name": "Computer Science / Commerce",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Information Systems",
-        "Cyber Security",
-        "Data Science",
-        "Finance",
-        "Machine Learning",
-        "Programming Languages",
-        "Scientific Computing"
-      ]
-    },
-    {
-      "name": "Computer Science / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Cyber Security",
-        "Data Science",
-        "Machine Learning",
-        "Programming Languages",
-        "Scientific Computing"
-      ]
-    },
-    {
-      "name": "Computer Science / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Cyber Security",
-        "Data Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Machine Learning",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Programming Languages",
-        "Psychology",
-        "Public Health",
-        "Scientific Computing",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Dental Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Dental Science (Honours)"
-      ]
-    },
-    {
-      "name": "Dental Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Dental Science (Honours)"
-      ]
-    },
-    {
-      "name": "Design",
-      "type": "Bachelor",
-      "majors": [
-        "Anthropology",
-        "Buildings and Environments",
-        "Environment and Society",
-        "Information Environments",
-        "Innovation and Entrepreneurship",
-        "Media and Digital Cultures"
-      ]
-    },
-    {
-      "name": "Economics",
-      "type": "Bachelor",
-      "majors": [
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "International and Financial Economics",
-        "Quantitative Analysis"
-      ]
-    },
-    {
-      "name": "Economics (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Econometrics",
-        "Economics"
-      ]
-    },
-    {
-      "name": "Education (Primary)",
-      "type": "Bachelor",
-      "majors": [
-        "Education (Primary)"
-      ]
-    },
-    {
-      "name": "Education (Primary)",
-      "type": "Bachelor",
-      "majors": [
-        "Education (Primary)"
-      ]
-    },
-    {
-      "name": "Education (Primary) (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Education (Primary) (Honours)"
-      ]
-    },
-    {
-      "name": "Education (Primary) (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Education (Primary) (Honours)"
-      ]
-    },
-    {
-      "name": "Education (Secondary)",
-      "type": "Bachelor",
-      "majors": [
-        "Education (Secondary)"
-      ]
-    },
-    {
-      "name": "Education (Secondary)",
-      "type": "Bachelor",
-      "majors": [
-        "Education (Secondary)"
-      ]
-    },
-    {
-      "name": "Engineering (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Electrical Engineering",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Software Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) and Master of Engineering",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Chemical Engineering",
-        "Chemical and Biomedical Engineering",
-        "Chemical and Bioprocess Engineering",
-        "Chemical and Environmental Engineering",
-        "Chemical and Materials Engineering",
-        "Chemical and Metallurgical Engineering",
-        "Civil Engineering",
-        "Civil and Environmental Engineering",
-        "Electrical Engineering",
-        "Electrical and Biomedical Engineering",
-        "Electrical and Computer Engineering",
-        "Mechanical Engineering",
-        "Mechanical and Aerospace Engineering",
-        "Mechanical and Materials Engineering",
-        "Mechatronic Engineering",
-        "Software Engineering"
-      ]
-    },
-    {
-      "name": "Environmental Management (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Environmental Management (Honours)"
-      ]
-    },
-    {
-      "name": "Environmental Management (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Environmental Management (Honours)"
-      ]
-    },
-    {
-      "name": "Environmental Science",
-      "type": "Bachelor",
-      "majors": [
-        "Environmental Science"
-      ]
-    },
-    {
-      "name": "Environmental Science",
-      "type": "Bachelor",
-      "majors": [
-        "Environmental Science"
-      ]
-    },
-    {
-      "name": "Environmental Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Environmental Science (Honours)"
-      ]
-    },
-    {
-      "name": "Environmental Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Environmental Science (Honours)"
-      ]
-    },
-    {
-      "name": "Equine Science",
-      "type": "Bachelor",
-      "majors": [
-        "Equine Science"
-      ]
-    },
-    {
-      "name": "Equine Science",
-      "type": "Bachelor",
-      "majors": [
-        "Equine Science"
-      ]
-    },
-    {
-      "name": "Equine Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Equine Science (Honours)"
-      ]
-    },
-    {
-      "name": "Equine Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Equine Science (Honours)"
-      ]
-    },
-    {
-      "name": "Exercise and Nutrition Sciences",
-      "type": "Bachelor",
-      "majors": [
-        "Exercise and Nutrition Sciences"
-      ]
-    },
-    {
-      "name": "Exercise and Nutrition Sciences",
-      "type": "Bachelor",
-      "majors": [
-        "Exercise and Nutrition Sciences"
-      ]
-    },
-    {
-      "name": "Exercise and Nutrition Sciences (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Exercise and Nutrition Sciences (Honours)"
-      ]
-    },
-    {
-      "name": "Exercise and Nutrition Sciences (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Exercise and Nutrition Sciences (Honours)"
-      ]
-    },
-    {
-      "name": "Exercise and Sport Sciences (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Exercise and Sport Sciences (Honours)"
-      ]
-    },
-    {
-      "name": "Exercise and Sport Sciences (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Exercise and Sport Sciences (Honours)"
-      ]
-    },
-    {
-      "name": "Economics / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "International and Financial Economics",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Quantitative Analysis",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Economics / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "International and Financial Economics",
-        "Quantitative Analysis"
-      ]
-    },
-    {
-      "name": "Economics / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "International and Financial Economics",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Quantitative Analysis",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Arts",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chemical Engineering",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Civil Engineering",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "Electrical Engineering",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Russian",
-        "Sociology",
-        "Software Engineering",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Biotechnology",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Agricultural Biotechnology",
-        "Chemical Engineering",
-        "Chemical and Nano Biotechnology",
-        "Medical Biotechnology",
-        "Molecular and Microbial Biotechnology",
-        "Synthetic Biology and Industrial\nBiotechnology"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Business Management",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Business Economics",
-        "Business Information Systems",
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Electrical Engineering",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Software Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Commerce",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Accounting",
-        "Business Analytics",
-        "Business Infomation Systems",
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Electrical Engineering",
-        "Finance",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Software Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Computer Science",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Aerospace Engineering",
-        "Biomedical Engineering",
-        "Bioprocess Engineering",
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Computer Engineering",
-        "Cyber Security",
-        "Data Science",
-        "Electrical Engineering",
-        "Environmental Engineering",
-        "Fire Safety Engineering",
-        "General Civil Engineering",
-        "Geotechnical Engineering",
-        "Machine Learning",
-        "Materials Engineering",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Metallurgical Engineering",
-        "Mining Engineering",
-        "Programming Languages",
-        "Scientific Computing",
-        "Structural Engineering",
-        "Transport Engineering",
-        "Water and Marine Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Design",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Anthropology",
-        "Buildings and Environments",
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Electrical Engineering",
-        "Environment and Society",
-        "Information Environments",
-        "Innovation and Entrepreneurship",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Media and Digital Cultures",
-        "Software Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Economics",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "Electrical Engineering",
-        "International and Financial Economics",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Quantitative Analysis",
-        "Software Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Information Technology",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Electrical Engineering",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Software Design",
-        "Software Information Systems",
-        "User Experience Design"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Mathematics",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Aerospace Engineering",
-        "Applied Mathematics",
-        "Biomedical Engineering",
-        "Bioprocess Engineering",
-        "Chemical Engineering",
-        "Civil Engineering",
-        "Computer Engineering",
-        "Computing",
-        "Data Analytics and Operations Research",
-        "Data Science",
-        "Design",
-        "Electrical Engineering",
-        "Environmental Engineering",
-        "Fire Safety Engineering",
-        "General Civil Engineering",
-        "Geotechnical Engineering",
-        "Materials Engineering",
-        "Mathematical Physics",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Metallurgical Engineering",
-        "Mining Engineering",
-        "Pure Mathematics",
-        "Software Engineering",
-        "Statistics",
-        "Structural Engineering",
-        "Transport Engineering",
-        "Water and Marine Engineering"
-      ]
-    },
-    {
-      "name": "Engineering (Honours) / Science",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Aerospace Engineering",
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Engineering",
-        "Biomedical Science",
-        "Bioprocess Engineering",
-        "Cell Biology",
-        "Chemical Engineering",
-        "Chemistry",
-        "Civil Engineering",
-        "Coastal and Ocean Science",
-        "Computer Engineering",
-        "Computer Science",
-        "Computing",
-        "Data Science",
-        "Design",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Electrical Engineering",
-        "Environmental Engineering",
-        "Fire Safety Engineering",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "General Civil Engineering",
-        "Genetics",
-        "Geographical Science",
-        "Geotechnical Engineering",
-        "Marine Biology",
-        "Materials Engineering",
-        "Mathematics",
-        "Mechanical Engineering",
-        "Mechatronic Engineering",
-        "Metallurgical Engineering",
-        "Microbiology",
-        "Mining Engineering",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Software Engineering",
-        "Statistics",
-        "Structural Engineering",
-        "Transport Engineering",
-        "Water and Marine Engineering",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Health Sciences",
-      "type": "Bachelor",
-      "majors": [
-        "Clinical Health",
-        "Nutrition",
-        "Public Health"
-      ]
-    },
-    {
-      "name": "Health Sciences (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Health Sciences (Honours)"
-      ]
-    },
-    {
-      "name": "Health Sciences (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Health Sciences (Honours)"
-      ]
-    },
-    {
-      "name": "Health, Sport and Physical Education (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Health, Sport and Physical Education (Honours)"
-      ]
-    },
-    {
-      "name": "Health, Sport and Physical Education (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Health, Sport and Physical Education (Honours)"
-      ]
-    },
-    {
-      "name": "Human Services (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Human Services (Honours)"
-      ]
-    },
-    {
-      "name": "Human Services (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Human Services (Honours)"
-      ]
-    },
-    {
-      "name": "Humanities",
-      "type": "Bachelor",
-      "majors": [
-        "Western Civilisation"
-      ]
-    },
-    {
-      "name": "Humanities / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Western Civilisation"
-      ]
-    },
-    {
-      "name": "Information Technology",
-      "type": "Bachelor",
-      "majors": [
-        "Computer Systems",
-        "Software Design",
-        "Software Information Systems",
-        "User Experience Design"
-      ]
-    },
-    {
-      "name": "Information Technology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Information Technology (Honours)"
-      ]
-    },
-    {
-      "name": "Information Technology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Information Technology (Honours)"
-      ]
-    },
-    {
-      "name": "International Studies",
-      "type": "Bachelor",
-      "majors": [
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Economics",
-        "French",
-        "French Advanced",
-        "German",
-        "Indonesian",
-        "International History",
-        "International Inequality and Development",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Korean",
-        "Peace and Conflict Studies",
-        "Russian",
-        "Spanish"
-      ]
-    },
-    {
-      "name": "International Studies (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Chinese",
-        "French",
-        "German",
-        "History",
-        "Indonesian",
-        "International Inequality and Development",
-        "International Relations",
-        "Japanese",
-        "Korean",
-        "Peace and Conflict Studies",
-        "Russian",
-        "Spanish"
-      ]
-    },
-    {
-      "name": "Information Technology / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Russian",
-        "Sociology",
-        "Software Design",
-        "Software Information Systems",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "User Experience Design",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Information Technology / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Systems",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Software Design",
-        "Software Information Systems",
-        "Statistics",
-        "User Experience Design",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Journalism",
-      "type": "Bachelor",
-      "majors": [
-        "Film and Television Studies",
-        "Political Science",
-        "Popular Music and Technology",
-        "Sports Studies"
-      ]
-    },
-    {
-      "name": "Journalism (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Journalism (Honours)"
-      ]
-    },
-    {
-      "name": "Journalism (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Journalism (Honours)"
-      ]
-    },
-    {
-      "name": "Journalism / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Psychology",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Journalism / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Journalism / Laws (Honours)"
-      ]
-    },
-    {
-      "name": "Journalism / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Journalism / Laws (Honours)"
-      ]
-    },
-    {
-      "name": "Laws (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Laws (Honours)"
-      ]
-    },
-    {
-      "name": "Laws (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Laws (Honours)"
-      ]
-    },
-    {
-      "name": "Languages",
-      "type": "Diploma",
-      "majors": [
-        "Ancient Greek",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "French",
-        "French Advanced",
-        "German",
-        "Indonesian",
-        "Japanese",
-        "Japanese Advanced",
-        "Korean",
-        "Latin",
-        "Russian",
-        "Spanish"
-      ]
-    },
-    {
-      "name": "Mathematics",
-      "type": "Bachelor",
-      "majors": [
-        "Applied Mathematics",
-        "Bioinformatics",
-        "Computational Science",
-        "Computer Science",
-        "Data Analytics and Operations Research",
-        "Mathematical Physics",
-        "Physics",
-        "Pure Mathematics",
-        "Statistics"
-      ]
-    },
-    {
-      "name": "Mathematics (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Mathematics (Honours)"
-      ]
-    },
-    {
-      "name": "Mathematics (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Mathematics (Honours)"
-      ]
-    },
-    {
-      "name": "Midwifery",
-      "type": "Bachelor",
-      "majors": [
-        "Midwifery"
-      ]
-    },
-    {
-      "name": "Midwifery",
-      "type": "Bachelor",
-      "majors": [
-        "Midwifery"
-      ]
-    },
-    {
-      "name": "Midwifery (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Midwifery (Honours)"
-      ]
-    },
-    {
-      "name": "Midwifery (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Midwifery (Honours)"
-      ]
-    },
-    {
-      "name": "Music (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Music (Honours)"
-      ]
-    },
-    {
-      "name": "Music (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Music (Honours)"
-      ]
-    },
-    {
-      "name": "Mathematics / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Applied Mathematics",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Data Analytics and Operations Research",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematical Physics",
-        "Media and Digital Cultures",
-        "Music",
-        "Music Psychology",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Pure Mathematics",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Statistics",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Mathematics / Business Management",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Business Economics",
-        "Business Information Systems",
-        "Data Analytics and Operations Research",
-        "Human Resources",
-        "Innovation and Entrepreneurship",
-        "International Business",
-        "Leadership and Management Science",
-        "Marketing",
-        "Mathematical Physics",
-        "Pure Mathematics",
-        "Statistics"
-      ]
-    },
-    {
-      "name": "Mathematics / Commerce",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Accounting",
-        "Applied Mathematics",
-        "Business Analytics",
-        "Business Infomation Systems",
-        "Data Analytics and Operations Research",
-        "Finance",
-        "Mathematical Physics",
-        "Pure Mathematics",
-        "Statistics"
-      ]
-    },
-    {
-      "name": "Mathematics / Computer Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Bioinformatics",
-        "Computational Science",
-        "Cyber Security",
-        "Data Analytics and Operations Research",
-        "Data Science",
-        "Machine Learning",
-        "Mathematical Physics",
-        "Physics",
-        "Programming Languages",
-        "Pure Mathematics",
-        "Scientific Computing",
-        "Statistics"
-      ]
-    },
-    {
-      "name": "Mathematics / Economics",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Data Analytics and Operations Research",
-        "Economics and Public Policy",
-        "Economics of Strategy and Behaviour",
-        "International and Financial Economics",
-        "Mathematical Physics",
-        "Pure Mathematics",
-        "Quantitative Analysis",
-        "Statistics"
-      ]
-    },
-    {
-      "name": "Mathematics / Education (Secondary)",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Data Analytics and Operations Research",
-        "Mathematical Physics",
-        "Pure Mathematics",
-        "Statistics"
-      ]
-    },
-    {
-      "name": "Mathematics / Science",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Data Analytics and Operations Research",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematical Physics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Pure Mathematics",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Music (Honours) / Arts",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Archaeology",
-        "Art History",
-        "Australian Studies",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Criminology",
-        "Drama",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Film and Television Studies",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Geography",
-        "German",
-        "History",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Music",
-        "Peace and Conflict Studies",
-        "Philosophy",
-        "Political Science",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Studies in Religion",
-        "Writing"
-      ]
-    },
-    {
-      "name": "Music (Honours) / Education (Secondary)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Music (Honours) / Education (Secondary)"
-      ]
-    },
-    {
-      "name": "Music (Honours) / Education (Secondary)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Music (Honours) / Education (Secondary)"
-      ]
-    },
-    {
-      "name": "Music (Honours) / Science",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Immunity and Infection",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Nursing",
-      "type": "Bachelor",
-      "majors": [
-        "Nursing"
-      ]
-    },
-    {
-      "name": "Nursing",
-      "type": "Bachelor",
-      "majors": [
-        "Nursing"
-      ]
-    },
-    {
-      "name": "Nursing (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Nursing (Honours)"
-      ]
-    },
-    {
-      "name": "Nursing (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Nursing (Honours)"
-      ]
-    },
-    {
-      "name": "Nursing / Midwifery",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Nursing / Midwifery"
-      ]
-    },
-    {
-      "name": "Nursing / Midwifery",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Nursing / Midwifery"
-      ]
-    },
-    {
-      "name": "Occupational Health and Safety Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Occupational Health and Safety Science (Honours)"
-      ]
-    },
-    {
-      "name": "Occupational Health and Safety Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Occupational Health and Safety Science (Honours)"
-      ]
-    },
-    {
-      "name": "Occupational Therapy (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Occupational Therapy (Honours)"
-      ]
-    },
-    {
-      "name": "Occupational Therapy (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Occupational Therapy (Honours)"
-      ]
-    },
-    {
-      "name": "Pharmacy (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Clinical and Experimental Therapeutics"
-      ]
-    },
-    {
-      "name": "Physiotherapy (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Physiotherapy (Honours)"
-      ]
-    },
-    {
-      "name": "Physiotherapy (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Physiotherapy (Honours)"
-      ]
-    },
-    {
-      "name": "Politics, Philosophy and Economics (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Economics",
-        "Philosophy",
-        "Politics"
-      ]
-    },
-    {
-      "name": "Psychological Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Psychological Science (Honours)"
-      ]
-    },
-    {
-      "name": "Psychological Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Psychological Science (Honours)"
-      ]
-    },
-    {
-      "name": "Regional and Town Planning",
-      "type": "Bachelor",
-      "majors": [
-        "Regional and Town Planning"
-      ]
-    },
-    {
-      "name": "Regional and Town Planning",
-      "type": "Bachelor",
-      "majors": [
-        "Regional and Town Planning"
-      ]
-    },
-    {
-      "name": "Regional and Town Planning (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Regional and Town Planning (Honours)"
-      ]
-    },
-    {
-      "name": "Regional and Town Planning (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Regional and Town Planning (Honours)"
-      ]
-    },
-    {
-      "name": "Science",
-      "type": "Bachelor",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Art History",
-        "Astrophysics",
-        "Australian Studies",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Criminology",
-        "Data Science",
-        "Design",
-        "Developmental Biology",
-        "Drama",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Entomology",
-        "Film and Television Studies",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "German",
-        "History",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Marine Biology",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Music",
-        "Music Psychology",
-        "Neuroscience",
-        "Peace and Conflict Studies",
-        "Pharmacology",
-        "Philosophy",
-        "Physics",
-        "Plant Science",
-        "Political Science",
-        "Popular Music and Technology",
-        "Population and Place",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Public Health",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Statistics",
-        "Studies in Religion",
-        "Writing",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Science (Honours) - Gatton",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Animal Production Science",
-        "Animal and Veterinary Bioscience",
-        "Plant Science"
-      ]
-    },
-    {
-      "name": "Science (Honours) - St Lucia",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Anatomy",
-        "Archaeological Science",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Drug Design and Development",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Environmental Science",
-        "Evolutionary Biology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Genomics",
-        "Geographical Science",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Nanotechnology",
-        "Neuroscience",
-        "Parasitology",
-        "Pharmacology",
-        "Physics",
-        "Physiology",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Wildlife Biology",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Social Science",
-      "type": "Bachelor",
-      "majors": [
-        "Development",
-        "Environment and Society",
-        "Health and Social Policy"
-      ]
-    },
-    {
-      "name": "Social Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Development",
-        "Health and Society",
-        "Social and Public Policy"
-      ]
-    },
-    {
-      "name": "Social Work (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Child, Youth and Family",
-        "Health and Ageing",
-        "Mental Health"
-      ]
-    },
-    {
-      "name": "Speech Pathology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Speech Pathology (Honours)"
-      ]
-    },
-    {
-      "name": "Speech Pathology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Speech Pathology (Honours)"
-      ]
-    },
-    {
-      "name": "Science",
-      "type": "Diploma",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Genetics",
-        "Geographical Information Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Science / Arts",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Aboriginal and Torres Strait Islander Studies",
-        "Ancient Greek",
-        "Ancient History",
-        "Ancient History/History",
-        "Anthropology",
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Archaeology",
-        "Art History",
-        "Astrophysics",
-        "Australian Studies",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Chinese",
-        "Chinese Translation and Interpreting",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Criminology",
-        "Developmental Biology",
-        "Drama",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Economics",
-        "English",
-        "English Literature",
-        "English as an International Language",
-        "Entomology",
-        "Film and Television Studies",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "French",
-        "French Advanced",
-        "Gender Studies",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Geography",
-        "German",
-        "History",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Indonesian",
-        "International Relations",
-        "Japanese",
-        "Japanese Advanced",
-        "Journalism and Mass Communication",
-        "Korean",
-        "Latin",
-        "Legal Education Studies",
-        "Linguistics",
-        "Marine Biology",
-        "Mathematics",
-        "Media and Digital Cultures",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Music",
-        "Music Psychology",
-        "Neuroscience",
-        "Peace and Conflict Studies",
-        "Pharmacology",
-        "Philosophy",
-        "Physics",
-        "Plant Science",
-        "Political Science",
-        "Popular Music and Technology",
-        "Professional Writing and Communication",
-        "Psychology",
-        "Public Health",
-        "Russian",
-        "Sociology",
-        "Spanish",
-        "Sports Studies",
-        "Statistics",
-        "Studies in Religion",
-        "Writing",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Science / Education (Secondary)",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Biomedical Science",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Physiology",
-        "Mathematics",
-        "Microbiology",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Science / Journalism",
-      "type": "Bachelor (Dual Degree)",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Infection and Immunity",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Science / Laws (Honours)",
-      "type": "Bachelor (Dual Degree) Honours",
-      "majors": [
-        "Applied Mathematics",
-        "Archaeological Science",
-        "Astrophysics",
-        "Biochemistry and Molecular Biology",
-        "Bioinformatics",
-        "Biomedical Science",
-        "Biophysics",
-        "Cell Biology",
-        "Chemical Biology",
-        "Chemistry",
-        "Coastal and Ocean Science",
-        "Computational Science",
-        "Computer Science",
-        "Developmental Biology",
-        "Earth Science",
-        "Ecology and Conservation Biology",
-        "Entomology",
-        "Food Science and Nutrition",
-        "Food Technology",
-        "Genetics",
-        "Geographical Information Science",
-        "Geographical Science",
-        "Human Anatomy",
-        "Human Physiology",
-        "Immunology",
-        "Marine Biology",
-        "Mathematics",
-        "Microbiology",
-        "Microbiology, Immunity and Infection",
-        "Neuroscience",
-        "Pharmacology",
-        "Physics",
-        "Plant Science",
-        "Psychology",
-        "Public Health",
-        "Statistics",
-        "Zoology"
-      ]
-    },
-    {
-      "name": "Tourism, Hospitality and Event Management",
-      "type": "Bachelor",
-      "majors": [
-        "Hotel and Hospitality Management",
-        "Tourism and Event Management"
-      ]
-    },
-    {
-      "name": "Veterinary Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Veterinary Science (Honours)"
-      ]
-    },
-    {
-      "name": "Veterinary Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Veterinary Science (Honours)"
-      ]
-    },
-    {
-      "name": "Veterinary Technology",
-      "type": "Bachelor",
-      "majors": [
-        "Veterinary Technology"
-      ]
-    },
-    {
-      "name": "Veterinary Technology",
-      "type": "Bachelor",
-      "majors": [
-        "Veterinary Technology"
-      ]
-    },
-    {
-      "name": "Veterinary Technology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Veterinary Technology (Honours)"
-      ]
-    },
-    {
-      "name": "Veterinary Technology (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Veterinary Technology (Honours)"
-      ]
-    },
-    {
-      "name": "Wildlife Science",
-      "type": "Bachelor",
-      "majors": [
-        "Wildlife Science"
-      ]
-    },
-    {
-      "name": "Wildlife Science",
-      "type": "Bachelor",
-      "majors": [
-        "Wildlife Science"
-      ]
-    },
-    {
-      "name": "Wildlife Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Wildlife Science (Honours)"
-      ]
-    },
-    {
-      "name": "Wildlife Science (Honours)",
-      "type": "Bachelor Honours",
-      "majors": [
-        "Wildlife Science (Honours)"
-      ]
-    }
-  ]
+  {
+    "name": "Advanced Business (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Information Systems",
+      "Finance",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Advanced Finance and Economics (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Economics",
+      "Finance"
+    ]
+  },
+  {
+    "name": "Advanced Humanities (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Ancient History",
+      "Art History",
+      "Drama",
+      "English Literature",
+      "History",
+      "Music",
+      "Philosophy",
+      "Studies in Religion",
+      "Western Civilisation"
+    ]
+  },
+  {
+    "name": "Advanced Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Art History",
+      "Astrophysics",
+      "Australian Studies",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Criminology",
+      "Data Science",
+      "Design",
+      "Developmental Biology",
+      "Drama",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Entomology",
+      "Film and Television Studies",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "German",
+      "History",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Marine Biology",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Microbiology",
+      "Music",
+      "Music Psychology",
+      "Neuroscience",
+      "Peace and Conflict Studies",
+      "Pharmacology",
+      "Philosophy",
+      "Physics",
+      "Plant Science",
+      "Political Science",
+      "Popular Music and Technology",
+      "Population and Place",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Public Health",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Statistics",
+      "Studies in Religion",
+      "Writing",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Agribusiness",
+    "type": "Bachelor",
+    "majors": [
+      "Agribusiness"
+    ]
+  },
+  {
+    "name": "Agribusiness",
+    "type": "Bachelor",
+    "majors": [
+      "Agribusiness"
+    ]
+  },
+  {
+    "name": "Agricultural Science",
+    "type": "Bachelor",
+    "majors": [
+      "Agronomy",
+      "Animal Science",
+      "Horticulture"
+    ]
+  },
+  {
+    "name": "Agricultural Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Agricultural Science (Honours)"
+    ]
+  },
+  {
+    "name": "Agricultural Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Agricultural Science (Honours)"
+    ]
+  },
+  {
+    "name": "Architectural Design",
+    "type": "Bachelor",
+    "majors": [
+      "Architectural Design"
+    ]
+  },
+  {
+    "name": "Architectural Design",
+    "type": "Bachelor",
+    "majors": [
+      "Architectural Design"
+    ]
+  },
+  {
+    "name": "Arts",
+    "type": "Bachelor",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Arts (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Ancient History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Chinese",
+      "Classical Languages",
+      "Communication and Cultural Studies",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English Literature",
+      "French",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Japanese",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Linguistics",
+      "Mathematics",
+      "Music",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Psychology",
+      "Public Policy",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion"
+    ]
+  },
+  {
+    "name": "Arts",
+    "type": "Diploma",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Agribusiness / Agricultural Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Agronomy",
+      "Animal Science",
+      "Horticulture"
+    ]
+  },
+  {
+    "name": "Agribusiness / Equine Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Agribusiness / Equine Science"
+    ]
+  },
+  {
+    "name": "Agribusiness / Equine Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Agribusiness / Equine Science"
+    ]
+  },
+  {
+    "name": "Agribusiness / Wildlife Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Agribusiness / Wildlife Science"
+    ]
+  },
+  {
+    "name": "Agribusiness / Wildlife Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Agribusiness / Wildlife Science"
+    ]
+  },
+  {
+    "name": "Arts / Education (Secondary)",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Ancient History/History",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Drama",
+      "Economics",
+      "English",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Geography",
+      "German",
+      "Japanese",
+      "Japanese Advanced",
+      "Legal Education Studies",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Popular Music and Technology",
+      "Psychology",
+      "Spanish"
+    ]
+  },
+  {
+    "name": "Arts / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Arts / Social Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Development",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Environment and Society",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "Health and Social Policy",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Arts / Tourism, Hospitality and Event Management",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Hotel and Hospitality Management",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Tourism and Event Management",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Biomedical Science",
+    "type": "Bachelor",
+    "majors": [
+      "Biomedical Science"
+    ]
+  },
+  {
+    "name": "Biomedical Science",
+    "type": "Bachelor",
+    "majors": [
+      "Biomedical Science"
+    ]
+  },
+  {
+    "name": "Biomedical Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Biomedical Science (Honours)"
+    ]
+  },
+  {
+    "name": "Biomedical Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Biomedical Science (Honours)"
+    ]
+  },
+  {
+    "name": "Biotechnology",
+    "type": "Bachelor",
+    "majors": [
+      "Agricultural Biotechnology",
+      "Bioinformatics",
+      "Chemical and Nano Biotechnology",
+      "Innovation and Entrepreneurship",
+      "Medical Biotechnology",
+      "Molecular and Microbial Biotechnology",
+      "Synthetic Biology and Industrial Biotechnology"
+    ]
+  },
+  {
+    "name": "Biotechnology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Agricultural Biotechnology",
+      "Chemical and Nano Biotechnology",
+      "Medical Biotechnology",
+      "Molecular and Microbial Biotechnology",
+      "Synthetic Biology and Industrial Biotechnology"
+    ]
+  },
+  {
+    "name": "Business Management",
+    "type": "Bachelor",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Business Management (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Business Management (Honours)"
+    ]
+  },
+  {
+    "name": "Business Management (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Business Management (Honours)"
+    ]
+  },
+  {
+    "name": "Biomedical Science / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Business Management / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Business Economics",
+      "Business Information Systems",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Human Resources",
+      "Indonesian",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Leadership and Management Science",
+      "Legal Education Studies",
+      "Linguistics",
+      "Marketing",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Business Management / Commerce",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Economics",
+      "Business Information Systems",
+      "Finance",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Business Management / Communication",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Digital Media",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing",
+      "Public Relations"
+    ]
+  },
+  {
+    "name": "Business Management / Design",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Anthropology",
+      "Buildings and Environments",
+      "Business Economics",
+      "Business Information Systems",
+      "Environment and Society",
+      "Human Resources",
+      "Information Environments",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing",
+      "Media and Digital Cultures"
+    ]
+  },
+  {
+    "name": "Business Management / Economics",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Information Systems",
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "International and Financial Economics",
+      "Leadership and Management Science",
+      "Marketing",
+      "Quantitative Analysis"
+    ]
+  },
+  {
+    "name": "Business Management / Education (Secondary)",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Economics"
+    ]
+  },
+  {
+    "name": "Business Management / Information Technology",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing",
+      "Software Design",
+      "Software Information Systems",
+      "User Experience Design"
+    ]
+  },
+  {
+    "name": "Business Management / Journalism",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Business Management / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing"
+    ]
+  },
+  {
+    "name": "Business Management / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Business Economics",
+      "Business Information Systems",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Human Resources",
+      "Immunology",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marine Biology",
+      "Marketing",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Business Management / Tourism, Hospitality and Event Management",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Hospitality Management",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing",
+      "Tourism and Event Management"
+    ]
+  },
+  {
+    "name": "Clinical Exercise Physiology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Clinical Exercise Physiology (Honours)"
+    ]
+  },
+  {
+    "name": "Clinical Exercise Physiology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Clinical Exercise Physiology (Honours)"
+    ]
+  },
+  {
+    "name": "Commerce",
+    "type": "Bachelor",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Information Systems",
+      "Finance"
+    ]
+  },
+  {
+    "name": "Commerce (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Commerce (Honours)"
+    ]
+  },
+  {
+    "name": "Commerce (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Commerce (Honours)"
+    ]
+  },
+  {
+    "name": "Communication",
+    "type": "Bachelor",
+    "majors": [
+      "Digital Media",
+      "Interaction Design",
+      "Journalism",
+      "Public Relations",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Communication (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Communication (Honours)"
+    ]
+  },
+  {
+    "name": "Communication (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Communication (Honours)"
+    ]
+  },
+  {
+    "name": "Computer Science",
+    "type": "Bachelor",
+    "majors": [
+      "Cyber Security",
+      "Data Science",
+      "Machine Learning",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Computer Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Computer Science (Honours)"
+    ]
+  },
+  {
+    "name": "Computer Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Computer Science (Honours)"
+    ]
+  },
+  {
+    "name": "Criminology and Criminal Justice (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Criminology and Criminal Justice (Honours)"
+    ]
+  },
+  {
+    "name": "Criminology and Criminal Justice (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Criminology and Criminal Justice (Honours)"
+    ]
+  },
+  {
+    "name": "Computer Science / Cyber Security",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Cryptography",
+      "Cyber Defence",
+      "Cyber Security",
+      "Data Science",
+      "Machine Learning",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Computer Science / Data Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Cyber Security",
+      "Data Science",
+      "Machine Learning",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Commerce / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Accounting",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Business Analytics",
+      "Business Information Systems",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "Finance",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Commerce / Economics",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Information Systems",
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "Finance",
+      "International and Financial Economics",
+      "Quantitative Analysis"
+    ]
+  },
+  {
+    "name": "Commerce / Information Technology",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Information Systems",
+      "Finance",
+      "Software Design",
+      "Software Information Systems",
+      "User Experience Design"
+    ]
+  },
+  {
+    "name": "Commerce / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Information Systems",
+      "Finance"
+    ]
+  },
+  {
+    "name": "Commerce / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Accounting",
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Business Analytics",
+      "Business Information Systems",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Finance",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Communication / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Digital Media",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Public Relations",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Communication / Journalism",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Digital Media",
+      "Interaction Design",
+      "Public Relations",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Computer Science / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Cyber Security",
+      "Data Science",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Machine Learning",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Programming Languages",
+      "Psychology",
+      "Russian",
+      "Scientific Computing",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Computer Science / Business Management",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Cyber Security",
+      "Data Science",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Machine Learning",
+      "Marketing",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Computer Science / Commerce",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Information Systems",
+      "Cyber Security",
+      "Data Science",
+      "Finance",
+      "Machine Learning",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Computer Science / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Cyber Security",
+      "Data Science",
+      "Machine Learning",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Computer Science / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Cyber Security",
+      "Data Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Machine Learning",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Programming Languages",
+      "Psychology",
+      "Public Health",
+      "Scientific Computing",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Dental Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Dental Science (Honours)"
+    ]
+  },
+  {
+    "name": "Dental Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Dental Science (Honours)"
+    ]
+  },
+  {
+    "name": "Design",
+    "type": "Bachelor",
+    "majors": [
+      "Anthropology",
+      "Buildings and Environments",
+      "Environment and Society",
+      "Information Environments",
+      "Innovation and Entrepreneurship",
+      "Media and Digital Cultures"
+    ]
+  },
+  {
+    "name": "Economics",
+    "type": "Bachelor",
+    "majors": [
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "International and Financial Economics",
+      "Quantitative Analysis"
+    ]
+  },
+  {
+    "name": "Economics (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Econometrics",
+      "Economics"
+    ]
+  },
+  {
+    "name": "Education (Primary)",
+    "type": "Bachelor",
+    "majors": [
+      "Education (Primary)"
+    ]
+  },
+  {
+    "name": "Education (Primary)",
+    "type": "Bachelor",
+    "majors": [
+      "Education (Primary)"
+    ]
+  },
+  {
+    "name": "Education (Primary) (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Education (Primary) (Honours)"
+    ]
+  },
+  {
+    "name": "Education (Primary) (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Education (Primary) (Honours)"
+    ]
+  },
+  {
+    "name": "Education (Secondary)",
+    "type": "Bachelor",
+    "majors": [
+      "Education (Secondary)"
+    ]
+  },
+  {
+    "name": "Education (Secondary)",
+    "type": "Bachelor",
+    "majors": [
+      "Education (Secondary)"
+    ]
+  },
+  {
+    "name": "Engineering (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Electrical Engineering",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) and Master of Engineering",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Chemical Engineering",
+      "Chemical and Biomedical Engineering",
+      "Chemical and Bioprocess Engineering",
+      "Chemical and Environmental Engineering",
+      "Chemical and Materials Engineering",
+      "Chemical and Metallurgical Engineering",
+      "Civil Engineering",
+      "Civil and Environmental Engineering",
+      "Electrical Engineering",
+      "Electrical and Biomedical Engineering",
+      "Electrical and Computer Engineering",
+      "Mechanical Engineering",
+      "Mechanical and Aerospace Engineering",
+      "Mechanical and Materials Engineering",
+      "Mechatronic Engineering",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Environmental Management (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Environmental Management (Honours)"
+    ]
+  },
+  {
+    "name": "Environmental Management (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Environmental Management (Honours)"
+    ]
+  },
+  {
+    "name": "Environmental Science",
+    "type": "Bachelor",
+    "majors": [
+      "Environmental Science"
+    ]
+  },
+  {
+    "name": "Environmental Science",
+    "type": "Bachelor",
+    "majors": [
+      "Environmental Science"
+    ]
+  },
+  {
+    "name": "Environmental Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Environmental Science (Honours)"
+    ]
+  },
+  {
+    "name": "Environmental Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Environmental Science (Honours)"
+    ]
+  },
+  {
+    "name": "Equine Science",
+    "type": "Bachelor",
+    "majors": [
+      "Equine Science"
+    ]
+  },
+  {
+    "name": "Equine Science",
+    "type": "Bachelor",
+    "majors": [
+      "Equine Science"
+    ]
+  },
+  {
+    "name": "Equine Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Equine Science (Honours)"
+    ]
+  },
+  {
+    "name": "Equine Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Equine Science (Honours)"
+    ]
+  },
+  {
+    "name": "Exercise and Nutrition Sciences",
+    "type": "Bachelor",
+    "majors": [
+      "Exercise and Nutrition Sciences"
+    ]
+  },
+  {
+    "name": "Exercise and Nutrition Sciences",
+    "type": "Bachelor",
+    "majors": [
+      "Exercise and Nutrition Sciences"
+    ]
+  },
+  {
+    "name": "Exercise and Nutrition Sciences (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Exercise and Nutrition Sciences (Honours)"
+    ]
+  },
+  {
+    "name": "Exercise and Nutrition Sciences (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Exercise and Nutrition Sciences (Honours)"
+    ]
+  },
+  {
+    "name": "Exercise and Sport Sciences (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Exercise and Sport Sciences (Honours)"
+    ]
+  },
+  {
+    "name": "Exercise and Sport Sciences (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Exercise and Sport Sciences (Honours)"
+    ]
+  },
+  {
+    "name": "Economics / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "International and Financial Economics",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Quantitative Analysis",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Economics / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "International and Financial Economics",
+      "Quantitative Analysis"
+    ]
+  },
+  {
+    "name": "Economics / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "International and Financial Economics",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Quantitative Analysis",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Arts",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chemical Engineering",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Civil Engineering",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "Electrical Engineering",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Software Engineering",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Biotechnology",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Agricultural Biotechnology",
+      "Chemical Engineering",
+      "Chemical and Nano Biotechnology",
+      "Medical Biotechnology",
+      "Molecular and Microbial Biotechnology",
+      "Synthetic Biology and Industrial\nBiotechnology"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Business Management",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Business Economics",
+      "Business Information Systems",
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Electrical Engineering",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Commerce",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Accounting",
+      "Business Analytics",
+      "Business Infomation Systems",
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Electrical Engineering",
+      "Finance",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Computer Science",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Cyber Security",
+      "Data Science",
+      "Electrical Engineering",
+      "Machine Learning",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Programming Languages",
+      "Scientific Computing"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Design",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Anthropology",
+      "Buildings and Environments",
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Electrical Engineering",
+      "Environment and Society",
+      "Information Environments",
+      "Innovation and Entrepreneurship",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Media and Digital Cultures",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Economics",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "Electrical Engineering",
+      "International and Financial Economics",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Quantitative Analysis",
+      "Software Engineering"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Information Technology",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Electrical Engineering",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Software Design",
+      "Software Information Systems",
+      "User Experience Design"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Mathematics",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Applied Mathematics",
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Data Analytics and Operations Research",
+      "Electrical Engineering",
+      "Mathematical Physics",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Pure Mathematics",
+      "Software Engineering",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Engineering (Honours) / Science",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Cell Biology",
+      "Chemical Engineering",
+      "Chemistry",
+      "Civil Engineering",
+      "Coastal and Ocean Science",
+      "Computer Science",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Electrical Engineering",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Science",
+      "Marine Biology",
+      "Mathematics",
+      "Mechanical Engineering",
+      "Mechatronic Engineering",
+      "Microbiology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Software Engineering",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Health Sciences",
+    "type": "Bachelor",
+    "majors": [
+      "Clinical Health",
+      "Nutrition",
+      "Public Health"
+    ]
+  },
+  {
+    "name": "Health Sciences (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Health Sciences (Honours)"
+    ]
+  },
+  {
+    "name": "Health Sciences (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Health Sciences (Honours)"
+    ]
+  },
+  {
+    "name": "Health, Sport and Physical Education (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Health, Sport and Physical Education (Honours)"
+    ]
+  },
+  {
+    "name": "Health, Sport and Physical Education (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Health, Sport and Physical Education (Honours)"
+    ]
+  },
+  {
+    "name": "Human Services (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Human Services (Honours)"
+    ]
+  },
+  {
+    "name": "Human Services (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Human Services (Honours)"
+    ]
+  },
+  {
+    "name": "Humanities",
+    "type": "Bachelor",
+    "majors": [
+      "Western Civilisation"
+    ]
+  },
+  {
+    "name": "Humanities / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Western Civilisation"
+    ]
+  },
+  {
+    "name": "Information Technology",
+    "type": "Bachelor",
+    "majors": [
+      "Computer Systems",
+      "Software Design",
+      "Software Information Systems",
+      "User Experience Design"
+    ]
+  },
+  {
+    "name": "Information Technology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Information Technology (Honours)"
+    ]
+  },
+  {
+    "name": "Information Technology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Information Technology (Honours)"
+    ]
+  },
+  {
+    "name": "International Studies",
+    "type": "Bachelor",
+    "majors": [
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Economics",
+      "French",
+      "French Advanced",
+      "German",
+      "Indonesian",
+      "International History",
+      "International Inequality and Development",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Korean",
+      "Peace and Conflict Studies",
+      "Spanish"
+    ]
+  },
+  {
+    "name": "International Studies (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Chinese",
+      "French",
+      "German",
+      "Indonesian",
+      "International History",
+      "International Inequality and Development",
+      "International Relations",
+      "Japanese",
+      "Korean",
+      "Peace and Conflict Studies",
+      "Russian",
+      "Spanish"
+    ]
+  },
+  {
+    "name": "Information Technology / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Software Design",
+      "Software Information Systems",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "User Experience Design",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Information Technology / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Systems",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Software Design",
+      "Software Information Systems",
+      "Statistics",
+      "User Experience Design",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Journalism",
+    "type": "Bachelor",
+    "majors": [
+      "Digital Media",
+      "Economics",
+      "Film and Television Studies",
+      "Political Science",
+      "Popular Music and Technology",
+      "Public Relations",
+      "Sports Studies",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Journalism (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Journalism (Honours)"
+    ]
+  },
+  {
+    "name": "Journalism (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Journalism (Honours)"
+    ]
+  },
+  {
+    "name": "Journalism / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Journalism / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Journalism / Laws (Honours)"
+    ]
+  },
+  {
+    "name": "Journalism / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Journalism / Laws (Honours)"
+    ]
+  },
+  {
+    "name": "Laws (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Laws (Honours)"
+    ]
+  },
+  {
+    "name": "Laws (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Laws (Honours)"
+    ]
+  },
+  {
+    "name": "Languages",
+    "type": "Diploma",
+    "majors": [
+      "Ancient Greek",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "French",
+      "French Advanced",
+      "German",
+      "Indonesian",
+      "Japanese",
+      "Japanese Advanced",
+      "Korean",
+      "Latin",
+      "Spanish"
+    ]
+  },
+  {
+    "name": "Mathematics",
+    "type": "Bachelor",
+    "majors": [
+      "Applied Mathematics",
+      "Bioinformatics",
+      "Computational Science",
+      "Computer Science",
+      "Data Analytics and Operations Research",
+      "Mathematical Physics",
+      "Physics",
+      "Pure Mathematics",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Mathematics (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Mathematics (Honours)"
+    ]
+  },
+  {
+    "name": "Mathematics (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Mathematics (Honours)"
+    ]
+  },
+  {
+    "name": "Midwifery",
+    "type": "Bachelor",
+    "majors": [
+      "Midwifery"
+    ]
+  },
+  {
+    "name": "Midwifery",
+    "type": "Bachelor",
+    "majors": [
+      "Midwifery"
+    ]
+  },
+  {
+    "name": "Midwifery (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Midwifery (Honours)"
+    ]
+  },
+  {
+    "name": "Midwifery (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Midwifery (Honours)"
+    ]
+  },
+  {
+    "name": "Music (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Music (Honours)"
+    ]
+  },
+  {
+    "name": "Music (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Music (Honours)"
+    ]
+  },
+  {
+    "name": "Mathematics / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Applied Mathematics",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Data Analytics and Operations Research",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematical Physics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Music Psychology",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Pure Mathematics",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Statistics",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Mathematics / Business Management",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Business Economics",
+      "Business Information Systems",
+      "Data Analytics and Operations Research",
+      "Human Resources",
+      "Innovation and Entrepreneurship",
+      "International Business",
+      "Leadership and Management Science",
+      "Marketing",
+      "Mathematical Physics",
+      "Pure Mathematics",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Mathematics / Commerce",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Accounting",
+      "Applied Mathematics",
+      "Business Analytics",
+      "Business Infomation Systems",
+      "Data Analytics and Operations Research",
+      "Finance",
+      "Mathematical Physics",
+      "Pure Mathematics",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Mathematics / Computer Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Bioinformatics",
+      "Computational Science",
+      "Cyber Security",
+      "Data Analytics and Operations Research",
+      "Data Science",
+      "Machine Learning",
+      "Mathematical Physics",
+      "Physics",
+      "Programming Languages",
+      "Pure Mathematics",
+      "Scientific Computing",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Mathematics / Economics",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Data Analytics and Operations Research",
+      "Economics and Public Policy",
+      "Economics of Strategy and Behaviour",
+      "International and Financial Economics",
+      "Mathematical Physics",
+      "Pure Mathematics",
+      "Quantitative Analysis",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Mathematics / Education (Secondary)",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Data Analytics and Operations Research",
+      "Mathematical Physics",
+      "Pure Mathematics",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Mathematics / Science",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Data Analytics and Operations Research",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematical Physics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Pure Mathematics",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Music (Honours) / Arts",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Archaeology",
+      "Art History",
+      "Australian Studies",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Criminology",
+      "Drama",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Film and Television Studies",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Geography",
+      "German",
+      "History",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Music",
+      "Peace and Conflict Studies",
+      "Philosophy",
+      "Political Science",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Studies in Religion",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Music (Honours) / Education (Secondary)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Music (Honours) / Education (Secondary)"
+    ]
+  },
+  {
+    "name": "Music (Honours) / Education (Secondary)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Music (Honours) / Education (Secondary)"
+    ]
+  },
+  {
+    "name": "Music (Honours) / Science",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Immunity and Infection",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Nursing",
+    "type": "Bachelor",
+    "majors": [
+      "Nursing"
+    ]
+  },
+  {
+    "name": "Nursing",
+    "type": "Bachelor",
+    "majors": [
+      "Nursing"
+    ]
+  },
+  {
+    "name": "Nursing (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Nursing (Honours)"
+    ]
+  },
+  {
+    "name": "Nursing (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Nursing (Honours)"
+    ]
+  },
+  {
+    "name": "Nursing / Midwifery",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Nursing / Midwifery"
+    ]
+  },
+  {
+    "name": "Nursing / Midwifery",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Nursing / Midwifery"
+    ]
+  },
+  {
+    "name": "Occupational Health and Safety Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Occupational Health and Safety Science (Honours)"
+    ]
+  },
+  {
+    "name": "Occupational Health and Safety Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Occupational Health and Safety Science (Honours)"
+    ]
+  },
+  {
+    "name": "Occupational Therapy (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Occupational Therapy (Honours)"
+    ]
+  },
+  {
+    "name": "Occupational Therapy (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Occupational Therapy (Honours)"
+    ]
+  },
+  {
+    "name": "Pharmacy (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Clinical and Experimental Therapeutics"
+    ]
+  },
+  {
+    "name": "Physiotherapy (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Physiotherapy (Honours)"
+    ]
+  },
+  {
+    "name": "Physiotherapy (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Physiotherapy (Honours)"
+    ]
+  },
+  {
+    "name": "Politics, Philosophy and Economics (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Economics",
+      "Philosophy",
+      "Politics"
+    ]
+  },
+  {
+    "name": "Psychological Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Psychological Science (Honours)"
+    ]
+  },
+  {
+    "name": "Psychological Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Psychological Science (Honours)"
+    ]
+  },
+  {
+    "name": "Regional and Town Planning",
+    "type": "Bachelor",
+    "majors": [
+      "Regional and Town Planning"
+    ]
+  },
+  {
+    "name": "Regional and Town Planning",
+    "type": "Bachelor",
+    "majors": [
+      "Regional and Town Planning"
+    ]
+  },
+  {
+    "name": "Regional and Town Planning (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Regional and Town Planning (Honours)"
+    ]
+  },
+  {
+    "name": "Regional and Town Planning (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Regional and Town Planning (Honours)"
+    ]
+  },
+  {
+    "name": "Science",
+    "type": "Bachelor",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Art History",
+      "Astrophysics",
+      "Australian Studies",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Criminology",
+      "Data Science",
+      "Design",
+      "Developmental Biology",
+      "Drama",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Entomology",
+      "Film and Television Studies",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "German",
+      "History",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Marine Biology",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Music",
+      "Music Psychology",
+      "Neuroscience",
+      "Peace and Conflict Studies",
+      "Pharmacology",
+      "Philosophy",
+      "Physics",
+      "Plant Science",
+      "Political Science",
+      "Popular Music and Technology",
+      "Population and Place",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Public Health",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Statistics",
+      "Studies in Religion",
+      "Writing",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Science (Honours) - Gatton",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Animal Production Science",
+      "Animal and Veterinary Bioscience",
+      "Plant Science"
+    ]
+  },
+  {
+    "name": "Science (Honours) - St Lucia",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Anatomy",
+      "Archaeological Science",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Drug Design and Development",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Environmental Science",
+      "Evolutionary Biology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Genomics",
+      "Geographical Science",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Nanotechnology",
+      "Neuroscience",
+      "Parasitology",
+      "Pharmacology",
+      "Physics",
+      "Physiology",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Wildlife Biology",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Social Science",
+    "type": "Bachelor",
+    "majors": [
+      "Development",
+      "Environment and Society",
+      "Health and Social Policy"
+    ]
+  },
+  {
+    "name": "Social Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Development",
+      "Environment and Society",
+      "Health and Social Policy",
+      "Health and Society",
+      "Social and Public Policy"
+    ]
+  },
+  {
+    "name": "Social Work (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Child, Youth and Family",
+      "Health and Ageing",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Speech Pathology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Speech Pathology (Honours)"
+    ]
+  },
+  {
+    "name": "Speech Pathology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Speech Pathology (Honours)"
+    ]
+  },
+  {
+    "name": "Science",
+    "type": "Diploma",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Genetics",
+      "Geographical Information Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Science / Arts",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Aboriginal and Torres Strait Islander Studies",
+      "Ancient Greek",
+      "Ancient History",
+      "Ancient History/History",
+      "Anthropology",
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Archaeology",
+      "Art History",
+      "Astrophysics",
+      "Australian Studies",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Chinese",
+      "Chinese Translation and Interpreting",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Criminology",
+      "Developmental Biology",
+      "Drama",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Economics",
+      "English",
+      "English Literature",
+      "English as an International Language",
+      "Entomology",
+      "Film and Television Studies",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "French",
+      "French Advanced",
+      "Gender Studies",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Geography",
+      "German",
+      "History",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Indonesian",
+      "International Relations",
+      "Italian",
+      "Japanese",
+      "Japanese Advanced",
+      "Journalism and Mass Communication",
+      "Korean",
+      "Latin",
+      "Legal Education Studies",
+      "Linguistics",
+      "Marine Biology",
+      "Mathematics",
+      "Media and Digital Cultures",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Music",
+      "Music Psychology",
+      "Neuroscience",
+      "Peace and Conflict Studies",
+      "Pharmacology",
+      "Philosophy",
+      "Physics",
+      "Plant Science",
+      "Political Science",
+      "Popular Music and Technology",
+      "Professional Writing and Communication",
+      "Psychology",
+      "Public Health",
+      "Russian",
+      "Sociology",
+      "Spanish",
+      "Sports Studies",
+      "Statistics",
+      "Studies in Religion",
+      "Writing",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Science / Education (Secondary)",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Biomedical Science",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Physiology",
+      "Mathematics",
+      "Microbiology",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Science / Journalism",
+    "type": "Bachelor (Dual Degree)",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Infection and Immunity",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Science / Laws (Honours)",
+    "type": "Bachelor (Dual Degree) Honours",
+    "majors": [
+      "Applied Mathematics",
+      "Archaeological Science",
+      "Astrophysics",
+      "Biochemistry and Molecular Biology",
+      "Bioinformatics",
+      "Biomedical Science",
+      "Biophysics",
+      "Cell Biology",
+      "Chemical Biology",
+      "Chemistry",
+      "Coastal and Ocean Science",
+      "Computational Science",
+      "Computer Science",
+      "Developmental Biology",
+      "Earth Science",
+      "Ecology and Conservation Biology",
+      "Entomology",
+      "Food Science and Nutrition",
+      "Food Technology",
+      "Genetics",
+      "Geographical Information Science",
+      "Geographical Science",
+      "Human Anatomy",
+      "Human Physiology",
+      "Immunology",
+      "Marine Biology",
+      "Mathematics",
+      "Microbiology",
+      "Microbiology, Immunity and Infection",
+      "Neuroscience",
+      "Pharmacology",
+      "Physics",
+      "Plant Science",
+      "Psychology",
+      "Public Health",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Tourism, Hospitality and Event Management",
+    "type": "Bachelor",
+    "majors": [
+      "Hotel and Hospitality Management",
+      "Tourism and Event Management"
+    ]
+  },
+  {
+    "name": "Veterinary Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Veterinary Science (Honours)"
+    ]
+  },
+  {
+    "name": "Veterinary Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Veterinary Science (Honours)"
+    ]
+  },
+  {
+    "name": "Veterinary Technology",
+    "type": "Bachelor",
+    "majors": [
+      "Veterinary Technology"
+    ]
+  },
+  {
+    "name": "Veterinary Technology",
+    "type": "Bachelor",
+    "majors": [
+      "Veterinary Technology"
+    ]
+  },
+  {
+    "name": "Veterinary Technology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Veterinary Technology (Honours)"
+    ]
+  },
+  {
+    "name": "Veterinary Technology (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Veterinary Technology (Honours)"
+    ]
+  },
+  {
+    "name": "Wildlife Science",
+    "type": "Bachelor",
+    "majors": [
+      "Wildlife Science"
+    ]
+  },
+  {
+    "name": "Wildlife Science",
+    "type": "Bachelor",
+    "majors": [
+      "Wildlife Science"
+    ]
+  },
+  {
+    "name": "Wildlife Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Wildlife Science (Honours)"
+    ]
+  },
+  {
+    "name": "Wildlife Science (Honours)",
+    "type": "Bachelor Honours",
+    "majors": [
+      "Wildlife Science (Honours)"
+    ]
+  }
+]
