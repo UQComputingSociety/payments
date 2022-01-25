@@ -2,7 +2,6 @@ from setuptools import setup, find_packages
 import sys
 
 requires = [
-    'Flask',
     'premailer',
     'requests',
     'sqlalchemy',
@@ -14,6 +13,7 @@ requires = [
     'bcrypt',
     'tzlocal',
     'flask-sqlalchemy',
+    'flask',
 ]
 
 if sys.version_info < (3, 5):
@@ -26,8 +26,8 @@ setup(
     install_requires=requires,
     url='https://join.uqcs.org.au',
     license='MIT',
-    author='Tom Manderson',
-    author_email='me@trm.io',
+    author='UQCS Committee',
+    author_email='contact@uqcs.org.au',
     description='The UQCS payment systems for membership signup',
     include_package_data=True,
 )
