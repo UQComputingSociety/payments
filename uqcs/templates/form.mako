@@ -223,9 +223,7 @@
     </form>
 
     <p class="help">
-      Membership is <b>$5</b> for one year.
-      Online card payments have a <b>40c</b> surcharge.
-      In person card payments have a <b>10c</b> surcharge.
+      Membership is <b>$2</b> for one year. There is no card surcharge for 2022 membership.
     </p>
     <p class="help">
       Membership expires at the end of February of the <i>next</i> calendar year

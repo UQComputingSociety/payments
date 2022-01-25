@@ -87,8 +87,8 @@ def mailer_worker(mailqueue):
                     + item.email)
                 continue
 
-            # membership is $5.00
-            cost = 500
+            # membership is $2.00
+            cost = 200
             payment = {
                 'cost': _cents_to_str(cost),
                 'surcharge': '',
@@ -98,10 +98,13 @@ def mailer_worker(mailqueue):
             if item.paid not in ('CASH', 'UQU'):
                 # if item.paid is not SQUARE, it was Stripe
                 is_square = item.paid == 'SQUARE'
-                surcharge = 10 if is_square else 40
+                # traditionally square and stripe had surcharges.
+                # now there is none, courtesy of your friendly neighbourhood
+                # ~~2021~~ 2022 committee
+                surcharge = 0
                 total = cost + surcharge
                 payment['total'] = _cents_to_str(total)
-                payment['surcharge'] = _cents_to_str(surcharge)
+                payment['surcharge'] = "no surcharge!"
                 payment['surcharge_text'] = ('Square' if is_square else 'Stripe') \
                     + ' Payment Fee'
 
