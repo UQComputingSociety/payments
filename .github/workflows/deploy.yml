@@ -6,7 +6,8 @@ name: Build and deploy container app to Azure Web App - uqcs-signup
 on:
   push:
     branches:
-      - azure_migration
+      - main
+
 
 env:
   # github repository formatted as <account>/<repo>
