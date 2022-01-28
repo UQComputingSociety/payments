@@ -309,6 +309,11 @@ a {
                 </tr>
                 <tr>
                   <td class="content-block aligncenter">
+                    <a href="https://discord.uqcs.org">Join our Discord!</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block aligncenter">
                     <table class="invoice">
                       <tr>
                         <td>${user.first_name} ${user.last_name}<br/>${time_paid}</td>
@@ -335,11 +340,6 @@ a {
                         </td>
                       </tr>
                     </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block aligncenter">
-                    <a href="http://www.mailgun.com">View in browser</a>
                   </td>
                 </tr>
                 <tr>
