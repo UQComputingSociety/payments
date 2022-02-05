@@ -63,26 +63,6 @@
         />
         </div>
       </div>
-      <div class="field">
-        <label class="label" for="emailInput"
-          >Email Address <span class="reqstar">*</span></label
-        >
-        <div class="control">
-          <input
-            name="email"
-            type="email"
-            class="input"
-            id="emailInput"
-            placeholder="a.smith@example.com"
-            required="required"
-          />
-        </div>
-        <p class="help">Valid UQ student email formats are:
-          <span style="white-space: nowrap;">first.last@uqconnect.edu.au</span>,
-          <span style="white-space: nowrap;">first.last@uq.net.au</span>,
-          <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
-        </p>
-      </div>
 
       <div class="field">
         <label class="label">Gender</label>
@@ -210,6 +190,27 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="emailInput"
+          >Email Address <span class="reqstar">*</span></label
+        >
+        <div class="control">
+          <input
+            name="email"
+            type="email"
+            class="input"
+            id="emailInput"
+            placeholder="a.smith@example.com"
+            required="required"
+          />
+        </div>
+        <p class="help">Valid UQ student email formats are:
+          <span style="white-space: nowrap;">first.last@uqconnect.edu.au</span>,
+          <span style="white-space: nowrap;">first.last@uq.net.au</span>,
+          <span style="white-space: nowrap;">s1234567@student.uq.edu.au</span>.
+        </p>
       </div>
 
       <!-- First hidden, disabled submit button prevents submission on Enter. -->
