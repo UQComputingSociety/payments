@@ -79,8 +79,10 @@ function setupForm(stripePublicKey, stripePriceId) {
   function checkId() {
     let field = document.getElementById("studentNo");
     let id = document.getElementById("studentNo").value;
+    let emailInput = document.getElementById("emailInput");
     if (validId(id)) {
       field.setCustomValidity("");
+      emailInput.value = studentEmailAutocomplete(id);
     } else {
       let text = "Invalid student number.";
       if (id.length != 8)
@@ -90,6 +92,11 @@ function setupForm(stripePublicKey, stripePriceId) {
   }
 
   document.getElementById("studentNo").onchange = checkId;
+
+  function studentEmailAutocomplete(studentNo) {
+    let output = 's' + studentNo.slice(0, 7) + '@student.uq.edu.au';
+    return output;
+  }
 
   const form = $('#fullForm');
   $$('#pay-online, #pay-person').forEach(el => el.addEventListener('click', async () => {
