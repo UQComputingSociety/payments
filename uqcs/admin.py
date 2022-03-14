@@ -156,18 +156,28 @@ def delete(s, admin_user, member_id):
 @needs_db_and_admin
 def dump_members(s, admin_user):
 
-    members = s.query(m.Member).filter(m.Member.paid != None).all()
+    """
+    Do a join of members and students so we can get student numbers,
+    without having to do two requests.
+    """
+    members = s.query(m.Member).outerjoin(m.Student, m.Member.id == m.Student.id).filter(m.Member.paid != None).all()
+
     data = io.BytesIO()
+
+    data.write(b"first_name,last_name,email,is_student,student_id\r\n")
 
     for mem in members:
         fn = mem.first_name
         ln = mem.last_name
         em = mem.email
-        data.write(",".join([fn, ln, em]).encode('utf-8') + b"\r\n")
-    
+        st = str(True) if mem.member_type == "student" else str(False)
+        sn = mem.student_no if mem.member_type == "student" else ""
+        data.write(",".join([fn, ln, em, st, sn]).encode('utf-8') + b"\r\n")
+
     data.seek(0)
 
-    return send_file(data, as_attachment=True, download_name="member_list.xlsx")
+    date = str(dt.date.today())
+    return send_file(data, as_attachment=True, download_name=f"member_list_{date}.csv")
 
 
 @admin.route('/logout')
