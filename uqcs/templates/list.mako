@@ -12,6 +12,10 @@
   Paid: ${paid.count()}
 </p>
 
+<div class="buttons">
+<a href="/admin/dump_members" class="button is-link">Dump Members</a>
+</div>
+
 <table class="table is-fullwidth is-narrow is-striped">
 <thead>
 <tr>

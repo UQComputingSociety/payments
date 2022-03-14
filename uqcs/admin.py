@@ -1,4 +1,4 @@
-from flask import Blueprint, request, session, redirect, abort, url_for, make_response, Response, flash, get_flashed_messages
+from flask import Blueprint, request, session, redirect, abort, url_for, make_response, Response, flash, get_flashed_messages, send_file
 from werkzeug import exceptions
 from .templates import lookup
 from .base import needs_db, mailchimp_queue, mailer_queue
@@ -10,6 +10,7 @@ import os
 import logging
 import tzlocal
 import datetime as dt
+import io
 
 # Type Imports
 from typing import TYPE_CHECKING, Optional
@@ -150,6 +151,24 @@ def delete(s, admin_user, member_id):
     user = s.query(m.Member).filter(m.Member.id == member_id).one()
     s.delete(user)
     return redirect("/admin/accept", 303)
+
+@admin.route('/dump_members')
+@needs_db_and_admin
+def dump_members(s, admin_user):
+
+    members = s.query(m.Member).filter(m.Member.paid != None).all()
+    data = io.BytesIO()
+
+    for mem in members:
+        fn = mem.first_name
+        ln = mem.last_name
+        em = mem.email
+        data.write(",".join([fn, ln, em]).encode('utf-8') + b"\r\n")
+    
+    data.seek(0)
+
+    return send_file(data, as_attachment=True, download_name="member_list.xlsx")
+
 
 @admin.route('/logout')
 @needs_db_and_admin
