@@ -2,6 +2,7 @@
 
 The online membership form for the [UQ Computing Society](https://uqcs.org.au).
 
+> This repo has been archived in favour of our newer [UQCSPay platform](https://github.com/uqcomputingsociety/uqcspay), which is a fork of this repo. We’ve opted to keep this repo in its current state for any club that is interested in a simple signup system that they can self-host.
 
 ## Params
 
